@@ -1,0 +1,39 @@
+# Fiche tendance : Figue (Fig)
+
+- **Identifiant** : `fig`
+- **Famille aromatique** : fruits_frais
+- **Rayon (supermarché 3D)** : Snacking sucré & confiserie
+- **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
+- **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
+
+## 1. Signaux quantitatifs
+
+- Recherches Google (13 dernières semaines vs les 13 précédentes) : -5 %
+- Recherches Google vs la même période l'an dernier : -4 %
+- Irrégularité de la courbe (volatilité sur 26 semaines) : 0.10 (0 = régulière)
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : +0 points
+- Produits Open Food Facts citant l'arôme : 60 produits, 40 marques, 17 pays (échantillon des produits récemment mis à jour, monde entier)
+- Mentions sur 30 jours : 7 dans la presse, 74 sur les réseaux (YouTube, Bluesky) ; 2 143 vues YouTube
+
+## 2. Résultat statistique (modèle V2)
+
+- **Statut** : Stable
+- **Probabilité que la hausse soit durable** : non calculée (arôme pas en hausse)
+- Fiabilité du modèle : accuracy 82%, F1 0.88, ROC AUC 0.81 sur 82 cas réels, validation leave-one-flavor-out (chaque arôme est prédit par un modèle qui ne l'a jamais vu).
+
+## 3. Preuves : articles et vidéos réels (30 derniers jours)
+
+- [google_news] 2026-11-09 : « ‘Weaving and grieving’ as iconic Far North fig gets the chop »
+- [google_news] 2026-11-09 : « Figue, artisans et tradition : Peri prépare sa Festa di u ficu 2026 »
+- [google_news] 2026-11-08 : « Your Holiday Charcuterie Board Needs Whole Foods’ New Fig Spread »
+- [google_news] 2026-11-06 : « Smash’s New Fig Spread Is Made for Holiday Cheese Boards, and the Jar Is $7.49 »
+- [youtube] 2026-11-06 : « Allix Fig - Early Top Tier Flavor #figboss #figs #fruittrees #gardening »
+- [google_news] 2026-11-06 : « Costco's Kirkland Cherry and Fig Bread Returns as a Must-Try Seasonal Favorite »
+
+## 4. Points de vigilance (calculés à partir des données)
+
+- Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable.
+
+## 5. Question de simulation
+
+Simuler, sur 12 mois, la réaction de quatre profils de consommateurs (jeune adulte curieux de nouveautés, parent qui fait les courses de la semaine, consommateur attentif à la santé et au « clean label », acheteur de la grande distribution) au lancement de produits à l'arôme **Figue** dans le rayon « Snacking sucré & confiserie ». En s'appuyant sur les signaux et les points de vigilance ci-dessus, l'arôme dépasse-t-il l'effet de curiosité des premières semaines ? Quels arguments favorisent ou freinent le réachat ?

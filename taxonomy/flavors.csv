@@ -1,0 +1,103 @@
+flavor_id,name_fr,name_en,family,wiki_fr,wiki_en,aliases_fr,aliases_en
+yuzu,Yuzu,Yuzu,agrumes,Yuzu,Yuzu,yuzu,yuzu
+lime,Citron vert,Lime,agrumes,Citron vert,Lime (fruit),citron vert|lime,lime
+blood_orange,Orange sanguine,Blood orange,agrumes,Orange sanguine,Blood orange,orange sanguine,blood orange
+grapefruit,Pamplemousse,Grapefruit,agrumes,Pamplemousse,Grapefruit,pamplemousse|pomelo,grapefruit
+calamansi,Calamansi,Calamansi,agrumes,Calamondin,Calamansi,calamansi|calamondin,calamansi|calamondin
+bergamot,Bergamote,Bergamot,agrumes,Bergamote,Bergamot orange,bergamote,bergamot
+passion_fruit,Fruit de la passion,Passion fruit,fruits_exotiques,Fruit de la passion,Passion fruit,fruit de la passion|maracuja|passiflore,passion fruit|passionfruit|maracuja
+mango,Mangue,Mango,fruits_exotiques,Mangue,Mango,mangue,mango
+lychee,Litchi,Lychee,fruits_exotiques,Litchi,Lychee,litchi|lychee,lychee|litchi
+guava,Goyave,Guava,fruits_exotiques,Goyave,Guava,goyave,guava
+dragon_fruit,Pitaya,Dragon fruit,fruits_exotiques,Pitaya,Pitaya,pitaya|fruit du dragon,dragon fruit|pitaya
+coconut,Noix de coco,Coconut,fruits_exotiques,Noix de coco,Coconut,noix de coco|coco,coconut
+ube,Ube,Ube,fruits_exotiques,Dioscorea alata,Dioscorea alata,ube|igname violette,ube|purple yam
+strawberry,Fraise,Strawberry,fruits_rouges,Fraise,Strawberry,fraise,strawberry
+raspberry,Framboise,Raspberry,fruits_rouges,Framboise,Raspberry,framboise,raspberry
+cherry,Cerise,Cherry,fruits_rouges,Cerise,Cherry,cerise,cherry
+peach,Pêche,Peach,fruits_noyau,Pêche (fruit),Peach,pêche,peach
+watermelon,Pastèque,Watermelon,fruits_frais,Pastèque,Watermelon,pastèque,watermelon
+cucumber,Concombre,Cucumber,vegetal,Concombre,Cucumber,concombre,cucumber
+hibiscus,Hibiscus,Hibiscus,floral,Bissap,Hibiscus tea,hibiscus|bissap|karkadé,hibiscus
+elderflower,Fleur de sureau,Elderflower,floral,Sureau noir,Sambucus nigra,fleur de sureau|sureau,elderflower
+lavender,Lavande,Lavender,floral,Lavande,Lavandula,lavande,lavender
+rose,Rose,Rose,floral,Eau de rose,Rose water,eau de rose|rose,rose water|rose
+mint,Menthe,Mint,herbace,Menthe,Mentha,menthe,mint|peppermint|spearmint
+basil,Basilic,Basil,herbace,Basilic,Basil,basilic,basil
+matcha,Matcha,Matcha,herbace,Matcha,Matcha,matcha,matcha
+ginger,Gingembre,Ginger,epice,Gingembre,Ginger,gingembre,ginger
+cardamom,Cardamome,Cardamom,epice,Cardamome,Cardamom,cardamome,cardamom
+cinnamon,Cannelle,Cinnamon,epice,Cannelle,Cinnamon,cannelle,cinnamon
+chili,Piment,Chili pepper,epice,Piment,Chili pepper,piment,chili|chilli
+vanilla,Vanille,Vanilla,gourmand,Vanille,Vanilla,vanille,vanilla
+salted_caramel,Caramel beurre salé,Salted caramel,gourmand,Caramel au beurre salé,Salted caramel,caramel beurre salé|caramel au beurre salé,salted caramel
+speculoos,Spéculoos,Speculoos,gourmand,Spéculoos,Speculaas,spéculoos|speculoos,speculoos|speculaas|biscoff
+tonka,Fève tonka,Tonka bean,gourmand,Fève tonka,Tonka bean,fève tonka|tonka,tonka bean|tonka
+pistachio,Pistache,Pistachio,fruits_a_coque,Pistache,Pistachio,pistache,pistachio
+black_sesame,Sésame noir,Black sesame,torrefie,Sésame,Sesame,sésame noir,black sesame
+hojicha,Hojicha,Hojicha,torrefie,Hōjicha,Hōjicha,hojicha,hojicha
+miso,Miso,Miso,umami,Miso,Miso,miso,miso
+lemon,Citron,Lemon,agrumes,Citron,Lemon,citron,lemon
+pomegranate,Grenade,Pomegranate,fruits_rouges,Grenade (fruit),Pomegranate,grenade,pomegranate
+blueberry,Myrtille,Blueberry,fruits_rouges,Myrtille,Blueberry,myrtille|bleuet,blueberry
+blackcurrant,Cassis,Blackcurrant,fruits_rouges,Cassis,Blackcurrant,cassis,blackcurrant
+cranberry,Canneberge,Cranberry,fruits_rouges,Canneberge,Cranberry,canneberge|cranberry,cranberry
+sea_buckthorn,Argousier,Sea buckthorn,fruits_rouges,Argousier,Hippophae,argousier,sea buckthorn
+fig,Figue,Fig,fruits_frais,Figue,Common fig,figue,fig
+apricot,Abricot,Apricot,fruits_noyau,Abricot,Apricot,abricot,apricot
+pear,Poire,Pear,fruits_frais,Poire,Pear,poire,pear
+green_apple,Pomme verte,Green apple,fruits_frais,Pomme,Apple,pomme verte|pomme,green apple|apple
+pineapple,Ananas,Pineapple,fruits_exotiques,Ananas,Pineapple,ananas,pineapple
+banana,Banane,Banana,fruits_exotiques,Banane,Banana,banane,banana
+kiwi,Kiwi,Kiwi,fruits_exotiques,Kiwi (fruit),Kiwifruit,kiwi,kiwi|kiwifruit
+melon,Melon,Melon,fruits_frais,Melon,Melon,melon,melon
+acai,Açaï,Açaí,fruits_exotiques,Açaí,Açaí palm,açaï|acai,acai|açaí
+tamarind,Tamarin,Tamarind,fruits_exotiques,Tamarinier,Tamarind,tamarin,tamarind
+orange_blossom,Fleur d'oranger,Orange blossom,floral,Eau de fleur d'oranger,Orange flower water,fleur d'oranger,orange blossom
+violet,Violette,Violet,floral,Viola odorata,Viola odorata,violette,violet
+jasmine,Jasmin,Jasmine,floral,Jasmin,Jasmine,jasmin,jasmine
+chamomile,Camomille,Chamomile,floral,Camomille,Chamomile,camomille,chamomile
+rosemary,Romarin,Rosemary,herbace,Romarin,Rosemary,romarin,rosemary
+thyme,Thym,Thyme,herbace,Thym,Thyme,thym,thyme
+coriander,Coriandre,Coriander,herbace,Coriandre,Coriander,coriandre,coriander|cilantro
+dill,Aneth,Dill,herbace,Aneth,Dill,aneth,dill
+lemongrass,Citronnelle,Lemongrass,herbace,Cymbopogon citratus,Cymbopogon citratus,citronnelle,lemongrass
+shiso,Shiso,Shiso,herbace,Shiso,Perilla frutescens var. crispa,shiso,shiso
+pandan,Pandan,Pandan,herbace,Pandanus amaryllifolius,Pandanus amaryllifolius,pandan,pandan
+turmeric,Curcuma,Turmeric,epice,Curcuma,Turmeric,curcuma,turmeric
+saffron,Safran,Saffron,epice,Safran (épice),Saffron,safran,saffron
+black_pepper,Poivre noir,Black pepper,epice,Poivre noir,Black pepper,poivre noir|poivre,black pepper
+sichuan_pepper,Poivre du Sichuan,Sichuan pepper,epice,Poivre du Sichuan,Sichuan pepper,poivre du sichuan,sichuan pepper
+chai,Chaï,Chai,epice,,Masala chai,chaï|chai,chai|masala chai
+pumpkin_spice,Pumpkin spice,Pumpkin spice,epice,,Pumpkin spice,pumpkin spice|épices à citrouille,pumpkin spice
+curry,Curry,Curry,epice,Curry,Curry,curry,curry
+harissa,Harissa,Harissa,epice,Harissa,Harissa,harissa,harissa
+gochujang,Gochujang,Gochujang,epice,Gochujang,Gochujang,gochujang,gochujang
+sriracha,Sriracha,Sriracha,epice,Sriracha,Sriracha sauce,sriracha,sriracha
+wasabi,Wasabi,Wasabi,epice,Wasabi,Wasabi,wasabi,wasabi
+zaatar,Zaatar,Za'atar,epice,Zaatar,Za'atar,zaatar|za'atar,za'atar|zaatar
+sumac,Sumac,Sumac,epice,Sumac des corroyeurs,Sumac,sumac,sumac
+jalapeno,Jalapeño,Jalapeño,epice,Jalapeño,Jalapeño,jalapeño|jalapeno,jalapeño|jalapeno
+hot_honey,Miel piquant,Hot honey,epice,,Hot honey,miel piquant|miel pimenté,hot honey|spicy honey
+chocolate,Chocolat,Chocolate,gourmand,Chocolat,Chocolate,chocolat,chocolate
+honey,Miel,Honey,gourmand,Miel,Honey,miel,honey
+maple,Érable,Maple,gourmand,Sirop d'érable,Maple syrup,sirop d'érable|érable,maple syrup|maple
+praline,Praliné,Praline,gourmand,Praliné,Praline (nut confection),praliné,praline
+tiramisu,Tiramisu,Tiramisu,gourmand,Tiramisu,Tiramisu,tiramisu,tiramisu
+cheesecake,Cheesecake,Cheesecake,gourmand,Cheesecake,Cheesecake,cheesecake,cheesecake
+dulce_de_leche,Confiture de lait,Dulce de leche,gourmand,Confiture de lait,Dulce de leche,confiture de lait|dulce de leche,dulce de leche
+marshmallow,Guimauve,Marshmallow,gourmand,Guimauve (confiserie),Marshmallow,guimauve|marshmallow,marshmallow
+cotton_candy,Barbe à papa,Cotton candy,gourmand,Barbe à papa,Cotton candy,barbe à papa,cotton candy
+hazelnut,Noisette,Hazelnut,fruits_a_coque,Noisette,Hazelnut,noisette,hazelnut
+almond,Amande,Almond,fruits_a_coque,Amande,Almond,amande,almond
+peanut_butter,Beurre de cacahuète,Peanut butter,fruits_a_coque,Beurre de cacahuète,Peanut butter,beurre de cacahuète|beurre d'arachide,peanut butter
+coffee,Café,Coffee,torrefie,Café,Coffee,café,coffee
+truffle,Truffe,Truffle,umami,Truffe (champignon),Truffle,truffe,truffle
+black_garlic,Ail noir,Black garlic,umami,Ail noir,Black garlic,ail noir,black garlic
+nori,Nori,Nori,umami,Nori,Nori,nori|algue nori,nori|seaweed
+salt_vinegar,Sel et vinaigre,Salt and vinegar,umami,,Salt and vinegar crisps,sel et vinaigre,salt and vinegar
+barbecue,Barbecue,Barbecue,fume,Sauce barbecue,Barbecue sauce,barbecue|bbq,barbecue|bbq
+kimchi,Kimchi,Kimchi,fermente,Kimchi,Kimchi,kimchi,kimchi
+pickle,Cornichon,Pickle,fermente,Cornichon,Pickled cucumber,cornichon|pickle,pickle|dill pickle
+mojito,Mojito,Mojito,cocktail,Mojito,Mojito,mojito,mojito
+bubble_tea,Bubble tea,Bubble tea,the,Bubble tea,Bubble tea,bubble tea|thé aux perles,bubble tea|boba

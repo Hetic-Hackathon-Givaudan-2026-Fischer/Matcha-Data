@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+logs/
+*.egg-info/
+build/
+data/manual/google_trends/*.csv
+!data/manual/google_trends/.gitkeep
+# exports Orange : contiennent des textes de posts (données personnelles possibles)
+data/exports/
+data/sample/orange/
+.vscode/
+.ruff_cache/

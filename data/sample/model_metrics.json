@@ -1,0 +1,51 @@
+{
+  "n_cases": 82,
+  "n_flavors": 25,
+  "n_perenne": 63,
+  "n_buzz": 19,
+  "label_rule": "cas = arôme en vraie hausse à T0 (≥ +20 % sur 13 semaines ET ≥ +20 % vs l'an dernier) ; pérenne si, un an après (semaines +39 à +52), il conserve au moins 50 % de son gain, sinon buzz",
+  "model_version": "V2",
+  "model_description": "Régression logistique sur la forme de la courbe Google Trends (pic, volatilité, accélération, croissance sur 13 semaines)",
+  "v1_description": "Règle simple : buzz si le pic récent ≥ 1.5 × la moyenne sur 26 semaines",
+  "validation": "leave-one-flavor-out (chaque arôme est prédit par un modèle qui ne l'a jamais vu)",
+  "accuracy": 0.817,
+  "balanced_accuracy": 0.771,
+  "buzz_detectes": 0.684,
+  "precision_buzz": 0.591,
+  "precision_perenne": 0.9,
+  "recall_perenne": 0.857,
+  "f1_perenne": 0.878,
+  "roc_auc": 0.81,
+  "confusion_matrix": {
+    "vrai_perenne_predit_perenne": 54,
+    "vrai_buzz_predit_perenne": 6,
+    "vrai_perenne_predit_buzz": 9,
+    "vrai_buzz_predit_buzz": 13
+  },
+  "baselines": {
+    "v1_regle_gros_pic": {
+      "accuracy": 0.732,
+      "balanced_accuracy": 0.734,
+      "buzz_detectes": 0.737
+    },
+    "reference_toujours_perenne": {
+      "accuracy": 0.768,
+      "balanced_accuracy": 0.5,
+      "buzz_detectes": 0.0
+    }
+  },
+  "lecture": "Le but métier est de repérer les buzz pour ne pas y investir : regarder balanced_accuracy et buzz_detectes. Toujours répondre « pérenne » a une bonne accuracy mais détecte 0 buzz.",
+  "features": [
+    "pic_ratio",
+    "volatilite_26s",
+    "acceleration",
+    "croissance_13s"
+  ],
+  "coefficients": {
+    "pic_ratio": -0.829,
+    "volatilite_26s": -0.209,
+    "acceleration": 0.085,
+    "croissance_13s": -0.587
+  },
+  "selection_note": "Variables choisies parmi 10 variantes comparées sur ces mêmes cas : le score est probablement un peu optimiste ; à reconfirmer sur les mois à venir."
+}

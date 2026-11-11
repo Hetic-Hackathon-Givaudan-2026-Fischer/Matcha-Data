@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flavortrends"
+version = "0.1.0"
+description = "Collecte, stockage brut et nettoyage des signaux de tendances aromatiques"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "tenacity>=8.2",
+    "psycopg[binary]>=3.1",
+    "python-dotenv>=1.0",
+    "feedparser>=6.0",
+    "langdetect>=1.0.9",
+    "datasketch>=2.0,<3",
+    "pytrends>=4.9",            # Google Trends, bibliothèque non officielle
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "respx>=0.21"]
+spike = ["scikit-learn>=1.5", "fastapi>=0.110", "uvicorn[standard]>=0.29", "pandas>=2"]
+
+[project.scripts]
+flavortrends = "flavortrends.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

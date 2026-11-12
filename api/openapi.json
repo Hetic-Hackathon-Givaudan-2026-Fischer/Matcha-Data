@@ -1,0 +1,2076 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FlavorTrends · API Data",
+    "description": "\nTendances d'arômes calculées sur **données réelles** (Google Trends, Open Food Facts, presse, réseaux, Wikipédia).\n\n- **V1** = règle simple « gros pic = buzz » (premier résultat).\n- **V2** = régression logistique validée en leave-one-flavor-out (modèle du prototype).\n- **MiroFish** = simulation séparée, `null` tant qu'aucune simulation n'a été exécutée.\n\n### Quelle route pour quoi ?\n| Besoin côté Tech | Route |\n|---|---|\n| Vérifier que l'API répond et la date des données | `GET /api/v1/health` |\n| Liste des 102 arômes (dashboard, rayons du supermarché 3D) | `GET /api/v1/trends` |\n| Fiche détaillée d'un arôme (courbe, preuves, points de vigilance) | `GET /api/v1/trends/{trend_id}` |\n| Fiabilité du modèle (panneau « validation ») | `GET /api/v1/model-metrics` |\n| Calculatrice « et si… » (variables saisies à la main) | `POST /api/v1/simulate` |\n| Indicateurs métier des 102 arômes (buzz score, trend status…) | `GET /api/v1/ai/indicators` |\n| Explication en langage simple d'un arôme (LLM local) | `GET /api/v1/trends/{trend_id}/insight` |\n\n### Erreurs\nToutes les erreurs renvoient un JSON `{\"detail\": \"...\"}`.\n`404` = identifiant inconnu · `422` = paramètre invalide (détail par champ) ·\n`503` = données ou modèle absents côté serveur · `500` = erreur inattendue (le champ `error` donne le type).\n\nLes données sont recalculées chaque nuit (3 h) ; `generated_at` (UTC) indique leur date.\n",
+    "version": "1.2.0"
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "tags": [
+          "Système"
+        ],
+        "summary": "État de l'API et date des données",
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/trends": {
+      "get": {
+        "tags": [
+          "Données"
+        ],
+        "summary": "Liste des arômes (dashboard et supermarché 3D)",
+        "description": "Route principale pour le front. Filtres optionnels, insensibles à la casse : `category` = identifiant d'un des 14 types de produits (ex. `glaces`, `desserts-lactes`) ; renvoie les arômes associés à ce type (principal ou secondaire). `status` = partie du statut (ex. `buzz`, `stable`). `include_series=true` ajoute la courbe de 104 semaines à chaque arôme (réponse plus lourde).",
+        "operationId": "list_trends_api_v1_trends_get",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Category"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          },
+          {
+            "name": "include_series",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Series"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrendList"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/product-types": {
+      "get": {
+        "tags": [
+          "Données"
+        ],
+        "summary": "Les 14 types de produits (rayons 3D) et leur nombre d'arômes",
+        "operationId": "product_types_api_v1_product_types_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/ProductTypeCount"
+                  },
+                  "type": "array",
+                  "title": "Response 200 Product Types Api V1 Product Types Get"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/trends/{trend_id}": {
+      "get": {
+        "tags": [
+          "Données"
+        ],
+        "summary": "Fiche complète d'un arôme (rapport détaillé)",
+        "description": "`trend_id` = identifiant anglais en minuscules, tel que renvoyé par /trends (ex. `matcha`, `curry`, `dragon_fruit`). Inclut la courbe Google Trends.",
+        "operationId": "get_trend_api_v1_trends__trend_id__get",
+        "parameters": [
+          {
+            "name": "trend_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trend Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Trend"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Identifiant inconnu",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/trends/{trend_id}/packet": {
+      "get": {
+        "tags": [
+          "Données"
+        ],
+        "summary": "Fiche Markdown prête pour MiroFish",
+        "operationId": "get_packet_api_v1_trends__trend_id__packet_get",
+        "parameters": [
+          {
+            "name": "trend_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trend Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fiche au format Markdown",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Identifiant inconnu",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/model-metrics": {
+      "get": {
+        "tags": [
+          "Modèle"
+        ],
+        "summary": "Validation du modèle V2, comparé à V1 (matrice de confusion, F1, comparaisons)",
+        "operationId": "model_metrics_api_v1_model_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelMetrics"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ai/health": {
+      "get": {
+        "tags": [
+          "IA"
+        ],
+        "summary": "État d'Ollama (LLM local) et modèle utilisé",
+        "operationId": "ai_health_api_v1_ai_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ai/indicators": {
+      "get": {
+        "tags": [
+          "IA"
+        ],
+        "summary": "Indicateurs métier des 102 arômes (instantané, sans LLM)",
+        "description": "Trend status, growth rate, buzz score, trend score, confiance. Calculés en Python à partir des données Data (aucun LLM, réponse immédiate). Définitions : voir /ai/insight.",
+        "operationId": "ai_indicators_api_v1_ai_indicators_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/Indicators"
+                  },
+                  "type": "array",
+                  "title": "Response 200 Ai Indicators Api V1 Ai Indicators Get"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/trends/{trend_id}/insight": {
+      "get": {
+        "tags": [
+          "IA"
+        ],
+        "summary": "Explication métier d'un arôme par l'AI Trend Analyst (LLM local Ollama)",
+        "description": "Les chiffres et le statut sont calculés en Python ; le LLM ne rédige que le texte. Première génération : 20 à 60 s sur CPU, puis réponse instantanée (cache, invalidé à chaque recalcul nocturne des données). Si Ollama est indisponible, la réponse arrive quand même avec un texte modèle (`generated_by: fallback`) et la raison dans `llm_error`.\n\n`focus` : complete (défaut), trend, buzz, emerging, business. `refresh=true` force une nouvelle génération. `use_llm=false` = texte modèle immédiat.",
+        "operationId": "trend_insight_api_v1_trends__trend_id__insight_get",
+        "parameters": [
+          {
+            "name": "trend_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trend Id"
+            }
+          },
+          {
+            "name": "focus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "complete",
+                "trend",
+                "buzz",
+                "emerging",
+                "business"
+              ],
+              "type": "string",
+              "default": "complete",
+              "title": "Focus"
+            }
+          },
+          {
+            "name": "refresh",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Refresh"
+            }
+          },
+          {
+            "name": "use_llm",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "title": "Use Llm"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Insight"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Identifiant inconnu",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/simulate": {
+      "post": {
+        "tags": [
+          "Modèle"
+        ],
+        "summary": "Probabilité V2 qu'une hausse soit durable, pour des variables données",
+        "description": "Calculatrice « et si… » : ne renvoie PAS les données des arômes (pour ça : GET /api/v1/trends). V2 n'utilise que pic_ratio, volatilite_26s, acceleration et croissance_13s. Verdict : durable si probabilité ≥ 0,6 ; buzz probable si ≤ 0,4 ; sinon incertain.",
+        "operationId": "simulate_api_v1_simulate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SimulationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SimulationResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Données ou modèle absents (lancer flavortrends spike2-build)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur inattendue",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ErrorResponse": {
+        "properties": {
+          "detail": {
+            "type": "string",
+            "title": "Detail",
+            "examples": [
+              "Arôme inconnu : pitaya"
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error",
+            "description": "Type d'exception (erreurs 500 uniquement)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponse"
+      },
+      "Evidence": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "examples": [
+              "google_news"
+            ]
+          },
+          "date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Date",
+            "examples": [
+              "2026-11-12"
+            ]
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "source"
+        ],
+        "title": "Evidence"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Health": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "ok",
+            "title": "Status"
+          },
+          "generated_at": {
+            "type": "string",
+            "title": "Generated At",
+            "description": "Date de calcul des données (ISO 8601, UTC)",
+            "examples": [
+              "2026-11-12T05:27:22+00:00"
+            ]
+          },
+          "trends": {
+            "type": "integer",
+            "title": "Trends",
+            "description": "Nombre d'arômes disponibles",
+            "examples": [
+              102
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "generated_at",
+          "trends"
+        ],
+        "title": "Health"
+      },
+      "IndicatorDefinition": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type"
+          },
+          "definition": {
+            "type": "string",
+            "title": "Definition"
+          }
+        },
+        "type": "object",
+        "required": [
+          "type",
+          "definition"
+        ],
+        "title": "IndicatorDefinition"
+      },
+      "Indicators": {
+        "properties": {
+          "trend_id": {
+            "type": "string",
+            "title": "Trend Id"
+          },
+          "aroma_name": {
+            "type": "string",
+            "title": "Aroma Name"
+          },
+          "trend_status": {
+            "type": "string",
+            "enum": [
+              "exploding",
+              "emerging",
+              "growing",
+              "seasonal",
+              "stable",
+              "declining",
+              "insufficient_data"
+            ],
+            "title": "Trend Status"
+          },
+          "trend_status_reason": {
+            "type": "string",
+            "title": "Trend Status Reason"
+          },
+          "growth_rate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Growth Rate",
+            "description": "Évolution des recherches Google sur 13 semaines, en %"
+          },
+          "buzz_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Buzz Score",
+            "description": "Bêta : rang relatif de l'attention médiatique"
+          },
+          "trend_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trend Score",
+            "description": "Bêta : rang relatif de la dynamique de recherche"
+          },
+          "perennity_score_v2": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Perennity Score V2",
+            "description": "Modèle V2 : probabilité (0-100) que la hausse dure 1 an"
+          },
+          "confidence_level": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "title": "Confidence Level"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trend_id",
+          "aroma_name",
+          "trend_status",
+          "trend_status_reason",
+          "confidence_level"
+        ],
+        "title": "Indicators"
+      },
+      "Insight": {
+        "properties": {
+          "trend_id": {
+            "type": "string",
+            "title": "Trend Id"
+          },
+          "aroma_name": {
+            "type": "string",
+            "title": "Aroma Name"
+          },
+          "trend_status": {
+            "type": "string",
+            "enum": [
+              "exploding",
+              "emerging",
+              "growing",
+              "seasonal",
+              "stable",
+              "declining",
+              "insufficient_data"
+            ],
+            "title": "Trend Status"
+          },
+          "trend_status_reason": {
+            "type": "string",
+            "title": "Trend Status Reason"
+          },
+          "growth_rate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Growth Rate",
+            "description": "Évolution des recherches Google sur 13 semaines, en %"
+          },
+          "buzz_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Buzz Score",
+            "description": "Bêta : rang relatif de l'attention médiatique"
+          },
+          "trend_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trend Score",
+            "description": "Bêta : rang relatif de la dynamique de recherche"
+          },
+          "perennity_score_v2": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Perennity Score V2",
+            "description": "Modèle V2 : probabilité (0-100) que la hausse dure 1 an"
+          },
+          "confidence_level": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "title": "Confidence Level"
+          },
+          "trend_summary": {
+            "type": "string",
+            "title": "Trend Summary"
+          },
+          "evolution_explanation": {
+            "type": "string",
+            "title": "Evolution Explanation"
+          },
+          "key_drivers": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Key Drivers"
+          },
+          "business_opportunity": {
+            "type": "string",
+            "title": "Business Opportunity"
+          },
+          "recommendation": {
+            "type": "string",
+            "title": "Recommendation"
+          },
+          "data_limitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Data Limitations"
+          },
+          "indicator_definitions": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/IndicatorDefinition"
+            },
+            "type": "object",
+            "title": "Indicator Definitions"
+          },
+          "focus": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "trend",
+              "buzz",
+              "emerging",
+              "business"
+            ],
+            "title": "Focus"
+          },
+          "generated_by": {
+            "type": "string",
+            "enum": [
+              "llm",
+              "fallback"
+            ],
+            "title": "Generated By",
+            "description": "« llm » = texte rédigé par Ollama ; « fallback » = texte modèle (Ollama indisponible)"
+          },
+          "model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model"
+          },
+          "llm_error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Llm Error",
+            "description": "Raison du repli, si generated_by = fallback"
+          },
+          "llm_seconds": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Llm Seconds"
+          },
+          "llm_attempts": {
+            "type": "integer",
+            "title": "Llm Attempts",
+            "description": "0 = LLM non appelé ; 2 = la première réponse a été corrigée"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings",
+            "description": "Avertissements éventuels sur la réponse"
+          },
+          "data_generated_at": {
+            "type": "string",
+            "title": "Data Generated At"
+          },
+          "cached": {
+            "type": "boolean",
+            "title": "Cached"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trend_id",
+          "aroma_name",
+          "trend_status",
+          "trend_status_reason",
+          "confidence_level",
+          "trend_summary",
+          "evolution_explanation",
+          "key_drivers",
+          "business_opportunity",
+          "recommendation",
+          "data_limitations",
+          "indicator_definitions",
+          "focus",
+          "generated_by",
+          "llm_attempts",
+          "warnings",
+          "data_generated_at",
+          "cached"
+        ],
+        "title": "Insight"
+      },
+      "Metrics": {
+        "properties": {
+          "search_growth_13w_pct": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Growth 13W Pct",
+            "description": "Croissance Google Trends sur 13 semaines (%)"
+          },
+          "search_growth_52w_pct": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Growth 52W Pct",
+            "description": "Croissance vs la même période l'an dernier (%)"
+          },
+          "search_volatility_26w": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Volatility 26W",
+            "description": "Écart-type / moyenne sur 26 semaines"
+          },
+          "search_spike_ratio": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Spike Ratio",
+            "description": "Pic des 13 dernières semaines / moyenne sur 26"
+          },
+          "popularity_vs_vanilla": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Popularity Vs Vanilla",
+            "description": "Obsolète, souvent null"
+          },
+          "wikipedia_growth_12m_relative_pts": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wikipedia Growth 12M Relative Pts",
+            "description": "Croissance Wikipédia sur 12 mois, en points au-dessus de la médiane des arômes"
+          },
+          "openfoodfacts_products_count": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Openfoodfacts Products Count",
+            "description": "Produits en rayon citant l'arôme"
+          },
+          "openfoodfacts_brands": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Openfoodfacts Brands"
+          },
+          "openfoodfacts_countries": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Openfoodfacts Countries"
+          },
+          "press_mentions_30d": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Press Mentions 30D"
+          },
+          "social_mentions_30d": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Social Mentions 30D"
+          },
+          "youtube_views_30d": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Youtube Views 30D"
+          },
+          "sponsored_share_30d": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sponsored Share 30D",
+            "description": "Part de contenus sponsorisés (0-1)"
+          },
+          "efsa_regulatory_status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Efsa Regulatory Status",
+            "examples": [
+              "non_verifie"
+            ]
+          }
+        },
+        "type": "object",
+        "title": "Metrics"
+      },
+      "MiroFish": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status",
+            "examples": [
+              "fiche_prete"
+            ]
+          },
+          "packet": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Packet",
+            "description": "Chemin de la fiche ; contenu via /trends/{id}/packet"
+          },
+          "simulation": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Simulation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "MiroFish"
+      },
+      "ModelMetrics": {
+        "properties": {
+          "model_version": {
+            "type": "string",
+            "title": "Model Version",
+            "examples": [
+              "V2"
+            ]
+          },
+          "n_cases": {
+            "type": "integer",
+            "title": "N Cases"
+          },
+          "n_flavors": {
+            "type": "integer",
+            "title": "N Flavors"
+          },
+          "n_perenne": {
+            "type": "integer",
+            "title": "N Perenne"
+          },
+          "n_buzz": {
+            "type": "integer",
+            "title": "N Buzz"
+          },
+          "validation": {
+            "type": "string",
+            "title": "Validation"
+          },
+          "accuracy": {
+            "type": "number",
+            "title": "Accuracy"
+          },
+          "balanced_accuracy": {
+            "type": "number",
+            "title": "Balanced Accuracy"
+          },
+          "buzz_detectes": {
+            "type": "number",
+            "title": "Buzz Detectes"
+          },
+          "precision_buzz": {
+            "type": "number",
+            "title": "Precision Buzz"
+          },
+          "roc_auc": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Roc Auc"
+          },
+          "confusion_matrix": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Confusion Matrix"
+          },
+          "baselines": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            "type": "object",
+            "title": "Baselines",
+            "description": "v1_regle_gros_pic, reference_toujours_perenne"
+          },
+          "features": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Features"
+          },
+          "coefficients": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Coefficients"
+          }
+        },
+        "type": "object",
+        "required": [
+          "model_version",
+          "n_cases",
+          "n_flavors",
+          "n_perenne",
+          "n_buzz",
+          "validation",
+          "accuracy",
+          "balanced_accuracy",
+          "buzz_detectes",
+          "precision_buzz",
+          "confusion_matrix",
+          "baselines",
+          "features",
+          "coefficients"
+        ],
+        "title": "ModelMetrics"
+      },
+      "ProductType": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "desserts-lactes",
+              "produits-laitiers",
+              "boissons",
+              "glaces",
+              "confiseries",
+              "chocolats",
+              "biscuits",
+              "viennoiseries",
+              "cereales",
+              "snacks",
+              "sauces",
+              "plats",
+              "vegetal",
+              "nutrition"
+            ],
+            "title": "Id",
+            "examples": [
+              "boissons"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "examples": [
+              "Boissons"
+            ]
+          },
+          "products": {
+            "type": "integer",
+            "title": "Products",
+            "description": "Produits Open Food Facts de ce type qui citent l'arôme"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share",
+            "description": "Part des produits de l'arôme (0-1) ; null si basis = famille"
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "produits",
+              "famille"
+            ],
+            "title": "Basis",
+            "description": "« produits » = calculé sur les vrais produits ; « famille » = aucun produit, type déduit de la famille de l'arôme"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "products",
+          "basis"
+        ],
+        "title": "ProductType"
+      },
+      "ProductTypeCount": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "desserts-lactes",
+              "produits-laitiers",
+              "boissons",
+              "glaces",
+              "confiseries",
+              "chocolats",
+              "biscuits",
+              "viennoiseries",
+              "cereales",
+              "snacks",
+              "sauces",
+              "plats",
+              "vegetal",
+              "nutrition"
+            ],
+            "title": "Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "flavors_main": {
+            "type": "integer",
+            "title": "Flavors Main",
+            "description": "Arômes dont c'est le type principal"
+          },
+          "flavors_any": {
+            "type": "integer",
+            "title": "Flavors Any",
+            "description": "Arômes associés à ce type (principal ou secondaire)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "flavors_main",
+          "flavors_any"
+        ],
+        "title": "ProductTypeCount"
+      },
+      "Scores": {
+        "properties": {
+          "v1_rule_verdict": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "buzz",
+                  "perenne"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "V1 Rule Verdict",
+            "description": "V1 : « buzz » si pic ≥ 1,5 × la moyenne. null si l'arôme n'est pas en vraie hausse"
+          },
+          "v2_perennity_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "V2 Perennity Score",
+            "description": "V2 : probabilité (0-100) que la hausse soit durable. null hors hausse"
+          },
+          "mirofish_simulation_score": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mirofish Simulation Score",
+            "description": "Toujours null (simulation non exécutée)"
+          },
+          "confidence_level": {
+            "type": "string",
+            "enum": [
+              "haute",
+              "moyenne",
+              "basse"
+            ],
+            "title": "Confidence Level"
+          }
+        },
+        "type": "object",
+        "required": [
+          "confidence_level"
+        ],
+        "title": "Scores"
+      },
+      "Series": {
+        "properties": {
+          "google_trends_world_weekly": {
+            "items": {
+              "$ref": "#/components/schemas/SeriesPoint"
+            },
+            "type": "array",
+            "title": "Google Trends World Weekly",
+            "description": "104 semaines, monde"
+          }
+        },
+        "type": "object",
+        "required": [
+          "google_trends_world_weekly"
+        ],
+        "title": "Series"
+      },
+      "SeriesPoint": {
+        "properties": {
+          "week": {
+            "type": "string",
+            "title": "Week",
+            "examples": [
+              "2024-11-10"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value",
+            "description": "Indice Google Trends (0-100)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "week"
+        ],
+        "title": "SeriesPoint"
+      },
+      "SimulationRequest": {
+        "properties": {
+          "croissance_13s": {
+            "type": "number",
+            "title": "Croissance 13S",
+            "description": "croissance sur 13 semaines (0.45 = +45 %)",
+            "default": 0.45
+          },
+          "croissance_52s": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Croissance 52S",
+            "description": "vs la même période l'an dernier",
+            "default": 0.3
+          },
+          "volatilite_26s": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Volatilite 26S",
+            "description": "écart-type / moyenne sur 26 semaines",
+            "default": 0.25
+          },
+          "pic_ratio": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pic Ratio",
+            "description": "pic des 13 dernières semaines / moyenne sur 26",
+            "default": 1.4
+          },
+          "acceleration": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Acceleration",
+            "description": "moyenne 4 semaines / moyenne 13 semaines",
+            "default": 1.1
+          },
+          "popularite_vs_ancre": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Popularite Vs Ancre",
+            "description": "non utilisé par V2 (conservé pour compatibilité)",
+            "default": 0.2
+          },
+          "produits_marche": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Produits Marche",
+            "description": "non utilisé par V2 (conservé pour compatibilité)",
+            "default": 3.0
+          }
+        },
+        "type": "object",
+        "title": "SimulationRequest",
+        "description": "Variables d'un arôme EN HAUSSE (mêmes définitions que les cas de référence)."
+      },
+      "SimulationResponse": {
+        "properties": {
+          "v2_probability_perenne": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "V2 Probability Perenne",
+            "examples": [
+              0.42
+            ]
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "durable",
+              "buzz probable",
+              "incertain"
+            ],
+            "title": "Verdict"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "v2_probability_perenne",
+          "verdict",
+          "note"
+        ],
+        "title": "SimulationResponse"
+      },
+      "Trend": {
+        "properties": {
+          "trend_id": {
+            "type": "string",
+            "title": "Trend Id",
+            "examples": [
+              "matcha"
+            ]
+          },
+          "aroma_name": {
+            "type": "string",
+            "title": "Aroma Name",
+            "examples": [
+              "Matcha"
+            ]
+          },
+          "aroma_name_en": {
+            "type": "string",
+            "title": "Aroma Name En"
+          },
+          "family": {
+            "type": "string",
+            "title": "Family",
+            "examples": [
+              "herbace"
+            ]
+          },
+          "category_3d_aisle": {
+            "type": "string",
+            "title": "Category 3D Aisle",
+            "description": "Libellé du type principal (= product_types[0].label)",
+            "examples": [
+              "Boissons"
+            ]
+          },
+          "main_product_type": {
+            "type": "string",
+            "enum": [
+              "desserts-lactes",
+              "produits-laitiers",
+              "boissons",
+              "glaces",
+              "confiseries",
+              "chocolats",
+              "biscuits",
+              "viennoiseries",
+              "cereales",
+              "snacks",
+              "sauces",
+              "plats",
+              "vegetal",
+              "nutrition"
+            ],
+            "title": "Main Product Type",
+            "description": "Identifiant du type principal (rayon 3D)"
+          },
+          "product_types": {
+            "items": {
+              "$ref": "#/components/schemas/ProductType"
+            },
+            "type": "array",
+            "title": "Product Types",
+            "description": "Types de produits associés, du plus fréquent au moins fréquent : tout type qui pèse au moins 10 % des produits de l'arôme (et 2 produits), toujours au moins un"
+          },
+          "status_label": {
+            "type": "string",
+            "title": "Status Label",
+            "examples": [
+              "Stable",
+              "En hausse : probablement passager (buzz)",
+              "En baisse",
+              "En hausse saisonnière (niveau proche de l'an dernier)",
+              "Volume de recherche trop faible pour conclure"
+            ]
+          },
+          "scores": {
+            "$ref": "#/components/schemas/Scores"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/Metrics"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array",
+            "title": "Evidence",
+            "description": "Jusqu'à 6 titres réels récents (presse, YouTube)"
+          },
+          "watch_points": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Watch Points",
+            "description": "Points de vigilance en français"
+          },
+          "mirofish": {
+            "$ref": "#/components/schemas/MiroFish"
+          },
+          "data_origin": {
+            "type": "string",
+            "const": "reel",
+            "title": "Data Origin"
+          },
+          "series": {
+            "$ref": "#/components/schemas/Series"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trend_id",
+          "aroma_name",
+          "aroma_name_en",
+          "family",
+          "category_3d_aisle",
+          "main_product_type",
+          "product_types",
+          "status_label",
+          "scores",
+          "metrics",
+          "evidence",
+          "watch_points",
+          "mirofish",
+          "data_origin",
+          "series"
+        ],
+        "title": "Trend"
+      },
+      "TrendList": {
+        "properties": {
+          "count": {
+            "type": "integer",
+            "title": "Count"
+          },
+          "generated_at": {
+            "type": "string",
+            "title": "Generated At"
+          },
+          "trends": {
+            "items": {
+              "$ref": "#/components/schemas/TrendSummary"
+            },
+            "type": "array",
+            "title": "Trends",
+            "description": "Avec include_series=true, chaque arôme a aussi `series`"
+          }
+        },
+        "type": "object",
+        "required": [
+          "count",
+          "generated_at",
+          "trends"
+        ],
+        "title": "TrendList"
+      },
+      "TrendSummary": {
+        "properties": {
+          "trend_id": {
+            "type": "string",
+            "title": "Trend Id",
+            "examples": [
+              "matcha"
+            ]
+          },
+          "aroma_name": {
+            "type": "string",
+            "title": "Aroma Name",
+            "examples": [
+              "Matcha"
+            ]
+          },
+          "aroma_name_en": {
+            "type": "string",
+            "title": "Aroma Name En"
+          },
+          "family": {
+            "type": "string",
+            "title": "Family",
+            "examples": [
+              "herbace"
+            ]
+          },
+          "category_3d_aisle": {
+            "type": "string",
+            "title": "Category 3D Aisle",
+            "description": "Libellé du type principal (= product_types[0].label)",
+            "examples": [
+              "Boissons"
+            ]
+          },
+          "main_product_type": {
+            "type": "string",
+            "enum": [
+              "desserts-lactes",
+              "produits-laitiers",
+              "boissons",
+              "glaces",
+              "confiseries",
+              "chocolats",
+              "biscuits",
+              "viennoiseries",
+              "cereales",
+              "snacks",
+              "sauces",
+              "plats",
+              "vegetal",
+              "nutrition"
+            ],
+            "title": "Main Product Type",
+            "description": "Identifiant du type principal (rayon 3D)"
+          },
+          "product_types": {
+            "items": {
+              "$ref": "#/components/schemas/ProductType"
+            },
+            "type": "array",
+            "title": "Product Types",
+            "description": "Types de produits associés, du plus fréquent au moins fréquent : tout type qui pèse au moins 10 % des produits de l'arôme (et 2 produits), toujours au moins un"
+          },
+          "status_label": {
+            "type": "string",
+            "title": "Status Label",
+            "examples": [
+              "Stable",
+              "En hausse : probablement passager (buzz)",
+              "En baisse",
+              "En hausse saisonnière (niveau proche de l'an dernier)",
+              "Volume de recherche trop faible pour conclure"
+            ]
+          },
+          "scores": {
+            "$ref": "#/components/schemas/Scores"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/Metrics"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array",
+            "title": "Evidence",
+            "description": "Jusqu'à 6 titres réels récents (presse, YouTube)"
+          },
+          "watch_points": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Watch Points",
+            "description": "Points de vigilance en français"
+          },
+          "mirofish": {
+            "$ref": "#/components/schemas/MiroFish"
+          },
+          "data_origin": {
+            "type": "string",
+            "const": "reel",
+            "title": "Data Origin"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trend_id",
+          "aroma_name",
+          "aroma_name_en",
+          "family",
+          "category_3d_aisle",
+          "main_product_type",
+          "product_types",
+          "status_label",
+          "scores",
+          "metrics",
+          "evidence",
+          "watch_points",
+          "mirofish",
+          "data_origin"
+        ],
+        "title": "TrendSummary"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Données",
+      "description": "Arômes, scores et fiches (lecture seule)"
+    },
+    {
+      "name": "Modèle",
+      "description": "Validation du modèle V2 et simulation"
+    },
+    {
+      "name": "IA",
+      "description": "AI Trend Analyst : explications métier rédigées par un LLM local (Ollama). Les chiffres viennent toujours de la Data, jamais du LLM."
+    },
+    {
+      "name": "Système",
+      "description": "État de l'API"
+    }
+  ]
+}

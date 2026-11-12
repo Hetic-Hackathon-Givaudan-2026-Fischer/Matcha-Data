@@ -1,613 +1,613 @@
 [
   {
     "flavor_id": "acai",
-    "chars": 2540,
+    "chars": 2637,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "almond",
-    "chars": 2780,
+    "chars": 3007,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "apricot",
-    "chars": 2249,
+    "chars": 2356,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "banana",
-    "chars": 2638,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "barbecue",
-    "chars": 2739,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "basil",
-    "chars": 2712,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "bergamot",
-    "chars": 2328,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "black_garlic",
-    "chars": 2992,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "black_pepper",
-    "chars": 2677,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "black_sesame",
-    "chars": 2802,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "blackcurrant",
-    "chars": 2407,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "blood_orange",
-    "chars": 2281,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "blueberry",
-    "chars": 2692,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "bubble_tea",
-    "chars": 2843,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "calamansi",
-    "chars": 2422,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "cardamom",
-    "chars": 2375,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "chai",
-    "chars": 2617,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "chamomile",
-    "chars": 2324,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "cheesecake",
-    "chars": 2738,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "cherry",
-    "chars": 2685,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "chili",
     "chars": 2756,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "chocolate",
-    "chars": 2800,
+    "flavor_id": "barbecue",
+    "chars": 2816,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "cinnamon",
-    "chars": 2673,
+    "flavor_id": "basil",
+    "chars": 2767,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "coconut",
-    "chars": 2692,
+    "flavor_id": "bergamot",
+    "chars": 2330,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "coffee",
-    "chars": 2640,
+    "flavor_id": "black_garlic",
+    "chars": 2988,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "coriander",
-    "chars": 2355,
+    "flavor_id": "black_pepper",
+    "chars": 2732,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "cotton_candy",
-    "chars": 2671,
+    "flavor_id": "black_sesame",
+    "chars": 3070,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "cranberry",
-    "chars": 2811,
+    "flavor_id": "blackcurrant",
+    "chars": 2429,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "cucumber",
-    "chars": 2177,
+    "flavor_id": "blood_orange",
+    "chars": 2283,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "curry",
-    "chars": 2882,
+    "flavor_id": "blueberry",
+    "chars": 2776,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "dill",
-    "chars": 2663,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "dragon_fruit",
-    "chars": 2461,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "dulce_de_leche",
-    "chars": 2124,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "elderflower",
-    "chars": 2385,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "fig",
-    "chars": 2708,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "ginger",
-    "chars": 2652,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "gochujang",
-    "chars": 2312,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "grapefruit",
-    "chars": 2235,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "green_apple",
-    "chars": 2751,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "guava",
-    "chars": 2398,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "harissa",
-    "chars": 2415,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "hazelnut",
-    "chars": 2523,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "hibiscus",
-    "chars": 2552,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "hojicha",
-    "chars": 2482,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "honey",
-    "chars": 2670,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "hot_honey",
-    "chars": 2649,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "jalapeno",
-    "chars": 2768,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "jasmine",
-    "chars": 2461,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "kimchi",
-    "chars": 2837,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "kiwi",
-    "chars": 2569,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "lavender",
-    "chars": 2454,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "lemon",
-    "chars": 2765,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "lemongrass",
-    "chars": 2392,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "lime",
-    "chars": 2688,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "lychee",
-    "chars": 2667,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "mango",
-    "chars": 2674,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "maple",
-    "chars": 2636,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "marshmallow",
-    "chars": 2847,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "matcha",
-    "chars": 2770,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "melon",
-    "chars": 2656,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "mint",
-    "chars": 2618,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "miso",
-    "chars": 2597,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "mojito",
-    "chars": 2282,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "nori",
-    "chars": 2213,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "orange_blossom",
-    "chars": 2263,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pandan",
-    "chars": 2560,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "passion_fruit",
-    "chars": 2701,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "peach",
-    "chars": 2666,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "peanut_butter",
-    "chars": 2679,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pear",
-    "chars": 2610,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pickle",
-    "chars": 2692,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pineapple",
-    "chars": 2697,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pistachio",
-    "chars": 2650,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pomegranate",
-    "chars": 2680,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "praline",
-    "chars": 2128,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "pumpkin_spice",
-    "chars": 2695,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "raspberry",
-    "chars": 2691,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "rose",
-    "chars": 2818,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "rosemary",
-    "chars": 2190,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "saffron",
-    "chars": 2769,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "salt_vinegar",
-    "chars": 2518,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "salted_caramel",
-    "chars": 2772,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "sea_buckthorn",
-    "chars": 2509,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "shiso",
-    "chars": 2407,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "sichuan_pepper",
-    "chars": 2476,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "speculoos",
-    "chars": 2834,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "sriracha",
-    "chars": 2452,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "strawberry",
-    "chars": 2594,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "sumac",
-    "chars": 2502,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "tamarind",
-    "chars": 2921,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "thyme",
-    "chars": 2539,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "tiramisu",
-    "chars": 2823,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "tonka",
-    "chars": 2462,
-    "quality_ok": true,
-    "issues": []
-  },
-  {
-    "flavor_id": "truffle",
+    "flavor_id": "bubble_tea",
     "chars": 2877,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "turmeric",
-    "chars": 2654,
+    "flavor_id": "calamansi",
+    "chars": 2495,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "ube",
-    "chars": 2591,
+    "flavor_id": "cardamom",
+    "chars": 2477,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "vanilla",
+    "flavor_id": "chai",
+    "chars": 2619,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "chamomile",
+    "chars": 2326,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cheesecake",
+    "chars": 2806,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cherry",
+    "chars": 2733,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "chili",
+    "chars": 2848,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "chocolate",
+    "chars": 2844,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cinnamon",
+    "chars": 2813,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "coconut",
+    "chars": 2822,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "coffee",
+    "chars": 2642,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "coriander",
+    "chars": 2440,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cotton_candy",
+    "chars": 2641,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cranberry",
+    "chars": 2860,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "cucumber",
+    "chars": 2286,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "curry",
+    "chars": 2974,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "dill",
+    "chars": 2755,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "dragon_fruit",
+    "chars": 2463,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "dulce_de_leche",
+    "chars": 2166,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "elderflower",
+    "chars": 2387,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "fig",
+    "chars": 2801,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "ginger",
+    "chars": 2754,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "gochujang",
+    "chars": 2352,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "grapefruit",
+    "chars": 2237,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "green_apple",
+    "chars": 2797,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "guava",
+    "chars": 2400,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "harissa",
+    "chars": 2485,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "hazelnut",
+    "chars": 2614,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "hibiscus",
+    "chars": 2574,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "hojicha",
+    "chars": 2536,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "honey",
+    "chars": 2732,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "hot_honey",
     "chars": 2707,
     "quality_ok": true,
     "issues": []
   },
   {
-    "flavor_id": "violet",
+    "flavor_id": "jalapeno",
+    "chars": 2901,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "jasmine",
+    "chars": 2539,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "kimchi",
+    "chars": 2893,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "kiwi",
+    "chars": 2591,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "lavender",
+    "chars": 2529,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "lemon",
+    "chars": 2866,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "lemongrass",
+    "chars": 2494,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "lime",
+    "chars": 2800,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "lychee",
+    "chars": 2689,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "mango",
+    "chars": 2702,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "maple",
+    "chars": 2715,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "marshmallow",
+    "chars": 2858,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "matcha",
+    "chars": 2772,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "melon",
+    "chars": 2715,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "mint",
+    "chars": 2725,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "miso",
+    "chars": 2682,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "mojito",
+    "chars": 2284,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "nori",
+    "chars": 2306,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "orange_blossom",
+    "chars": 2323,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pandan",
+    "chars": 2592,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "passion_fruit",
+    "chars": 2729,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "peach",
+    "chars": 2694,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "peanut_butter",
     "chars": 2784,
     "quality_ok": true,
     "issues": []
   },
   {
+    "flavor_id": "pear",
+    "chars": 2638,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pickle",
+    "chars": 2807,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pineapple",
+    "chars": 2699,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pistachio",
+    "chars": 2818,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pomegranate",
+    "chars": 2725,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "praline",
+    "chars": 2140,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "pumpkin_spice",
+    "chars": 2787,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "raspberry",
+    "chars": 2798,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "rose",
+    "chars": 2820,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "rosemary",
+    "chars": 2282,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "saffron",
+    "chars": 2876,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "salt_vinegar",
+    "chars": 2560,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "salted_caramel",
+    "chars": 2892,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "sea_buckthorn",
+    "chars": 2563,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "shiso",
+    "chars": 2447,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "sichuan_pepper",
+    "chars": 2473,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "speculoos",
+    "chars": 2869,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "sriracha",
+    "chars": 2492,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "strawberry",
+    "chars": 2694,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "sumac",
+    "chars": 2528,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "tamarind",
+    "chars": 2961,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "thyme",
+    "chars": 2594,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "tiramisu",
+    "chars": 2831,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "tonka",
+    "chars": 2442,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "truffle",
+    "chars": 2993,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "turmeric",
+    "chars": 2709,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "ube",
+    "chars": 2627,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "vanilla",
+    "chars": 2828,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
+    "flavor_id": "violet",
+    "chars": 2786,
+    "quality_ok": true,
+    "issues": []
+  },
+  {
     "flavor_id": "wasabi",
-    "chars": 2583,
+    "chars": 2668,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "watermelon",
-    "chars": 2661,
+    "chars": 2720,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "yuzu",
-    "chars": 2232,
+    "chars": 2263,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "zaatar",
-    "chars": 2595,
+    "chars": 2674,
     "quality_ok": true,
     "issues": []
   }

@@ -2,7 +2,7 @@
 
 - **Identifiant** : `lime`
 - **Famille aromatique** : agrumes
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Boissons (38 %), Plats préparés et produits traiteur (16 %), Sauces et condiments (13 %), Snacks et produits apéritifs (11 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 

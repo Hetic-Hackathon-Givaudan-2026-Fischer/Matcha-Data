@@ -37,6 +37,7 @@ import psycopg
 
 from .config import ROOT
 from .exports import export_orange
+from .product_types import aggregate as aggregate_product_types, classify as classify_product
 from .taxonomy import FlavorFinder, from_db
 
 log = logging.getLogger(__name__)
@@ -61,17 +62,7 @@ FEATURE_HELP = {
     "popularite_vs_ancre": "niveau de recherche comparé à la vanille (terme d'ancrage)",
     "produits_marche": "produits Open Food Facts citant l'arôme et ajoutés avant la date (log)",
 }
-AISLES = [
-    ("Boissons", ("beverages", "drinks", "sodas", "juices", "teas", "coffees", "waters", "syrups")),
-    ("Glaces", ("ice-creams", "frozen-desserts", "sorbets")),
-    ("Produits laitiers & desserts", ("dairies", "yogurts", "desserts", "cheeses", "milks", "creams", "puddings")),
-    ("Petit-déjeuner & tartinables", ("breakfasts", "spreads", "cereals", "jams", "honeys")),
-    ("Snacking sucré & confiserie", ("biscuits", "confectioneries", "chocolates", "candies", "cakes", "sweet-snacks")),
-    ("Épicerie salée & sauces", ("sauces", "condiments", "salty-snacks", "chips", "spices", "meals", "soups", "pickles")),
-]
-FAMILY_AISLE = {"the": "Boissons", "cocktail": "Boissons", "gourmand": "Snacking sucré & confiserie",
-                "epice": "Épicerie salée & sauces", "umami": "Épicerie salée & sauces", "fume": "Épicerie salée & sauces",
-                "fermente": "Épicerie salée & sauces"}
+# Rayons du supermarché 3D : les 14 types de produits définis avec l'équipe Tech (voir product_types.py).
 
 
 # --------------------------------------------------------------------------- chargement des séries
@@ -101,19 +92,18 @@ def load_trends(conn: psycopg.Connection) -> tuple[dict, dict]:
 
 
 def product_dates(conn: psycopg.Connection, finder: FlavorFinder) -> tuple[dict, dict]:
-    """Dates d'ajout des produits citant chaque arôme, et rayon le plus fréquent de ces produits."""
-    added, aisle_votes = defaultdict(list), defaultdict(Counter)
+    """Dates d'ajout des produits citant chaque arôme, et nombre de ces produits par type (product_types)."""
+    added, type_votes = defaultdict(list), defaultdict(Counter)
     for p in conn.execute("SELECT name, generic_name, ingredients_text, categories, brand_main, countries, added_at "
                           "FROM core.product"):
         text = " ".join(x for x in (p["name"], p["generic_name"], p["ingredients_text"]) if x)
+        ptype, _ = classify_product(p["categories"], p["name"])
         for fid in set(finder.find(text)):
             if p["added_at"]:
                 added[fid].append(p["added_at"].date())
-            for name, keys in AISLES:
-                if any(any(k in c for k in keys) for c in (p["categories"] or [])):
-                    aisle_votes[fid][name] += 1
-                    break
-    return added, aisle_votes
+            if ptype:
+                type_votes[fid][ptype] += 1
+    return added, type_votes
 
 
 # --------------------------------------------------------------------------- variables
@@ -298,7 +288,9 @@ def build_packet(f, cur, prob, status, ind, evidence, model_info) -> str:
         "",
         f"- **Identifiant** : `{f.flavor_id}`",
         f"- **Famille aromatique** : {f.family}",
-        f"- **Rayon (supermarché 3D)** : {ind['aisle']}",
+        f"- **Types de produits** : " + ", ".join(
+            t["label"] + (f" ({round(t['share'] * 100)} %)" if t["share"] is not None else " (d'après la famille)")
+            for t in ind["types"]),
         f"- **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; "
         f"presse et réseaux sur les 30 derniers jours. Données au {date.today().isoformat()}.",
         "- **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.",
@@ -367,7 +359,7 @@ def build(conn: psycopg.Connection, out_dir: Path = OUT_DIR) -> dict:
     series, anchors = load_trends(conn)
     if not series:
         raise ValueError("Aucune donnée Google Trends automatique en base : lancez d'abord flavortrends collect google_trends")
-    added, aisle_votes = product_dates(conn, finder)
+    added, type_votes = product_dates(conn, finder)
 
     # 1. Cas de référence + modèle
     cases = build_cases(series, anchors, added)
@@ -418,8 +410,9 @@ def build(conn: psycopg.Connection, out_dir: Path = OUT_DIR) -> dict:
     for fid, f in flavors.items():
         r = ind_rows.get(fid, {})
         mentions = int(num(r, "C#mentions_presse_30j") or 0) + int(num(r, "C#mentions_reseaux_30j") or 0)
-        aisle = aisle_votes[fid].most_common(1)[0][0] if aisle_votes[fid] else FAMILY_AISLE.get(f.family, "Épicerie")
-        ind = {"aisle": aisle, "wiki_rel": num(r, "C#wiki_croissance_12m_relative"),
+        ptypes = aggregate_product_types(type_votes[fid], f.family)
+        aisle = ptypes[0]["label"]
+        ind = {"aisle": aisle, "types": ptypes, "wiki_rel": num(r, "C#wiki_croissance_12m_relative"),
                "produits": int(num(r, "C#produits_total") or 0), "marques": int(num(r, "C#marques_distinctes") or 0),
                "pays": int(num(r, "C#pays_distincts") or 0), "presse": int(num(r, "C#mentions_presse_30j") or 0),
                "reseaux": int(num(r, "C#mentions_reseaux_30j") or 0), "yt_vues": int(num(r, "C#youtube_vues_30j") or 0),
@@ -451,7 +444,8 @@ def build(conn: psycopg.Connection, out_dir: Path = OUT_DIR) -> dict:
         manifest.append({"flavor_id": fid, "chars": len(packet), "quality_ok": not issues, "issues": issues})
         trends.append({
             "trend_id": fid, "aroma_name": f.name_fr, "aroma_name_en": f.name_en, "family": f.family,
-            "category_3d_aisle": aisle, "status_label": status,
+            "category_3d_aisle": aisle, "main_product_type": ptypes[0]["id"], "product_types": ptypes,
+            "status_label": status,
             "scores": {"v1_rule_verdict": v1_verdict(cur["pic_ratio"]) if prob is not None else None,
                        "v2_perennity_score": None if prob is None else round(prob * 100),
                        "mirofish_simulation_score": None, "confidence_level": confidence},

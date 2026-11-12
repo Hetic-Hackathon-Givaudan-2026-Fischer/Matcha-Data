@@ -2,7 +2,7 @@
 
 - **Identifiant** : `jasmine`
 - **Famille aromatique** : floral
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Boissons (56 %), Plats préparés et produits traiteur (22 %), Biscuits et pâtisseries (11 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 

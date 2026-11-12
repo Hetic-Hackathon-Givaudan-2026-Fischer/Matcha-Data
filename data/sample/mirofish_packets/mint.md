@@ -2,7 +2,7 @@
 
 - **Identifiant** : `mint`
 - **Famille aromatique** : herbace
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Boissons (26 %), Confiseries (18 %), Chocolats et produits chocolatés (15 %), Plats préparés et produits traiteur (13 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 

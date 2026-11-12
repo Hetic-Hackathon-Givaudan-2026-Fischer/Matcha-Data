@@ -2,7 +2,7 @@
 
 - **Identifiant** : `black_sesame`
 - **Famille aromatique** : torrefie
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Viennoiseries et produits de boulangerie (21 %), Biscuits et pâtisseries (16 %), Plats préparés et produits traiteur (16 %), Glaces et desserts glacés (10 %), Produits végétaux et alternatives alimentaires (10 %), Snacks et produits apéritifs (10 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 
@@ -37,4 +37,4 @@
 
 ## 5. Question de simulation
 
-Simuler, sur 12 mois, la réaction de quatre profils de consommateurs (jeune adulte curieux de nouveautés, parent qui fait les courses de la semaine, consommateur attentif à la santé et au « clean label », acheteur de la grande distribution) au lancement de produits à l'arôme **Sésame noir** dans le rayon « Boissons ». En s'appuyant sur les signaux et les points de vigilance ci-dessus, l'arôme dépasse-t-il l'effet de curiosité des premières semaines ? Quels arguments favorisent ou freinent le réachat ?
+Simuler, sur 12 mois, la réaction de quatre profils de consommateurs (jeune adulte curieux de nouveautés, parent qui fait les courses de la semaine, consommateur attentif à la santé et au « clean label », acheteur de la grande distribution) au lancement de produits à l'arôme **Sésame noir** dans le rayon « Viennoiseries et produits de boulangerie ». En s'appuyant sur les signaux et les points de vigilance ci-dessus, l'arôme dépasse-t-il l'effet de curiosité des premières semaines ? Quels arguments favorisent ou freinent le réachat ?

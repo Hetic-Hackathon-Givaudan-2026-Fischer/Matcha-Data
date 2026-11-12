@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T05:27:22.794157+00:00",
+  "generated_at": "2026-11-12T11:05:43.820643+00:00",
   "model": {
     "n_cases": 82,
     "n_flavors": 25,
@@ -58,7 +58,31 @@
       "aroma_name": "Curry",
       "aroma_name_en": "Curry",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 79,
+          "share": 0.427,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 68,
+          "share": 0.368,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 20,
+          "share": 0.108,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En hausse : probablement passager (buzz)",
       "scores": {
         "v1_rule_verdict": "buzz",
@@ -557,7 +581,31 @@
       "aroma_name": "Açaï",
       "aroma_name_en": "Açaí",
       "family": "fruits_exotiques",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Produits nutritionnels et sportifs",
+      "main_product_type": "nutrition",
+      "product_types": [
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 7,
+          "share": 0.333,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 6,
+          "share": 0.286,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 4,
+          "share": 0.19,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -1048,7 +1096,45 @@
       "aroma_name": "Amande",
       "aroma_name_en": "Almond",
       "family": "fruits_a_coque",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 57,
+          "share": 0.154,
+          "basis": "produits"
+        },
+        {
+          "id": "vegetal",
+          "label": "Produits végétaux et alternatives alimentaires",
+          "products": 56,
+          "share": 0.151,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 54,
+          "share": 0.146,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 49,
+          "share": 0.132,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 45,
+          "share": 0.121,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -1546,6 +1632,37 @@
       "aroma_name_en": "Apricot",
       "family": "fruits_noyau",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 49,
+          "share": 0.398,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 23,
+          "share": 0.187,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 17,
+          "share": 0.138,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 17,
+          "share": 0.138,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -2019,6 +2136,37 @@
       "aroma_name_en": "Banana",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 98,
+          "share": 0.31,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 48,
+          "share": 0.152,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 35,
+          "share": 0.111,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 35,
+          "share": 0.111,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -2515,7 +2663,31 @@
       "aroma_name": "Barbecue",
       "aroma_name_en": "Barbecue",
       "family": "fume",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 66,
+          "share": 0.346,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 60,
+          "share": 0.314,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 39,
+          "share": 0.204,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -3012,7 +3184,24 @@
       "aroma_name": "Basilic",
       "aroma_name_en": "Basil",
       "family": "herbace",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 234,
+          "share": 0.484,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 181,
+          "share": 0.375,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -3510,6 +3699,16 @@
       "aroma_name_en": "Bergamot",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 8,
+          "share": 0.667,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -3971,7 +4170,17 @@
       "aroma_name": "Ail noir",
       "aroma_name_en": "Black garlic",
       "family": "umami",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 2,
+          "share": 0.667,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -4465,7 +4674,24 @@
       "aroma_name": "Poivre noir",
       "aroma_name_en": "Black pepper",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 618,
+          "share": 0.58,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 232,
+          "share": 0.218,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -4962,7 +5188,52 @@
       "aroma_name": "Sésame noir",
       "aroma_name_en": "Black sesame",
       "family": "torrefie",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Viennoiseries et produits de boulangerie",
+      "main_product_type": "viennoiseries",
+      "product_types": [
+        {
+          "id": "viennoiseries",
+          "label": "Viennoiseries et produits de boulangerie",
+          "products": 4,
+          "share": 0.211,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 3,
+          "share": 0.158,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 3,
+          "share": 0.158,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 2,
+          "share": 0.105,
+          "basis": "produits"
+        },
+        {
+          "id": "vegetal",
+          "label": "Produits végétaux et alternatives alimentaires",
+          "products": 2,
+          "share": 0.105,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 2,
+          "share": 0.105,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -5461,6 +5732,23 @@
       "aroma_name_en": "Blackcurrant",
       "family": "fruits_rouges",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 74,
+          "share": 0.398,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 44,
+          "share": 0.237,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -5935,6 +6223,16 @@
       "aroma_name_en": "Blood orange",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 25,
+          "share": 0.806,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -6402,7 +6700,31 @@
       "aroma_name": "Myrtille",
       "aroma_name_en": "Blueberry",
       "family": "fruits_rouges",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Produits laitiers",
+      "main_product_type": "produits-laitiers",
+      "product_types": [
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 47,
+          "share": 0.228,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 42,
+          "share": 0.204,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 30,
+          "share": 0.146,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -6894,6 +7216,23 @@
       "aroma_name_en": "Bubble tea",
       "family": "the",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 13,
+          "share": 0.867,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 2,
+          "share": 0.133,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -7391,7 +7730,24 @@
       "aroma_name": "Calamansi",
       "aroma_name_en": "Calamansi",
       "family": "agrumes",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 2,
+          "share": 0.5,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 2,
+          "share": 0.5,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -7854,7 +8210,31 @@
       "aroma_name": "Cardamome",
       "aroma_name_en": "Cardamom",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 31,
+          "share": 0.341,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 21,
+          "share": 0.231,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 18,
+          "share": 0.198,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -8334,6 +8714,16 @@
       "aroma_name_en": "Chai",
       "family": "epice",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 33,
+          "share": 0.868,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -8831,6 +9221,16 @@
       "aroma_name_en": "Chamomile",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 17,
+          "share": 0.944,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -9309,7 +9709,31 @@
       "aroma_name": "Cheesecake",
       "aroma_name_en": "Cheesecake",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Produits nutritionnels et sportifs",
+      "main_product_type": "nutrition",
+      "product_types": [
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 17,
+          "share": 0.293,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 16,
+          "share": 0.276,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 7,
+          "share": 0.121,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -9807,6 +10231,30 @@
       "aroma_name_en": "Cherry",
       "family": "fruits_rouges",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 62,
+          "share": 0.301,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 27,
+          "share": 0.131,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 23,
+          "share": 0.112,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -10303,7 +10751,31 @@
       "aroma_name": "Piment",
       "aroma_name_en": "Chili pepper",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 344,
+          "share": 0.417,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 255,
+          "share": 0.309,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 125,
+          "share": 0.152,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En hausse saisonnière (niveau proche de l'an dernier)",
       "scores": {
         "v1_rule_verdict": null,
@@ -10800,7 +11272,24 @@
       "aroma_name": "Chocolat",
       "aroma_name_en": "Chocolate",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 1818,
+          "share": 0.481,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 742,
+          "share": 0.196,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -11297,7 +11786,38 @@
       "aroma_name": "Cannelle",
       "aroma_name_en": "Cinnamon",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Biscuits et pâtisseries",
+      "main_product_type": "biscuits",
+      "product_types": [
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 80,
+          "share": 0.19,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 68,
+          "share": 0.161,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 57,
+          "share": 0.135,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 52,
+          "share": 0.123,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -11794,7 +12314,38 @@
       "aroma_name": "Noix de coco",
       "aroma_name_en": "Coconut",
       "family": "fruits_exotiques",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Biscuits et pâtisseries",
+      "main_product_type": "biscuits",
+      "product_types": [
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 199,
+          "share": 0.147,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 185,
+          "share": 0.136,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 158,
+          "share": 0.117,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 141,
+          "share": 0.104,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -12292,6 +12843,16 @@
       "aroma_name_en": "Coffee",
       "family": "torrefie",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 572,
+          "share": 0.704,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -12788,7 +13349,24 @@
       "aroma_name": "Coriandre",
       "aroma_name_en": "Coriander",
       "family": "herbace",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 161,
+          "share": 0.468,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 105,
+          "share": 0.305,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -13262,7 +13840,17 @@
       "aroma_name": "Barbe à papa",
       "aroma_name_en": "Cotton candy",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Confiseries",
+      "main_product_type": "confiseries",
+      "product_types": [
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 4,
+          "share": 0.8,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -13755,6 +14343,23 @@
       "aroma_name_en": "Cranberry",
       "family": "fruits_rouges",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 48,
+          "share": 0.381,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 24,
+          "share": 0.19,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -14251,7 +14856,38 @@
       "aroma_name": "Concombre",
       "aroma_name_en": "Cucumber",
       "family": "vegetal",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 35,
+          "share": 0.565,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 9,
+          "share": 0.145,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 8,
+          "share": 0.129,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 7,
+          "share": 0.113,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -14718,7 +15354,31 @@
       "aroma_name": "Aneth",
       "aroma_name_en": "Dill",
       "family": "herbace",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 29,
+          "share": 0.358,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 26,
+          "share": 0.321,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 16,
+          "share": 0.198,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -15216,6 +15876,16 @@
       "aroma_name_en": "Dragon fruit",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 3,
+          "share": 0.6,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -15695,7 +16365,24 @@
       "aroma_name": "Confiture de lait",
       "aroma_name_en": "Dulce de leche",
       "family": "gourmand",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Confiseries",
+      "main_product_type": "confiseries",
+      "product_types": [
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 7,
+          "share": 0.467,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 4,
+          "share": 0.267,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -16156,6 +16843,16 @@
       "aroma_name_en": "Elderflower",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 43,
+          "share": 0.581,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -16624,7 +17321,31 @@
       "aroma_name": "Figue",
       "aroma_name_en": "Fig",
       "family": "fruits_frais",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Céréales et produits du petit-déjeuner",
+      "main_product_type": "cereales",
+      "product_types": [
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 15,
+          "share": 0.405,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 8,
+          "share": 0.216,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 8,
+          "share": 0.216,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -17121,7 +17842,31 @@
       "aroma_name": "Gingembre",
       "aroma_name_en": "Ginger",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 174,
+          "share": 0.375,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 90,
+          "share": 0.194,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 86,
+          "share": 0.185,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -17618,7 +18363,24 @@
       "aroma_name": "Gochujang",
       "aroma_name_en": "Gochujang",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 5,
+          "share": 0.417,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 4,
+          "share": 0.333,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -18087,6 +18849,16 @@
       "aroma_name_en": "Grapefruit",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 66,
+          "share": 0.857,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -18560,6 +19332,23 @@
       "aroma_name_en": "Green apple",
       "family": "fruits_frais",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 360,
+          "share": 0.287,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 298,
+          "share": 0.237,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -19058,6 +19847,16 @@
       "aroma_name_en": "Guava",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 53,
+          "share": 0.855,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -19542,7 +20341,24 @@
       "aroma_name": "Harissa",
       "aroma_name_en": "Harissa",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 4,
+          "share": 0.5,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 2,
+          "share": 0.25,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -20011,7 +20827,31 @@
       "aroma_name": "Noisette",
       "aroma_name_en": "Hazelnut",
       "family": "fruits_a_coque",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 108,
+          "share": 0.309,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 71,
+          "share": 0.203,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 54,
+          "share": 0.155,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -20497,6 +21337,23 @@
       "aroma_name_en": "Hibiscus",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 42,
+          "share": 0.5,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 13,
+          "share": 0.155,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -20987,7 +21844,17 @@
       "aroma_name": "Hojicha",
       "aroma_name_en": "Hojicha",
       "family": "torrefie",
-      "category_3d_aisle": "Épicerie",
+      "category_3d_aisle": "Produits nutritionnels et sportifs",
+      "main_product_type": "nutrition",
+      "product_types": [
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 1,
+          "share": 0.5,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -21457,7 +22324,17 @@
       "aroma_name": "Miel",
       "aroma_name_en": "Honey",
       "family": "gourmand",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Céréales et produits du petit-déjeuner",
+      "main_product_type": "cereales",
+      "product_types": [
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 497,
+          "share": 0.594,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -21954,7 +22831,24 @@
       "aroma_name": "Miel piquant",
       "aroma_name_en": "Hot honey",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Céréales et produits du petit-déjeuner",
+      "main_product_type": "cereales",
+      "product_types": [
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 24,
+          "share": 0.75,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 4,
+          "share": 0.125,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -22058,7 +22952,38 @@
       "aroma_name": "Jalapeño",
       "aroma_name_en": "Jalapeño",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 41,
+          "share": 0.295,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 29,
+          "share": 0.209,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 27,
+          "share": 0.194,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 22,
+          "share": 0.158,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -22557,6 +23482,30 @@
       "aroma_name_en": "Jasmine",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 10,
+          "share": 0.556,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 4,
+          "share": 0.222,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 2,
+          "share": 0.111,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -23035,7 +23984,17 @@
       "aroma_name": "Kimchi",
       "aroma_name_en": "Kimchi",
       "family": "fermente",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 9,
+          "share": 0.75,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -23534,6 +24493,23 @@
       "aroma_name_en": "Kiwi",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 40,
+          "share": 0.635,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 10,
+          "share": 0.159,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -24031,6 +25007,30 @@
       "aroma_name_en": "Lavender",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 3,
+          "share": 0.333,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 2,
+          "share": 0.222,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 2,
+          "share": 0.222,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -24511,6 +25511,37 @@
       "aroma_name_en": "Lemon",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 380,
+          "share": 0.256,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 276,
+          "share": 0.186,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 213,
+          "share": 0.143,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 152,
+          "share": 0.102,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -25007,7 +26038,31 @@
       "aroma_name": "Citronnelle",
       "aroma_name_en": "Lemongrass",
       "family": "herbace",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 13,
+          "share": 0.382,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 13,
+          "share": 0.382,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 5,
+          "share": 0.147,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -25094,6 +26149,37 @@
       "aroma_name_en": "Lime",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 114,
+          "share": 0.384,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 48,
+          "share": 0.162,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 38,
+          "share": 0.128,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 33,
+          "share": 0.111,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -25591,6 +26677,23 @@
       "aroma_name_en": "Lychee",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 22,
+          "share": 0.759,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 3,
+          "share": 0.103,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -26083,6 +27186,23 @@
       "aroma_name_en": "Mango",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 202,
+          "share": 0.437,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 81,
+          "share": 0.175,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -26579,7 +27699,24 @@
       "aroma_name": "Érable",
       "aroma_name_en": "Maple",
       "family": "gourmand",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Céréales et produits du petit-déjeuner",
+      "main_product_type": "cereales",
+      "product_types": [
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 40,
+          "share": 0.301,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 36,
+          "share": 0.271,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -27076,7 +28213,24 @@
       "aroma_name": "Guimauve",
       "aroma_name_en": "Marshmallow",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Confiseries",
+      "main_product_type": "confiseries",
+      "product_types": [
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 27,
+          "share": 0.435,
+          "basis": "produits"
+        },
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 16,
+          "share": 0.258,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -27574,6 +28728,16 @@
       "aroma_name_en": "Matcha",
       "family": "herbace",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 55,
+          "share": 0.598,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -28070,7 +29234,38 @@
       "aroma_name": "Melon",
       "aroma_name_en": "Melon",
       "family": "fruits_frais",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 6,
+          "share": 0.333,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 5,
+          "share": 0.278,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 2,
+          "share": 0.111,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 2,
+          "share": 0.111,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -28568,6 +29763,37 @@
       "aroma_name_en": "Mint",
       "family": "herbace",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 76,
+          "share": 0.26,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 54,
+          "share": 0.185,
+          "basis": "produits"
+        },
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 44,
+          "share": 0.151,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 38,
+          "share": 0.13,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -29064,7 +30290,24 @@
       "aroma_name": "Miso",
       "aroma_name_en": "Miso",
       "family": "umami",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 25,
+          "share": 0.758,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 6,
+          "share": 0.182,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -29562,6 +30805,16 @@
       "aroma_name_en": "Mojito",
       "family": "cocktail",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 14,
+          "share": 0.875,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -30029,7 +31282,24 @@
       "aroma_name": "Nori",
       "aroma_name_en": "Nori",
       "family": "umami",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 15,
+          "share": 0.417,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 11,
+          "share": 0.306,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -30503,6 +31773,30 @@
       "aroma_name_en": "Orange blossom",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 8,
+          "share": 0.471,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 5,
+          "share": 0.294,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 2,
+          "share": 0.118,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -30582,7 +31876,17 @@
       "aroma_name": "Pandan",
       "aroma_name_en": "Pandan",
       "family": "herbace",
-      "category_3d_aisle": "Épicerie",
+      "category_3d_aisle": "Biscuits et pâtisseries",
+      "main_product_type": "biscuits",
+      "product_types": [
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 3,
+          "share": 0.75,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -31075,6 +32379,23 @@
       "aroma_name_en": "Passion fruit",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 97,
+          "share": 0.584,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 28,
+          "share": 0.169,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -31572,6 +32893,23 @@
       "aroma_name_en": "Peach",
       "family": "fruits_noyau",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 166,
+          "share": 0.604,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 42,
+          "share": 0.153,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -32068,7 +33406,24 @@
       "aroma_name": "Beurre de cacahuète",
       "aroma_name_en": "Peanut butter",
       "family": "fruits_a_coque",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Céréales et produits du petit-déjeuner",
+      "main_product_type": "cereales",
+      "product_types": [
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 250,
+          "share": 0.598,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 75,
+          "share": 0.179,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -32566,6 +33921,23 @@
       "aroma_name_en": "Pear",
       "family": "fruits_frais",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 47,
+          "share": 0.461,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 12,
+          "share": 0.118,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -33062,7 +34434,31 @@
       "aroma_name": "Cornichon",
       "aroma_name_en": "Pickle",
       "family": "fermente",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Snacks et produits apéritifs",
+      "main_product_type": "snacks",
+      "product_types": [
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 20,
+          "share": 0.667,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 5,
+          "share": 0.167,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 3,
+          "share": 0.1,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -33560,6 +34956,16 @@
       "aroma_name_en": "Pineapple",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 148,
+          "share": 0.521,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -34056,7 +35462,45 @@
       "aroma_name": "Pistache",
       "aroma_name_en": "Pistachio",
       "family": "fruits_a_coque",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 37,
+          "share": 0.255,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 25,
+          "share": 0.172,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 18,
+          "share": 0.124,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 17,
+          "share": 0.117,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 16,
+          "share": 0.11,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -34554,6 +35998,23 @@
       "aroma_name_en": "Pomegranate",
       "family": "fruits_rouges",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 34,
+          "share": 0.576,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 11,
+          "share": 0.186,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -35050,7 +36511,17 @@
       "aroma_name": "Praliné",
       "aroma_name_en": "Praline",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 84,
+          "share": 0.764,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -35510,7 +36981,31 @@
       "aroma_name": "Pumpkin spice",
       "aroma_name_en": "Pumpkin spice",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Biscuits et pâtisseries",
+      "main_product_type": "biscuits",
+      "product_types": [
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 13,
+          "share": 0.295,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 12,
+          "share": 0.273,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 6,
+          "share": 0.136,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -35621,6 +37116,37 @@
       "aroma_name_en": "Raspberry",
       "family": "fruits_rouges",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 105,
+          "share": 0.283,
+          "basis": "produits"
+        },
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 47,
+          "share": 0.127,
+          "basis": "produits"
+        },
+        {
+          "id": "cereales",
+          "label": "Céréales et produits du petit-déjeuner",
+          "products": 43,
+          "share": 0.116,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 42,
+          "share": 0.113,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -36118,6 +37644,16 @@
       "aroma_name_en": "Rose",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 39,
+          "share": 0.542,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -36227,7 +37763,31 @@
       "aroma_name": "Romarin",
       "aroma_name_en": "Rosemary",
       "family": "herbace",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 114,
+          "share": 0.309,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 85,
+          "share": 0.23,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 76,
+          "share": 0.206,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -36694,7 +38254,38 @@
       "aroma_name": "Safran",
       "aroma_name_en": "Saffron",
       "family": "epice",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 7,
+          "share": 0.28,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 5,
+          "share": 0.2,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 5,
+          "share": 0.2,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 5,
+          "share": 0.2,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -37192,7 +38783,17 @@
       "aroma_name": "Sel et vinaigre",
       "aroma_name_en": "Salt and vinegar",
       "family": "umami",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Snacks et produits apéritifs",
+      "main_product_type": "snacks",
+      "product_types": [
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 9,
+          "share": 0.818,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -37279,7 +38880,45 @@
       "aroma_name": "Caramel beurre salé",
       "aroma_name_en": "Salted caramel",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Confiseries",
+      "main_product_type": "confiseries",
+      "product_types": [
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 44,
+          "share": 0.265,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 33,
+          "share": 0.199,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 26,
+          "share": 0.157,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 25,
+          "share": 0.151,
+          "basis": "produits"
+        },
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 19,
+          "share": 0.114,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -37776,7 +39415,17 @@
       "aroma_name": "Argousier",
       "aroma_name_en": "Sea buckthorn",
       "family": "fruits_rouges",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Produits nutritionnels et sportifs",
+      "main_product_type": "nutrition",
+      "product_types": [
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 2,
+          "share": 0.5,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -38246,7 +39895,17 @@
       "aroma_name": "Shiso",
       "aroma_name_en": "Shiso",
       "family": "herbace",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 0,
+          "share": null,
+          "basis": "famille"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -38709,7 +40368,17 @@
       "aroma_name": "Poivre du Sichuan",
       "aroma_name_en": "Sichuan pepper",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 2,
+          "share": 1.0,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -39172,7 +40841,24 @@
       "aroma_name": "Spéculoos",
       "aroma_name_en": "Speculoos",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Biscuits et pâtisseries",
+      "main_product_type": "biscuits",
+      "product_types": [
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 27,
+          "share": 0.45,
+          "basis": "produits"
+        },
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 8,
+          "share": 0.133,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -39664,7 +41350,24 @@
       "aroma_name": "Sriracha",
       "aroma_name_en": "Sriracha",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 23,
+          "share": 0.676,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 5,
+          "share": 0.147,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -40143,7 +41846,38 @@
       "aroma_name": "Fraise",
       "aroma_name_en": "Strawberry",
       "family": "fruits_rouges",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Produits laitiers",
+      "main_product_type": "produits-laitiers",
+      "product_types": [
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 151,
+          "share": 0.248,
+          "basis": "produits"
+        },
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 115,
+          "share": 0.189,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 68,
+          "share": 0.112,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 66,
+          "share": 0.108,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -40640,7 +42374,17 @@
       "aroma_name": "Sumac",
       "aroma_name_en": "Sumac",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 3,
+          "share": 0.75,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -41115,7 +42859,24 @@
       "aroma_name": "Tamarin",
       "aroma_name_en": "Tamarind",
       "family": "fruits_exotiques",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Sauces et condiments",
+      "main_product_type": "sauces",
+      "product_types": [
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 30,
+          "share": 0.577,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 12,
+          "share": 0.231,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -41613,7 +43374,24 @@
       "aroma_name": "Thym",
       "aroma_name_en": "Thyme",
       "family": "herbace",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 124,
+          "share": 0.549,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 61,
+          "share": 0.27,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -42098,7 +43876,24 @@
       "aroma_name": "Tiramisu",
       "aroma_name_en": "Tiramisu",
       "family": "gourmand",
-      "category_3d_aisle": "Produits laitiers & desserts",
+      "category_3d_aisle": "Desserts lactés",
+      "main_product_type": "desserts-lactes",
+      "product_types": [
+        {
+          "id": "desserts-lactes",
+          "label": "Desserts lactés",
+          "products": 41,
+          "share": 0.719,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 8,
+          "share": 0.14,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -42596,7 +44391,17 @@
       "aroma_name": "Fève tonka",
       "aroma_name_en": "Tonka bean",
       "family": "gourmand",
-      "category_3d_aisle": "Produits laitiers & desserts",
+      "category_3d_aisle": "Produits laitiers",
+      "main_product_type": "produits-laitiers",
+      "product_types": [
+        {
+          "id": "produits-laitiers",
+          "label": "Produits laitiers",
+          "products": 4,
+          "share": 0.8,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -43059,7 +44864,31 @@
       "aroma_name": "Truffe",
       "aroma_name_en": "Truffle",
       "family": "umami",
-      "category_3d_aisle": "Boissons",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 42,
+          "share": 0.494,
+          "basis": "produits"
+        },
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 15,
+          "share": 0.176,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 9,
+          "share": 0.106,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -43557,7 +45386,24 @@
       "aroma_name": "Curcuma",
       "aroma_name_en": "Turmeric",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 300,
+          "share": 0.468,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 140,
+          "share": 0.218,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -44055,6 +45901,23 @@
       "aroma_name_en": "Ube",
       "family": "fruits_exotiques",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 5,
+          "share": 0.455,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 2,
+          "share": 0.182,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -44551,7 +46414,38 @@
       "aroma_name": "Vanille",
       "aroma_name_en": "Vanilla",
       "family": "gourmand",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Chocolats et produits chocolatés",
+      "main_product_type": "chocolats",
+      "product_types": [
+        {
+          "id": "chocolats",
+          "label": "Chocolats et produits chocolatés",
+          "products": 380,
+          "share": 0.203,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 373,
+          "share": 0.2,
+          "basis": "produits"
+        },
+        {
+          "id": "glaces",
+          "label": "Glaces et desserts glacés",
+          "products": 280,
+          "share": 0.15,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 192,
+          "share": 0.103,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -45049,6 +46943,16 @@
       "aroma_name_en": "Violet",
       "family": "floral",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 2,
+          "share": 0.5,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,
@@ -45153,7 +47057,31 @@
       "aroma_name": "Wasabi",
       "aroma_name_en": "Wasabi",
       "family": "epice",
-      "category_3d_aisle": "Épicerie salée & sauces",
+      "category_3d_aisle": "Snacks et produits apéritifs",
+      "main_product_type": "snacks",
+      "product_types": [
+        {
+          "id": "snacks",
+          "label": "Snacks et produits apéritifs",
+          "products": 5,
+          "share": 0.417,
+          "basis": "produits"
+        },
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 4,
+          "share": 0.333,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 3,
+          "share": 0.25,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -45638,7 +47566,38 @@
       "aroma_name": "Pastèque",
       "aroma_name_en": "Watermelon",
       "family": "fruits_frais",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 19,
+          "share": 0.404,
+          "basis": "produits"
+        },
+        {
+          "id": "confiseries",
+          "label": "Confiseries",
+          "products": 13,
+          "share": 0.277,
+          "basis": "produits"
+        },
+        {
+          "id": "nutrition",
+          "label": "Produits nutritionnels et sportifs",
+          "products": 5,
+          "share": 0.106,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 5,
+          "share": 0.106,
+          "basis": "produits"
+        }
+      ],
       "status_label": "En baisse",
       "scores": {
         "v1_rule_verdict": null,
@@ -46130,6 +48089,23 @@
       "aroma_name_en": "Yuzu",
       "family": "agrumes",
       "category_3d_aisle": "Boissons",
+      "main_product_type": "boissons",
+      "product_types": [
+        {
+          "id": "boissons",
+          "label": "Boissons",
+          "products": 12,
+          "share": 0.706,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 2,
+          "share": 0.118,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Stable",
       "scores": {
         "v1_rule_verdict": null,
@@ -46596,7 +48572,31 @@
       "aroma_name": "Zaatar",
       "aroma_name_en": "Za'atar",
       "family": "epice",
-      "category_3d_aisle": "Snacking sucré & confiserie",
+      "category_3d_aisle": "Plats préparés et produits traiteur",
+      "main_product_type": "plats",
+      "product_types": [
+        {
+          "id": "plats",
+          "label": "Plats préparés et produits traiteur",
+          "products": 4,
+          "share": 0.364,
+          "basis": "produits"
+        },
+        {
+          "id": "biscuits",
+          "label": "Biscuits et pâtisseries",
+          "products": 3,
+          "share": 0.273,
+          "basis": "produits"
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces et condiments",
+          "products": 2,
+          "share": 0.182,
+          "basis": "produits"
+        }
+      ],
       "status_label": "Volume de recherche trop faible pour conclure",
       "scores": {
         "v1_rule_verdict": null,

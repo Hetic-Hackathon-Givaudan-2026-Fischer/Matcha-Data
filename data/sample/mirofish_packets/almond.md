@@ -2,7 +2,7 @@
 
 - **Identifiant** : `almond`
 - **Famille aromatique** : fruits_a_coque
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Chocolats et produits chocolatés (15 %), Produits végétaux et alternatives alimentaires (15 %), Céréales et produits du petit-déjeuner (15 %), Biscuits et pâtisseries (13 %), Produits nutritionnels et sportifs (12 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 
@@ -36,4 +36,4 @@
 
 ## 5. Question de simulation
 
-Simuler, sur 12 mois, la réaction de quatre profils de consommateurs (jeune adulte curieux de nouveautés, parent qui fait les courses de la semaine, consommateur attentif à la santé et au « clean label », acheteur de la grande distribution) au lancement de produits à l'arôme **Amande** dans le rayon « Boissons ». En s'appuyant sur les signaux et les points de vigilance ci-dessus, l'arôme dépasse-t-il l'effet de curiosité des premières semaines ? Quels arguments favorisent ou freinent le réachat ?
+Simuler, sur 12 mois, la réaction de quatre profils de consommateurs (jeune adulte curieux de nouveautés, parent qui fait les courses de la semaine, consommateur attentif à la santé et au « clean label », acheteur de la grande distribution) au lancement de produits à l'arôme **Amande** dans le rayon « Chocolats et produits chocolatés ». En s'appuyant sur les signaux et les points de vigilance ci-dessus, l'arôme dépasse-t-il l'effet de curiosité des premières semaines ? Quels arguments favorisent ou freinent le réachat ?

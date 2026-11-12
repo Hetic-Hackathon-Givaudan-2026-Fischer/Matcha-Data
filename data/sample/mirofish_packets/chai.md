@@ -2,7 +2,7 @@
 
 - **Identifiant** : `chai`
 - **Famille aromatique** : epice
-- **Rayon (supermarché 3D)** : Boissons
+- **Types de produits** : Boissons (87 %)
 - **Zone et période** : monde entier (recherches en anglais), historique Google Trends sur 5 ans ; presse et réseaux sur les 30 derniers jours. Données au 2026-11-12.
 - **Origine** : données réelles collectées par le pipeline FlavorTrends. Aucune citation n'est inventée.
 

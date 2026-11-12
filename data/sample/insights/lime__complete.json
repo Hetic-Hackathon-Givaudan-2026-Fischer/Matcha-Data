@@ -1,0 +1,60 @@
+{
+  "trend_id": "lime",
+  "aroma_name": "Citron vert",
+  "trend_status": "stable",
+  "trend_status_reason": "recherches stables sur les 3 derniers mois",
+  "growth_rate": -17.8,
+  "buzz_score": 73,
+  "trend_score": 53,
+  "perennity_score_v2": null,
+  "confidence_level": "high",
+  "trend_summary": "Le citron vert est stable, avec des recherches stables sur les 3 derniers mois.",
+  "evolution_explanation": "La tendance actuelle est stable, reflétant une installation des arômes dans le marché.",
+  "business_opportunity": "Hypothèse : La tendance actuelle indique une opportunité pour Givaudan de maintenir le citron vert dans le portefeuille, en continuant de développer sa présence dans les produits de boissons, plats préparés, sauces et condiments, et snacks et produits apéritifs.",
+  "recommendation": "Maintenir le citron vert dans le portefeuille et continuer à développer sa présence dans les produits de diverses catégories pour maintenir sa position dans le marché.",
+  "key_drivers": [
+    "Le citron vert est présent dans 38% des produits de boissons, 16% de plats préparés et produits traiteur, 13% de sauces et condiments, et 11% de snacks et produits apéritifs.",
+    "Il y a eu une croissance de 7% sur les 3 derniers mois par rapport à l'an dernier, indiquant une croissance continue dans le marché.",
+    "Il y a eu 5 articles de presse, 151 posts sur les réseaux sociaux, et 23 572 vues YouTube, ce qui indique une attention croissante des médias.",
+    "Le citron vert a un score de tendance de 53/100, ce qui est plus dynamique que 53% des arômes."
+  ],
+  "data_limitations": [
+    "Pas de prédiction « durable ou buzz » : le modèle ne s'applique qu'aux arômes en vraie hausse.",
+    "Réseaux sociaux : langue connue, pays non connu. Google Trends : accès non officiel."
+  ],
+  "indicator_definitions": {
+    "trend_status": {
+      "type": "calculé (règle bêta)",
+      "definition": "Dérivé du statut Data. Vraie hausse (≥ +20 % sur 3 mois ET vs l'an dernier) : « exploding » si le pic récent ≥ 2.0 × la moyenne, « emerging » si moins de 20 produits en rayon, sinon « growing ». Sinon : seasonal, stable, declining, ou insufficient_data (volume de recherche trop faible)."
+    },
+    "growth_rate": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Évolution des recherches Google (monde) sur les 13 dernières semaines, en %."
+    },
+    "buzz_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Attention médiatique sur 30 jours, comparée aux 102 arômes : moyenne des rangs (0-100) des mentions presse, des mentions réseaux sociaux et des vues YouTube. 80 = plus visible que 80 % des arômes. Ce n'est pas une mesure absolue."
+    },
+    "trend_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Dynamique de recherche comparée aux autres arômes : moyenne des rangs (0-100) de la croissance sur 3 mois et de la croissance vs l'an dernier. null si le volume est trop faible."
+    },
+    "perennity_score_v2": {
+      "type": "calculé (modèle V2 validé)",
+      "definition": "Probabilité (0-100) que la hausse tienne encore dans 1 an. N'existe que pour un arôme en vraie hausse."
+    },
+    "confidence_level": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Quantité de données disponibles : high = beaucoup de mentions et de produits, low = peu de signaux."
+    }
+  },
+  "focus": "complete",
+  "generated_by": "llm",
+  "model": "qwen2.5:1.5b",
+  "llm_error": null,
+  "llm_seconds": 23.0,
+  "llm_attempts": 1,
+  "warnings": [],
+  "data_generated_at": "2026-11-12T11:31:42.410437+00:00",
+  "cached": false
+}

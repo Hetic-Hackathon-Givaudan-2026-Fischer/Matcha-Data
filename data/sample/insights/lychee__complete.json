@@ -1,0 +1,61 @@
+{
+  "trend_id": "lychee",
+  "aroma_name": "Litchi",
+  "trend_status": "insufficient_data",
+  "trend_status_reason": "volume de recherche trop faible pour conclure",
+  "growth_rate": null,
+  "buzz_score": 43,
+  "trend_score": null,
+  "perennity_score_v2": null,
+  "confidence_level": "low",
+  "trend_summary": "L'arôme Litchi est inconnu sur les données de recherche Google, avec une courbe irrégulière. La dynamique de recherche est inconnue.",
+  "evolution_explanation": "La dynamique actuelle de l'arôme Litchi est difficile à évaluer car il n'y a pas suffisamment de données pour conclure. Les médias ont une attention modérée, mais les vues sur YouTube et les articles de presse sont faibles.",
+  "business_opportunity": "Hypothèse : La dynamique actuelle de l'arôme Litchi pourrait être influencée par la croissance des produits à base de fruits exotiques dans le marché.",
+  "recommendation": "Hypothèse : Givaudan pourrait envisager de développer des produits à base de fruits exotiques pour s'adapter à la dynamique actuelle de l'arôme Litchi.",
+  "key_drivers": [
+    "Volume de recherche Google Trends : 3 mois : inconnu ; 1 an : inconnu",
+    "Vues Wikipédia : 24 % : ≈ -24 % en un an",
+    "Buzz score : 43/100 : plus visible que 43 % des arômes",
+    "Trend score : inconnu : dynamique des recherches comparée aux 102 arômes"
+  ],
+  "data_limitations": [
+    "Volume de recherche Google trop faible : pas de mesure fiable de la dynamique.",
+    "Pas de prédiction « durable ou buzz » : le modèle ne s'applique qu'aux arômes en vraie hausse.",
+    "Réseaux sociaux : langue connue, pays non connu. Google Trends : accès non officiel."
+  ],
+  "indicator_definitions": {
+    "trend_status": {
+      "type": "calculé (règle bêta)",
+      "definition": "Dérivé du statut Data. Vraie hausse (≥ +20 % sur 3 mois ET vs l'an dernier) : « exploding » si le pic récent ≥ 2.0 × la moyenne, « emerging » si moins de 20 produits en rayon, sinon « growing ». Sinon : seasonal, stable, declining, ou insufficient_data (volume de recherche trop faible)."
+    },
+    "growth_rate": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Évolution des recherches Google (monde) sur les 13 dernières semaines, en %."
+    },
+    "buzz_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Attention médiatique sur 30 jours, comparée aux 102 arômes : moyenne des rangs (0-100) des mentions presse, des mentions réseaux sociaux et des vues YouTube. 80 = plus visible que 80 % des arômes. Ce n'est pas une mesure absolue."
+    },
+    "trend_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Dynamique de recherche comparée aux autres arômes : moyenne des rangs (0-100) de la croissance sur 3 mois et de la croissance vs l'an dernier. null si le volume est trop faible."
+    },
+    "perennity_score_v2": {
+      "type": "calculé (modèle V2 validé)",
+      "definition": "Probabilité (0-100) que la hausse tienne encore dans 1 an. N'existe que pour un arôme en vraie hausse."
+    },
+    "confidence_level": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Quantité de données disponibles : high = beaucoup de mentions et de produits, low = peu de signaux."
+    }
+  },
+  "focus": "complete",
+  "generated_by": "llm",
+  "model": "qwen2.5:1.5b",
+  "llm_error": null,
+  "llm_seconds": 20.7,
+  "llm_attempts": 1,
+  "warnings": [],
+  "data_generated_at": "2026-11-12T11:31:42.410437+00:00",
+  "cached": false
+}

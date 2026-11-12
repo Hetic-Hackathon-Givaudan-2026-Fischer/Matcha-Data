@@ -1,0 +1,61 @@
+{
+  "trend_id": "violet",
+  "aroma_name": "Violette",
+  "trend_status": "insufficient_data",
+  "trend_status_reason": "volume de recherche trop faible pour conclure",
+  "growth_rate": null,
+  "buzz_score": 47,
+  "trend_score": null,
+  "perennity_score_v2": null,
+  "confidence_level": "low",
+  "trend_summary": "Violette : difficile à évaluer (trop peu de recherches)",
+  "evolution_explanation": "La dynamique actuelle de la violette est difficile à évaluer en raison de la faible recherche disponible. Cette absence de données potentiellement signifie que la tendance pourrait être inconnue ou que la recherche n'a pas été effectuée de manière suffisante pour conclure.",
+  "business_opportunity": "Hypothèse : La présence de la violette dans les produits en rayon et dans les médias pourrait signifier une opportunité de développer une nouvelle gamme de produits associant la violette à des produits de santé ou de bien-être, en particulier dans les boissons.",
+  "recommendation": "Hypothèse : La violette pourrait être une arôme potentiellement profitable dans les produits de santé ou de bien-être, en particulier dans les boissons. Les produits associant la violette à des produits de santé ou de bien-être pourraient être un marché à explorer.",
+  "key_drivers": [
+    "Boissons (50%) : Arôme présent dans une grande majorité des produits en rayon, ce qui indique une forte présence du produit dans le marché.",
+    "Médias : 5 articles de presse, 148 posts sur les réseaux sociaux, et 0 vues YouTube, indiquant une présence active de la marque dans les médias.",
+    "Buzz score : 47/100, indiquant une attention des médias plus élevée que la moyenne des arômes."
+  ],
+  "data_limitations": [
+    "Volume de recherche Google trop faible : pas de mesure fiable de la dynamique.",
+    "Historique de recherche court (moins d'un an).",
+    "Pas de prédiction « durable ou buzz » : le modèle ne s'applique qu'aux arômes en vraie hausse.",
+    "Réseaux sociaux : langue connue, pays non connu. Google Trends : accès non officiel."
+  ],
+  "indicator_definitions": {
+    "trend_status": {
+      "type": "calculé (règle bêta)",
+      "definition": "Dérivé du statut Data. Vraie hausse (≥ +20 % sur 3 mois ET vs l'an dernier) : « exploding » si le pic récent ≥ 2.0 × la moyenne, « emerging » si moins de 20 produits en rayon, sinon « growing ». Sinon : seasonal, stable, declining, ou insufficient_data (volume de recherche trop faible)."
+    },
+    "growth_rate": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Évolution des recherches Google (monde) sur les 13 dernières semaines, en %."
+    },
+    "buzz_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Attention médiatique sur 30 jours, comparée aux 102 arômes : moyenne des rangs (0-100) des mentions presse, des mentions réseaux sociaux et des vues YouTube. 80 = plus visible que 80 % des arômes. Ce n'est pas une mesure absolue."
+    },
+    "trend_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Dynamique de recherche comparée aux autres arômes : moyenne des rangs (0-100) de la croissance sur 3 mois et de la croissance vs l'an dernier. null si le volume est trop faible."
+    },
+    "perennity_score_v2": {
+      "type": "calculé (modèle V2 validé)",
+      "definition": "Probabilité (0-100) que la hausse tienne encore dans 1 an. N'existe que pour un arôme en vraie hausse."
+    },
+    "confidence_level": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Quantité de données disponibles : high = beaucoup de mentions et de produits, low = peu de signaux."
+    }
+  },
+  "focus": "complete",
+  "generated_by": "llm",
+  "model": "qwen2.5:1.5b",
+  "llm_error": null,
+  "llm_seconds": 25.4,
+  "llm_attempts": 1,
+  "warnings": [],
+  "data_generated_at": "2026-11-12T11:31:42.410437+00:00",
+  "cached": false
+}

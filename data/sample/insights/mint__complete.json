@@ -1,0 +1,60 @@
+{
+  "trend_id": "mint",
+  "aroma_name": "Menthe",
+  "trend_status": "stable",
+  "trend_status_reason": "recherches stables sur les 3 derniers mois",
+  "growth_rate": -13.6,
+  "buzz_score": 83,
+  "trend_score": 46,
+  "perennity_score_v2": null,
+  "confidence_level": "high",
+  "trend_summary": "Menthe est stable, à maintenir dans le portefeuille.",
+  "evolution_explanation": "Les données montrent une tendance irrégulière, avec une légère baisse de 14% sur les 3 derniers mois et une croissance de 2% par rapport à l'an dernier. Cela indique une dynamique stable mais non significative.",
+  "business_opportunity": "Hypothèse : La tendance actuelle de Menthe pourrait s'inspirer d'une nouvelle tendance en matière de desserts inspirés de boissons, comme les desserts inspirés de protein.",
+  "recommendation": "Maintenir Menthe dans le portefeuille et explorer les opportunités de nouveaux produits inspirés de Menthe pour satisfaire les tendances actuelles.",
+  "key_drivers": [
+    "Recherches Google : -14% sur 3 mois, +2% par rapport à l'an dernier",
+    "Marché : 385 produits en rayon, 227 marques, 38 pays",
+    "Médias : 16 articles de presse, 186 posts sur les réseaux, 7 200 vues YouTube",
+    "Buzz score : 83/100 (plus visible que 83% des arômes)"
+  ],
+  "data_limitations": [
+    "Pas de prédiction « durable ou buzz » : le modèle ne s'applique qu'aux arômes en vraie hausse.",
+    "Réseaux sociaux : langue connue, pays non connu. Google Trends : accès non officiel."
+  ],
+  "indicator_definitions": {
+    "trend_status": {
+      "type": "calculé (règle bêta)",
+      "definition": "Dérivé du statut Data. Vraie hausse (≥ +20 % sur 3 mois ET vs l'an dernier) : « exploding » si le pic récent ≥ 2.0 × la moyenne, « emerging » si moins de 20 produits en rayon, sinon « growing ». Sinon : seasonal, stable, declining, ou insufficient_data (volume de recherche trop faible)."
+    },
+    "growth_rate": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Évolution des recherches Google (monde) sur les 13 dernières semaines, en %."
+    },
+    "buzz_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Attention médiatique sur 30 jours, comparée aux 102 arômes : moyenne des rangs (0-100) des mentions presse, des mentions réseaux sociaux et des vues YouTube. 80 = plus visible que 80 % des arômes. Ce n'est pas une mesure absolue."
+    },
+    "trend_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Dynamique de recherche comparée aux autres arômes : moyenne des rangs (0-100) de la croissance sur 3 mois et de la croissance vs l'an dernier. null si le volume est trop faible."
+    },
+    "perennity_score_v2": {
+      "type": "calculé (modèle V2 validé)",
+      "definition": "Probabilité (0-100) que la hausse tienne encore dans 1 an. N'existe que pour un arôme en vraie hausse."
+    },
+    "confidence_level": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Quantité de données disponibles : high = beaucoup de mentions et de produits, low = peu de signaux."
+    }
+  },
+  "focus": "complete",
+  "generated_by": "llm",
+  "model": "qwen2.5:1.5b",
+  "llm_error": null,
+  "llm_seconds": 19.4,
+  "llm_attempts": 1,
+  "warnings": [],
+  "data_generated_at": "2026-11-12T11:31:42.410437+00:00",
+  "cached": false
+}

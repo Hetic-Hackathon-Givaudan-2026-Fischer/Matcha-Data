@@ -1,0 +1,64 @@
+# FlavorTrends · API Data + AI Trend Analyst
+#
+#   docker compose up -d api                    API sur http://localhost:8000/docs (Ollama du PC hôte)
+#   docker compose --profile ollama up -d       API + Ollama dans un conteneur (modèle téléchargé au 1er lancement)
+#   docker compose run --rm pipeline run        collecte + nettoyage + recalcul (lit .env : Supabase, clés API)
+#   docker compose run --rm pipeline insights --all   pré-génère les 102 explications IA
+#
+# Les données servies sont dans ./data/sample (monté en volume) : un recalcul sur l'hôte ou via « pipeline »
+# est visible par l'API sans reconstruire l'image (redémarrer l'API pour vider son cache : docker compose restart api).
+
+x-app: &app
+  build: .
+  image: flavortrends:latest
+  volumes:
+    - ./data/sample:/app/data/sample
+  extra_hosts:
+    - "host.docker.internal:host-gateway"     # accès à l'Ollama du PC hôte (Linux ; natif sous Windows/Mac)
+
+services:
+  api:
+    <<: *app
+    container_name: flavortrends-api
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      LLM_MODEL: ${LLM_MODEL:-qwen2.5:1.5b}
+      LLM_TIMEOUT: ${LLM_TIMEOUT:-150}
+    restart: unless-stopped
+
+  pipeline:
+    <<: *app
+    profiles: ["pipeline"]
+    env_file: .env                            # secrets lus à l'exécution, jamais copiés dans l'image
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      LLM_MODEL: ${LLM_MODEL:-qwen2.5:1.5b}
+    volumes:
+      - ./data/sample:/app/data/sample
+      - ./data/manual:/app/data/manual
+      - ./logs:/app/logs
+    command: ["status"]
+
+  ollama:
+    image: ollama/ollama:0.5.7
+    profiles: ["ollama"]
+    container_name: flavortrends-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+  ollama-pull:                                # télécharge le modèle une fois, puis s'arrête
+    image: ollama/ollama:0.5.7
+    profiles: ["ollama"]
+    depends_on: [ollama]
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c", "sleep 3 && ollama pull ${LLM_MODEL:-qwen2.5:1.5b}"]
+    restart: "no"
+
+volumes:
+  ollama: {}

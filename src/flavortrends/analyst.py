@@ -463,8 +463,12 @@ def insight(t: dict, population: list[dict], generated_at: str, focus: str = "co
         "data_generated_at": generated_at, "cached": False,
     }
     if generated_by == "llm":
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        cache.write_text(json.dumps({**result, "model": LLM_MODEL}, ensure_ascii=False, indent=2), encoding="utf-8")
+        try:
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            cache.write_text(json.dumps({**result, "model": LLM_MODEL}, ensure_ascii=False, indent=2),
+                             encoding="utf-8")
+        except OSError as exc:   # dossier en lecture seule (ex. volume Docker) : on sert quand même la réponse
+            log.warning("Cache IA non écrit (%s) : %s", cache, exc)
     return result
 
 

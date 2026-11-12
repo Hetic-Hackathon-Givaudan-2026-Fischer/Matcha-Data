@@ -19,7 +19,7 @@
 | | |
 |---|---|
 | API (Swagger) | https://word-anyone-retract.ngrok-free.dev/docs *(en ligne quand le PC Data est allumé ; sinon voir [Reproduire](#6-reproduire-les-résultats))* |
-| Contrat d'interface | Route `/openapi.json` de l'API (v1.2.0, 10 routes) |
+| Contrat d'interface | [`api/openapi.json`](api/openapi.json) (OpenAPI v1.2.0, 10 routes), aussi servi en direct par l'API sur `/openapi.json` |
 | Code | [`src/flavortrends/`](src/flavortrends/) · tests : [`tests/`](tests/) (97 tests) |
 
 ---
@@ -54,10 +54,10 @@ Légende : ✅ fait et vérifiable dans ce dépôt ou dans l'API
 
 | Livrable attendu | Statut | Où |
 |---|---|---|
-| 1. Dataset exploitable | ✅ | [`data/sample/reference_cases.csv`](data/sample/reference_cases.csv) (en-têtes au format Orange) · exports Orange : `flavortrends export-orange` |
+| 1. Dataset exploitable | ✅ | [`data/sample/reference_cases.csv`](data/sample/reference_cases.csv) (en-têtes au format Orange) · exports Orange : `flavortrends export-orange` · exploration dans Orange : [captures](#exploration-dans-orange-data-mining) |
 | 2. Premier résultat représentatif (V1) | ✅ | **V1 = règle « gros pic = buzz »** : 74 % des buzz détectés ([§3](#3-modèles-v1--v2-et-validation)) |
 | 3. Preuve de faisabilité (script) | ✅ | [`src/flavortrends/spike2.py`](src/flavortrends/spike2.py), commande `flavortrends spike2-build` · validation reproduite dans Orange ([§3](#3-modèles-v1--v2-et-validation)) |
-| 4. Swagger / OpenAPI | ✅ | `/docs` et `/openapi.json` sur l'API · [`src/flavortrends/api.py`](src/flavortrends/api.py) |
+| 4. Swagger / OpenAPI | ✅ | Contrat statique [`api/openapi.json`](api/openapi.json) · Swagger interactif `/docs` sur l'API · [`src/flavortrends/api.py`](src/flavortrends/api.py) |
 | 5. Endpoint accessible à Tech via ngrok | ✅ | L'API renvoyait déjà de **vraies données** au lieu d'un endpoint factice |
 
 ### Jeudi 12 · Prototype
@@ -142,6 +142,21 @@ Les **doublons sont exclus** des indicateurs. Les **contenus sponsorisés sont m
 **Rattachement aux 102 arômes :**
 - recherche en mot entier, sans accents, sur le nom et les synonymes de chaque arôme ;
 - chaque arôme est associé à **un ou plusieurs des 14 types de produits** du prototype (boissons, glaces, chocolats…), calculés sur les catégories des vrais produits Open Food Facts. Un type est retenu à partir de 10 % des produits ([`src/flavortrends/product_types.py`](src/flavortrends/product_types.py)).
+
+### Exploration dans Orange Data Mining
+
+Les indicateurs des 102 arômes sont exportés au format Orange (`flavortrends export-orange`) et explorés dans l'outil :
+
+| Workflow | Tableau des 102 arômes |
+|---|---|
+| ![Workflow Orange : File, Data Table, Scatter Plot](captures/orange_1_workflow.png) | ![Tableau Orange : 102 arômes, 18 indicateurs](captures/orange_2_tableau_aromes.png) |
+
+![Nuage de points Orange : croissance Wikipédia sur 12 mois et irrégularité de la courbe, par famille d'arômes](captures/orange_3_nuage_de_points.png)
+
+**Ce que montre l'exploration** (chaque point est un arôme, coloré par famille) :
+- **94 arômes sur 100 ont des vues Wikipédia en baisse sur un an** : c'est une baisse générale de Wikipédia, pas des arômes. C'est pour ça que le projet mesure la croissance **relative** entre arômes.
+- **Deux arômes se détachent nettement en croissance** : le **pitaya** (+76 %) et l'**ube** (+30 %), à surveiller.
+- **Quatre arômes ont une courbe très irrégulière** (irrégularité au-dessus de 0,5) : **pumpkin spice** (0,88), **café**, **chocolat** et **cornichon**. Pour le pumpkin spice, c'est un profil typiquement saisonnier, ce qui confirme qu'il faut séparer saisonnalité et tendance, comme le fait la règle « +20 % par rapport à l'an dernier ».
 
 ---
 
@@ -257,13 +272,14 @@ LLM **local** (Ollama, `qwen2.5:1.5b`, le modèle fourni en cours). Il transform
   - sortie JSON imposée par un schéma ;
   - texte en français ;
   - statut respecté ;
-  - aucun chiffre absent des données.
+  - aucun chiffre absent des données ;
+  - aucune consigne du prompt ni étiquette interne recopiée.
 
   Si un contrôle échoue, le modèle a un essai de correction, puis on utilise un **texte de repli** (l'API ne tombe jamais à cause du LLM).
 - **Indicateurs** :
   - **calculés** : taux de croissance, score V2, niveau de confiance ;
   - **bêta**, présentés comme tels : statut métier (exploding / emerging / growing / seasonal / stable / declining), buzz score et trend score, qui sont des rangs relatifs entre les 102 arômes.
-- **Résultat** : 81 explications sur 102 rédigées par l'IA, 21 par le texte de repli. Elles sont mises en cache dans [`data/sample/insights/`](data/sample/insights/).
+- **Résultat** : 69 explications sur 102 rédigées par l'IA et validées par les contrôles, 33 par le texte de repli. Elles sont mises en cache dans [`data/sample/insights/`](data/sample/insights/).
 
 ---
 
@@ -383,4 +399,6 @@ data/sample/         données publiées : reference_cases.csv, model_v2.json, mo
                      trends_scored.json, insights/, mirofish_packets/
 scripts/windows/     tâches planifiées (collecte automatique)
 tests/               97 tests automatiques
+api/openapi.json     contrat d'interface de l'API (OpenAPI 1.2.0)
+captures/            captures de l'exploration dans Orange Data Mining
 ```

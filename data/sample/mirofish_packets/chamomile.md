@@ -11,9 +11,9 @@
 - Recherches Google (13 dernières semaines vs les 13 précédentes) : -33 %
 - Recherches Google vs la même période l'an dernier : -8 %
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.27 (0 = régulière)
-- Wikipédia, croissance sur 12 mois relative aux autres arômes : -9 points
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : -10 points
 - Produits Open Food Facts citant l'arôme : 21 produits, 12 marques, 11 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 2 dans la presse, 54 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 3 dans la presse, 68 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -25,6 +25,7 @@
 
 - [google_news] 2026-11-10 : « Top 5 Best Chamomile Teas 2026 »
 - [google_news] 2026-11-06 : « Selon la science, la camomille est bien plus qu’une tisane apaisante »
+- [google_news] 2026-11-06 : « 30 Days Of Christmas: Win ‘The Magic Of Chamomile Cottage’ »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

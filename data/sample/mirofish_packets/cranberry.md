@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.09 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -4 points
 - Produits Open Food Facts citant l'arôme : 171 produits, 123 marques, 37 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 23 dans la presse, 83 sur les réseaux (YouTube, Bluesky) ; 6 006 vues YouTube
+- Mentions sur 30 jours : 27 dans la presse, 167 sur les réseaux (YouTube, Bluesky) ; 6 006 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Nothing hits quite like an Ina Garten recipe, especially during the holidays. The best part of this cranberry martini recipe? It can be prepped before guests arrive. »
 - [google_news] 2026-11-11 : « A case for retiring canned cranberry sauce from the holiday table »
 - [google_news] 2026-11-11 : « 11 Store-Bought Cranberry Sauces Ranked From Worst To Best »
 - [google_news] 2026-11-10 : « The ‘Magic’ 3-Ingredient Cranberry Sauce That Made Us Ditch Store-Bought for Good »
 - [google_news] 2026-11-10 : « POPPI LAUNCHES LIMITED-EDITION CRAN FIZZ CRANBERRY SODA IN THE UK FOR CHRISTMAS 2026! »
 - [google_news] 2026-11-10 : « I Asked 7 Chefs if Fresh or Frozen Cranberries Are Best for Cranberry Sauce »
-- [google_news] 2026-11-09 : « Video: Sweet Potato and Cranberry Layer Cake »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

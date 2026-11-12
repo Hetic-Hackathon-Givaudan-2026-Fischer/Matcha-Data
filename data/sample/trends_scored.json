@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:19:07.700059+00:00",
+  "generated_at": "2026-11-12T05:27:22.794157+00:00",
   "model": {
     "n_cases": 82,
     "n_flavors": 25,
@@ -72,14 +72,14 @@
         "search_volatility_26w": 0.594,
         "search_spike_ratio": 3.82,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 3.5,
+        "wikipedia_growth_12m_relative_pts": 3.4,
         "openfoodfacts_products_count": 361,
         "openfoodfacts_brands": 226,
         "openfoodfacts_countries": 42,
-        "press_mentions_30d": 20,
-        "social_mentions_30d": 102,
+        "press_mentions_30d": 22,
+        "social_mentions_30d": 195,
         "youtube_views_30d": 50327,
-        "sponsored_share_30d": 0.025,
+        "sponsored_share_30d": 0.014,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -505,6 +505,18 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Weston-super-Mare curry house owner recognised for tackling major issue",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeWtCLXl3cDByWDVEN2NjT1dJOE1XVTNaNUhFM0ppTi0tbUpTUVdlYUd3TE9laXNSZVhFSlVfaDQtWkJ1X0YydUtyVEhqSUVocllVSk5zNy0tUTB4THlQOWxGRG84SHp0UFpkOHhXcV9Ia2piLThVbHNqTEs3M0VBXzFxSTlCZ3ZOem9aV285emlFenlYVHVTbHA2Uy1kSFhIcEM1a09R?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Warriors’ Stephen Curry exits early with abdominal soreness, ruled out vs Rockets",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNZlNGSzZIam5LdEJZR3hRekNWY0VRWHJRUHlfM2l4Si1nd002Z09Pc1BHYUhPZ19kZUhnQzJEMlM4VldCMkJiT25lYVJWZUtIZ2xRWUViOUcxV2I4TVk4RkY5WmFvY2ZTaDJibjBIVy1uS3VvTmxTRmN5ZDFzb0pFQ0ozakxEdUJEN3dacE15MzZqaGlsdXZqWG1IQkVXYTJVTFkyVUJ4T25XejZjVlBWN1ItbTUwaFQ2Q1pNYkFmblphYVJEVjNqRGlsN05lVGx4T1dVekt2WjQ3WGVPRDQwZi1yQnZsSzBZWlpPaWFzaDNOTk9WcHUtcUtqSlF2WXBLVkRicTRlWjVnUlE0S0hJ?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Glasgow restaurant creates 'curry in a pie' for Aldi stores across Scotland",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWnluZVJ1eENwNHQ0NWt6azZTOC1yQWpVOVV5dlBqUTFHeUpLaC02Y3QzWmlXRVhWRTFKWVBCZmZINGkxNGI1RmRsaDlxbUFTVFNTSW5kQ1RhZXMzOVJjTUt6LTl2Y0twWVU3TWswU2FXNy1hdWhLYVJySFBJb1hLRjFsVVRGdDRJd0lKMi1OMWpwMWV2bHlhaTV3SGFLN1XSAaQBQVVfeXFMT1pqTThUTW1heVBmTlZJYzZaNmFLT3p6Zk9LY01JNE1waHh2akR3VVJnZUxzRGlQTVFBSlh0bXNrVnVVRy05b2JXQ1E1eGMxbkw1SE5YRmI3VmpLdG8waC1qWmswSV9hcWRQYnduSmtnNjZJZmhWYUgzMXVsSjNNLW1hQm15cFJGRXBpUFFRYzVxVjJjRU43Z3ZZVW1sdnFDQWpDNUY?oc=5"
@@ -526,18 +538,6 @@
           "date": "2026-11-10",
           "title": "Singapore Noodles The Takeaway Classic",
           "url": null
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win",
-          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOQjVpMzBOMDEtMmoyYTRFVm9ZTTJZdW5tVHBSazE1NGhMeEE1d21XM3kzcDZOU1FBUTN1dVJOSnRkNFRYbkFaQnFMeF80YzNDbVRpOGhGcTdPdDcxdXJMQndhNnAtMVo2cGR2el9lZ01pc3cyRWx1RjVfakRDdVFDaEVUQkRoQmgtLXJEbWtvXzN5R3hCNl9ZWGtMNGZyUzFnOVVVS3ZyMFVxVU1EVFFqTHphOXdyb2Z2ZVhtLTNfUkpENE9fd25XczN6ZHNIWjNiUDJwTlJxUkZxOVdQXzQwWVc2QV9PbzhheHFVT3JlNmIzd0FKNmM2cjFEcVBLOEdhUkx2aUwzWnU1SVNGcGtCX3pSbm9WYnJCZmhoaQ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Aatma Curry House Review: Not Authentic, and Proudly So",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE53am1QZjJQTzhwWFFmUnp0ZmlEMlR5eUxNVDIxNDNkbVNsaWdMZ28yQ3lSWHF6X25YUFdBUFJmcm5DSW4xdUhwMGR3VjNqYWo4WG5rSnhKMkU3Qnl3WWNhTXNQQklzZ2g1LTYzNVcwQ3RYbXM0MkZtbEUyNA?oc=5"
         }
       ],
       "watch_points": [
@@ -571,12 +571,12 @@
         "search_volatility_26w": 0.076,
         "search_spike_ratio": 1.03,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 14.8,
+        "wikipedia_growth_12m_relative_pts": 14.7,
         "openfoodfacts_products_count": 32,
         "openfoodfacts_brands": 26,
         "openfoodfacts_countries": 14,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 12,
+        "social_mentions_30d": 14,
         "youtube_views_30d": 60,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -1067,9 +1067,9 @@
         "openfoodfacts_brands": 296,
         "openfoodfacts_countries": 58,
         "press_mentions_30d": 12,
-        "social_mentions_30d": 88,
+        "social_mentions_30d": 131,
         "youtube_views_30d": 14520,
-        "sponsored_share_30d": 0.01,
+        "sponsored_share_30d": 0.014,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -1564,7 +1564,7 @@
         "openfoodfacts_brands": 99,
         "openfoodfacts_countries": 27,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 49,
+        "social_mentions_30d": 61,
         "youtube_views_30d": 3145,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -2036,8 +2036,8 @@
         "openfoodfacts_products_count": 464,
         "openfoodfacts_brands": 301,
         "openfoodfacts_countries": 63,
-        "press_mentions_30d": 13,
-        "social_mentions_30d": 107,
+        "press_mentions_30d": 15,
+        "social_mentions_30d": 197,
         "youtube_views_30d": 4661,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -2465,6 +2465,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Machine Learning and Marine Metaheuristics Optimize Solvent Free Banana Flavor Synthesis",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZV9vdEs4d0lNSDlhandvMXUwV0N3aDN2NktMY0lqcldVZ3FSVnR1UWdadzRMcnIwWExJTmV1a3ljUzMyWld3MWhwREpFNWRTVnc2dE1vMllNWHhBN01mdGRaMlY2MXItVFBWUk9GbUs2TW1lVTdxVEJVM1RjR09hbU9qYzkxWThfa0h5NjJhZXFZN01heHFHSjg0djRVYy1oTDZMcm53MnFaNFhic0Y1Z3Q0cw?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Your daily Matcha just got a banana & fiber makeover with TRIZIE",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRXVUOVBRYzlZMzlxVXRFLURLVFB0M21pdXkwMkJsbWtUdDN5VUZ1WGprUXJ0OERmN1lnT1o1TnFmTHJYUTVrelNQMHlUTllDaWVCRm5xUmZ6ZE54NzY0TkpPU0kwcUlDN2lGU0l4aXBnZWt2eVgzMTZxV1drTEhEYlprSHVUVlBIbTlFMDUzRVA0aHYzS09fVGxJclppSHNaLVpyY1lPcEc2cXIt?oc=5"
@@ -2492,12 +2498,6 @@
           "date": "2026-11-09",
           "title": "ELEV8 adds Banana Bread and Shaken Espresso Creamy Rice",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwY19OdzBHSUIzMDN5MlNjNVBqVHJ1V1JjRmFiUUM1ZnVOT1dmWHM2M2t4LXhfU21zUVBhUVN6NVNyVDdPUE9YaWx1ZWdxZ0VTb0Q3Rk5PMXc2Y1JEbjB5cm5kbkdSN0x2?oc=5"
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-08",
-          "title": "Not making my coffee any other way 😍😍🔥🔥 #teacherdiaries #icedcoffee",
-          "url": null
         }
       ],
       "watch_points": [
@@ -2533,10 +2533,10 @@
         "openfoodfacts_products_count": 333,
         "openfoodfacts_brands": 249,
         "openfoodfacts_countries": 56,
-        "press_mentions_30d": 19,
-        "social_mentions_30d": 77,
+        "press_mentions_30d": 22,
+        "social_mentions_30d": 138,
         "youtube_views_30d": 1530,
-        "sponsored_share_30d": 0.01,
+        "sponsored_share_30d": 0.006,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -2963,7 +2963,13 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
-          "title": "SAW’s BBQ brings award-winning flavor to Chelsea’s Valley Po...",
+          "title": "Three Food Festivals Bring Barbecue, Plant-Based Dining and Wine Tastings to the Coachella Valley This Weekend",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSUl5ZkpFd282aThBTzE2VHhCblVHTy1jLVJnaDM4NTlPMUQwT0JfanRTNE9Ra2Y2T0ZxdXFudE5VU0d5MEt4MkVyTEprbjdqenloaENiMzlYMlVMZTdZdk1sdTFkaFlmWk5LNTFvYjBlbVRacnV2QWVzUWFpU2RaNG5qMkVLU24tdzBvZF9KaFJvN1JOcHIzLURrMWtmRUNxZ28wZ1dXV2loS042X2dwcjdBdGhoLWotVlBHMkdRTHBGUjM2bnA1NDBTd1hDZUh6ZG5oSUo5X2I1TjA?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "SAW’s BBQ brings award-winning flavor to Chelsea’s Valley Post",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbG02OTQ1M3doamk2d3JpM1JONGRMMkVyem9FclRTVk84RWYzcnZIVllfaFFPcEZCbzJnVF9RVEdYZGxrVVJnNHRaVDZhampHRXJ4TkdVTjg0bzQ1UVNTYXBPc1I3VUtNYkdtak1CcUZoYUlrcHU2blRZel9BUDdZb2Z2TUJRWllsSHVpa2RtWEloUkVEZy14UExWRk5FRWlaSmI5WTdMS2IzcTBzZnVweQ?oc=5"
         },
         {
@@ -2989,12 +2995,6 @@
           "date": "2026-11-10",
           "title": "Show Up After Lunch At These 7 Ohio Barbecue Joints And The Pulled Pork Is Already Gone",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObWc4ZlltMldFT0xqc1NoMnVmclJjS2RmYkpMQUJrNG1iNEVMVHhsd0NaY2RGUW1CSHB0UnU5eTJTcWtmRmRDS0FSUkNSUDFNX19oXzRXSmJGVDhlS09mR0o5NFhINUs2cE1PSjNTYVBrOGFaeWpETEFac0JUcnNWVDdvckdVQVVub2F6NkNKVXFSbFB5MGtvN2FVSWpWakhJV1pYVEpFOVBDSkNRR0N6OEE1QVdBQ3RrdEtGQUVKQ1JhZw?oc=5"
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-10",
-          "title": "Easy Maple Barbecue Sauce with Smoky Flavor #shorts",
-          "url": null
         }
       ],
       "watch_points": [
@@ -3026,14 +3026,14 @@
         "search_volatility_26w": 0.18,
         "search_spike_ratio": 1.03,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -7.4,
+        "wikipedia_growth_12m_relative_pts": -7.3,
         "openfoodfacts_products_count": 621,
         "openfoodfacts_brands": 286,
         "openfoodfacts_countries": 53,
-        "press_mentions_30d": 5,
-        "social_mentions_30d": 81,
+        "press_mentions_30d": 7,
+        "social_mentions_30d": 140,
         "youtube_views_30d": 59,
-        "sponsored_share_30d": 0.012,
+        "sponsored_share_30d": 0.007,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -3459,6 +3459,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Basil Zempilas unveils plans to fast-track WA mining projects",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOalNNc3RYRGpYY2Y5UUhjVjJDdnlyWUl6LXhSb0x4V19pTlpoVXlEb1NQZFNuUjZHTDhiVGJXNGRUdnlzUWVHVWdFczRHckFyZWRLSWtQN3Q1bkpJZFRXM0htU2t6dlFySi1xQzRBNmZJc19lN3NWMU9SMWJQZjFFRmFXRkk2Z1FfbElzT0JjQmx6T1RRT1dyaA?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Whip Up This Red Sauce Pasta Recipe In Under 15 Minutes Using Ripe Tomatoes And Fresh Basil",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNT0xPYUthSkpxYXhsb2ZQTmNndUM4aEdQbzNJV0dyejUxN0Z2M21KTDhMaFI0RXF4akpFTzZORS15NWRNUjR5Y25sVURvb3MtTGpjY3lfc1I1b01yeGQyaUVfMUJXVlZhS3RrYVRjQzVETDdZaFhXWkx4VHpZSXR4ZmhTUVFSdDQtWllZdXVPSERhbzRmVjdaRWE5WVBBMUVPbTlvenhpQzdYQnk0TW5CeFotdmdnM2UwSk5GZ1RwOGM1SmJEYmfSAcYBQVVfeXFMTU9MT2FLYUpKcWF4bG9mUE5jZ3VDOGhHUG8zSVdHcno1MTdGdjNtSkw4TGhSNEVxeGpKRU82TkUteTVkTVI0eWNubFVEb29zLUxqY2N5X3NSNW9NcnhkMmlFXzFCV1ZWYUt0a2FUY0M1REw3WWhYV1pMeFR6WUl0eGZoU1FRUnQ0LVpZWXV1T0hEYW80ZlY3WkVhOVlQQTFFT205b3p4aUM3WEJ5NE1uQnhaLXZnZzNlMEpORmdUcDhjNUpiRGJn?oc=5"
@@ -3484,14 +3490,8 @@
         {
           "source": "google_news",
           "date": "2026-11-05",
-          "title": "Thai Basil duo to open another restaurant in Madison next year",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb081dExyS25yLVg4WEpoVVk4M0NQeGN3b1BkR0hUTXUwYlAyQ0dzRlZFQ3ktR3RYQlF2cGVzc3pQcG5EVy15bHc0ZWFVakpMTHNRNU9MYVdoZS1mNFdKcDA5TXAzcXVNZ3BJdU1MRXlyeXNBOTc5cFJOQ1AtS0d4YzhaeldTRjVGc2hPVG9tX2lWRHpoYTZxSmZkQmt4ZHhlN1NTVmxqdUNDLW1ZTHJScnEwVURzeFBSbm5ybEctMFZHLVBLZlBFNVRHVXBNQmpUMlFhd3dSdzB2ZW4y?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-04",
-          "title": "Quick Bites: Thai Basil",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE90TVhBUEh4Xy1iRXltTUV4eE5odVNBT2dFY3JCY1FOakUxLUJ0RUlXRTh4WTNkLU0zM19PeEdtM2tRQmtKTGxxbGRKUVI3cU5EWHBJc2FNSnVCYVB1bGlzS0N4ZFRrbEM4d0lVVnVVY2tGNmpydHJQZUJnSQ?oc=5"
+          "title": "Why A Pound Of Basil Can Cost As Much As A Pound Of Wagyu Beef",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcDdYX2p2QUp2V2JrMGdXRE1FdUxYdElOdmlEeEl3S3FyQjVXVXV5ZjFYWXlDTWp4Yl9FbkVqbWxxbmJLM3pYRnptMGU3UlpVb3c3RHcwb1J3S3dkWDRBc1JVRFQxbkZsbTRiVWJHRlBBYV84MW5Sa0JLMWNtNHpRc0szVDlTWEt4?oc=5"
         }
       ],
       "watch_points": [
@@ -3523,12 +3523,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -3.0,
+        "wikipedia_growth_12m_relative_pts": -2.8,
         "openfoodfacts_products_count": 13,
         "openfoodfacts_brands": 9,
         "openfoodfacts_countries": 4,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 26,
+        "social_mentions_30d": 36,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -3985,14 +3985,14 @@
         "search_volatility_26w": 0.187,
         "search_spike_ratio": 1.23,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -18.5,
+        "wikipedia_growth_12m_relative_pts": -18.3,
         "openfoodfacts_products_count": 9,
         "openfoodfacts_brands": 4,
         "openfoodfacts_countries": 4,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 4,
+        "social_mentions_30d": 5,
         "youtube_views_30d": 1940,
-        "sponsored_share_30d": 0.125,
+        "sponsored_share_30d": 0.111,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -4449,8 +4449,8 @@
       ],
       "watch_points": [
         "Peu de produits en rayon dans notre échantillon Open Food Facts (9) : marché encore étroit (ou arôme de niche).",
-        "12 % des mentions récentes sont sponsorisées : signal en partie marketing.",
-        "Peu de mentions récentes dans la presse et les réseaux (8 sur 30 jours) : confiance limitée.",
+        "11 % des mentions récentes sont sponsorisées : signal en partie marketing.",
+        "Peu de mentions récentes dans la presse et les réseaux (9 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -4484,7 +4484,7 @@
         "openfoodfacts_brands": 628,
         "openfoodfacts_countries": 59,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 50,
+        "social_mentions_30d": 72,
         "youtube_views_30d": 22701,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -4981,7 +4981,7 @@
         "openfoodfacts_brands": 26,
         "openfoodfacts_countries": 12,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 12,
+        "social_mentions_30d": 13,
         "youtube_views_30d": 71186,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -5479,7 +5479,7 @@
         "openfoodfacts_brands": 135,
         "openfoodfacts_countries": 33,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 11,
+        "social_mentions_30d": 14,
         "youtube_views_30d": 1201,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -5953,7 +5953,7 @@
         "openfoodfacts_brands": 22,
         "openfoodfacts_countries": 12,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 9,
+        "social_mentions_30d": 21,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -6421,9 +6421,9 @@
         "openfoodfacts_brands": 227,
         "openfoodfacts_countries": 47,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 95,
+        "social_mentions_30d": 177,
         "youtube_views_30d": 2647,
-        "sponsored_share_30d": 0.021,
+        "sponsored_share_30d": 0.011,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -6912,7 +6912,7 @@
         "openfoodfacts_brands": 11,
         "openfoodfacts_countries": 9,
         "press_mentions_30d": 8,
-        "social_mentions_30d": 32,
+        "social_mentions_30d": 44,
         "youtube_views_30d": 99770,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -7868,12 +7868,12 @@
         "search_volatility_26w": 0.125,
         "search_spike_ratio": 1.08,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 5.6,
+        "wikipedia_growth_12m_relative_pts": 5.7,
         "openfoodfacts_products_count": 134,
         "openfoodfacts_brands": 91,
         "openfoodfacts_countries": 23,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 33,
+        "social_mentions_30d": 40,
         "youtube_views_30d": 7913,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -8352,7 +8352,7 @@
         "openfoodfacts_brands": 35,
         "openfoodfacts_countries": 15,
         "press_mentions_30d": 7,
-        "social_mentions_30d": 92,
+        "social_mentions_30d": 131,
         "youtube_views_30d": 3578,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -8844,12 +8844,12 @@
         "search_volatility_26w": 0.265,
         "search_spike_ratio": 1.09,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -9.4,
+        "wikipedia_growth_12m_relative_pts": -9.5,
         "openfoodfacts_products_count": 21,
         "openfoodfacts_brands": 12,
         "openfoodfacts_countries": 11,
-        "press_mentions_30d": 2,
-        "social_mentions_30d": 54,
+        "press_mentions_30d": 3,
+        "social_mentions_30d": 68,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -9286,6 +9286,12 @@
           "date": "2026-11-06",
           "title": "Selon la science, la camomille est bien plus qu’une tisane apaisante",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQa2hUVV9NOEFYVGNScWxTQnJ0VUFmTHlCck1kanFtal9lcS1IbmdmRW15SHNuWUk1eWNoRU1YRHhDbjFJeTlTM2ZnalJ5akthSmhhaDlWRUswamstRTltWWh6MzBqNENSUGFFblprYk5hcVJRVkZuOUk5VlNrLURJTDZsYWJCN3JvU2FlMFBGMVdqTjhpVWpUTU9SZDluT2VpUWl3RGtpWUFydjljbkhzSjVFQ1JSa2t6UEc1a3RLM3pTbmJjRENJYmN5ME4?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-06",
+          "title": "30 Days Of Christmas: Win ‘The Magic Of Chamomile Cottage’",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjVUSXpXaWY0TVU4d2hQYWUyUkhjaUhGN01jbGY4TGIyOUljZGhrZ2pFQldGSTMyZzFCWFU1N081SFRjYjRfYTNWcmVoZVY5RGJlRS1fb1lnUHZqd0V4VzdOSHZMV2J5UXV3X1h0bE1IWkhQZC0tZmw0MVp0MEY4RE1xZUdpcV9aaWIxdldKZUo5WFNhc0VLVA?oc=5"
         }
       ],
       "watch_points": [
@@ -9322,7 +9328,7 @@
         "openfoodfacts_brands": 85,
         "openfoodfacts_countries": 23,
         "press_mentions_30d": 15,
-        "social_mentions_30d": 95,
+        "social_mentions_30d": 183,
         "youtube_views_30d": 2733,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -9819,9 +9825,9 @@
         "openfoodfacts_brands": 247,
         "openfoodfacts_countries": 42,
         "press_mentions_30d": 15,
-        "social_mentions_30d": 125,
+        "social_mentions_30d": 211,
         "youtube_views_30d": 281,
-        "sponsored_share_30d": 0.007,
+        "sponsored_share_30d": 0.004,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -10315,8 +10321,8 @@
         "openfoodfacts_products_count": 1405,
         "openfoodfacts_brands": 774,
         "openfoodfacts_countries": 76,
-        "press_mentions_30d": 20,
-        "social_mentions_30d": 120,
+        "press_mentions_30d": 22,
+        "social_mentions_30d": 215,
         "youtube_views_30d": 18240,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -10745,6 +10751,18 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
+          "title": "Tequesta Chili Cook-Off Brings the Heat",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBka1hVZHdELXNoX213dnVGdzkzSWoyUThmMy01S2dUcUJNREtUdVhxWUozYjJwTHc5MzhXWE5mb1ltWTBDMDRXUXJaRG5NNEMwdS1ucV9vNFNrd3k4TjZfNEgySlZyR2xfMm5HcWs3Z25tNXZlQ1E?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Veterans Day 2026 deals: Score free food from Olive Garden, Krispy Kreme, Chili’s, and more",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44ZU5pM2xpa1laUEpCTTVSUVBrNmRiaUtaVmdZaS1YWHJleUNBYUJBM1BweXBuTEtHbnA2eG9VV1Iyd3RWTU1MajM1UTNPM1AtU2Vwamw0UXV0dmxnekJpY3RmdnZwd25KbnVR?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
           "title": "Kiwanis Chili Day Remembered as Annual Northeast Tradition",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTzQ3Y1BQcFRuSFRtNmtVOFpiNnZPZHpVMzlZMVU4enRCX1QySDFseTYwczZURWFRbTRhMGpnWHJiWkxDbTRuQk1PYWJ0ZHp2U2NrWUtsNVgza01HX3VqS2IzdzJXZzJrX3JsQ3RYSDQ5aHhKQkN1ZU5sNFI4TWZJMi1BWmFxazR0TnpJTGRtYklmcjl2Y1E?oc=5"
         },
@@ -10764,18 +10782,6 @@
           "source": "youtube",
           "date": "2026-11-10",
           "title": "Reviewing Eat Real Hummus Chips Zesty Lime Chilli And Sea Salt Flavour",
-          "url": null
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-10",
-          "title": "Singapore Noodles The Takeaway Classic",
-          "url": null
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-10",
-          "title": "Kimchi Instant Ramen with Pork & Egg | Easy Korean Ramen Recipe",
           "url": null
         }
       ],
@@ -10808,14 +10814,14 @@
         "search_volatility_26w": 0.064,
         "search_spike_ratio": 1.14,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 21.3,
+        "wikipedia_growth_12m_relative_pts": 21.4,
         "openfoodfacts_products_count": 3960,
         "openfoodfacts_brands": 1695,
         "openfoodfacts_countries": 115,
-        "press_mentions_30d": 63,
-        "social_mentions_30d": 291,
+        "press_mentions_30d": 69,
+        "social_mentions_30d": 417,
         "youtube_views_30d": 1399300,
-        "sponsored_share_30d": 0.003,
+        "sponsored_share_30d": 0.002,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -11240,16 +11246,22 @@
       },
       "evidence": [
         {
-          "source": "rss",
-          "date": "2026-11-11",
-          "title": "Planters announces festive seasonal snack lineup",
-          "url": "https://www.snackandbakery.com/articles/116640-planters-announces-festive-seasonal-snack-lineup"
+          "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Chocolate-Inspired Fragrance Lines: Michel Germain Debuts Séxūal Crème Chocolat…",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZVWtQWkRTbmJjdUFEYmstSks0QWFNNzFPMVB6bllkcmkxQ0dIZlVuTExydFlkY2JLZEVKZnRfaXBjNlIySEhUWFNNQjBCZ3hEUzY1Z1JUbDRwWFhIcTRhOXZlYmU5Nkx4c0owTlFDVQ?oc=5"
         },
         {
           "source": "google_news",
           "date": "2026-11-11",
-          "title": "Rare Cadbury chocolate bar slashed in price after return to UK supermarkets",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGdTQXdqYWVhTzA4ZXRaZUF2dk0yRE9qYkNXZ3ZBeDdFR0JrTTBYNXpvRkZXTUtsd0UzaVg3Nk95cHBjRENVcFdDNzZJWWVKUGtQTFYtZmE0Qm4zRjdFeTRFTTFaRzhlbmhyU090RDJ5TzdiNWVhd2stQXp6QUtBbURqRjgwdU5UU245Qk9IUl9PejZFc3MtbVpRdmpVeklmbWJ3eGhsc25PZ211ZnpFdk53UkY0UQ?oc=5"
+          "title": "Encapsulated Lemongrass Essential Oil Optimizes Dark Chocolate Texture And Acceptability",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWjhFMU9DMjM0RnkzcGlMOFc3TTZtbDEtX3NYQUtLQW9TNnZqMEduRXdDNmZZUXRIQVNFODlBdlFJaFVoektJX05hMXNRbjhla2JTdTNBR3J6bVVMRjhCVFB0V2laaWM2bnY1a3puT3ROSldJZ2NwdWVMcmhIMlhXSU5CRm1LU05yRkZQdzRqa292cEZVbmhZSHNuNGszWGVhUjZNYjRMUWs3MjZLTTFSTkRaQQ?oc=5"
+        },
+        {
+          "source": "rss",
+          "date": "2026-11-11",
+          "title": "Planters announces festive seasonal snack lineup",
+          "url": "https://www.snackandbakery.com/articles/116640-planters-announces-festive-seasonal-snack-lineup"
         },
         {
           "source": "google_news",
@@ -11266,14 +11278,8 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
-          "title": "Chocolat, thé, ou plus insolite : quel calendrier de l'Avent gourmand 2026 est (vraiment) fait pour vous",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkZaY1BSaXpGTWpnY1pVM3VzeGFSUzdQZnZKNDdrdE4ycDRNTk55Z0RieERoN2h4REJiaV9GYTR2a3lZRTRiSXBJV1N5LU1VQ3pfa2x5OW9FWDNyTF9kN0xGUUMyaFBPcGJuVURFaHRVUzdNRVJ5UXZrTnZFSHFZeVBoRnRjZUp2d3otNWhKSmRqQURWU0w5SlA0T3dYUU1iVk45OGZJZDB0Y0l0TGg0ekVFclhGcFdCYWNHRmlaTzFPallkVkpmQnFB?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-11",
-          "title": "Panda Express Just Turned Its Famous Rangoons Into a Triple-Chocolate Dessert With Ghirardelli—but There's a Catch",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVThZMHptUlE1UmZaVEE4ME1Tb2Q5NFpJQ28wSkMwZUpSQ0NOSlA3T2VQbl9pVjUyMEtwcjJiZEtVX1hOemJhV3hyZVktbmRfbDkwNXYtV2pwdGhHMzFHbXFPWHhxMkd5aWc4WDNMR3BMV1FsZVhpbTk0LWNvcXk3MnRyWGJQS3NqTlQxZVFQNjJqblVLNG5mTGNDZlJWVnZvNTlqMlV5ZHpaYl85UERickhjemxKUml2Vk5GRWlPT1lUdlNlQUFZdFZuQzJ4YnF0V29v?oc=5"
+          "title": "Rare Cadbury chocolate bar slashed in price after return to UK supermarkets",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZFZDZHFGd0tiaDNIZERKakNNM1dndnd4WW54LU5CanZsaGNCLUJ4b1NON296bFZUQk1hb0ZyLXNnZTVjVlVENHQwZXc0Qk9yUEJ1N0VzaDlKSjFWQ0RhejJVRGtVWHM1dzBhTEdMRHVxTF9LajNWOWs3U1BJVk9PR1ZXcE9PSHg2TlpRRnhsakZvZEFUMXVYMUFlTVgxVVJXU0hkNU1MMVQ3N00xc1I1a3BEalB0QjFTZmdBNGFjT1NpZw?oc=5"
         }
       ],
       "watch_points": [
@@ -11309,10 +11315,10 @@
         "openfoodfacts_products_count": 616,
         "openfoodfacts_brands": 401,
         "openfoodfacts_countries": 57,
-        "press_mentions_30d": 15,
-        "social_mentions_30d": 118,
+        "press_mentions_30d": 16,
+        "social_mentions_30d": 207,
         "youtube_views_30d": 18837,
-        "sponsored_share_30d": 0.008,
+        "sponsored_share_30d": 0.009,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -11737,6 +11743,12 @@
       },
       "evidence": [
         {
+          "source": "google_news",
+          "date": "2026-11-12",
+          "title": "This is what happens to blood sugar levels when you drink overnight-soaked cinnamon water",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQejNKQTVQOUpoX2tKa1NhSF9EdUhBNEJScEJzSXlFX1FlTTV1SHEwRFI3QzJhOU5BSEMzeU1RTWVZcHF3YUpiZ01KS1JVOElEZ0x6YjM4VDB0S1RPQ05MVC11d1A0ZDZ6LXRuNlVwOXZZZUtCM01POGU3WFljYTNlOVNVOEp4T1U0SUM0aDNyTXFlekNBbFVHR1gyX1lkLVUzam5PaUxkbW1EN00zclFZV0ZQdlhtU1dlcFNELWFjbHNIbXVMelF5dHBlMEdOMEgzVFE?oc=5"
+        },
+        {
           "source": "rss",
           "date": "2026-11-11",
           "title": "Planters announces festive seasonal snack lineup",
@@ -11765,12 +11777,6 @@
           "date": "2026-11-10",
           "title": "New Jersey’s 11 best cinnamon rolls, ranked for 2026",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNblFOQ19KMjd1OXBPcmRXQVhITTVhMWhTTFp0TVNQeEF2RzZUdW9OX25BR1BuNFIyZ1NSTHQ4NnJwcjg3ekZxLXA3ZzFsVnlmWEdIeEZlTktUMVdqT05zSVI2MWFxQ091TVpLX1FHNXBCX0VXb2Y2N1Bvanc3YWV3emh3Q2FXa0hSREJxSlE1WjE?oc=5"
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-10",
-          "title": "Cinnamon Maple Frosted Flakes - Perfect For a Cool Fall Day",
-          "url": null
         }
       ],
       "watch_points": [
@@ -11806,10 +11812,10 @@
         "openfoodfacts_products_count": 1801,
         "openfoodfacts_brands": 995,
         "openfoodfacts_countries": 89,
-        "press_mentions_30d": 17,
-        "social_mentions_30d": 88,
+        "press_mentions_30d": 19,
+        "social_mentions_30d": 158,
         "youtube_views_30d": 20641,
-        "sponsored_share_30d": 0.019,
+        "sponsored_share_30d": 0.011,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -12303,10 +12309,10 @@
         "openfoodfacts_products_count": 847,
         "openfoodfacts_brands": 370,
         "openfoodfacts_countries": 75,
-        "press_mentions_30d": 85,
-        "social_mentions_30d": 303,
+        "press_mentions_30d": 93,
+        "social_mentions_30d": 457,
         "youtube_views_30d": 1432528,
-        "sponsored_share_30d": 0.026,
+        "sponsored_share_30d": 0.04,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -12733,6 +12739,12 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
+          "title": "Aussies 'keep coming back' as $8 coffee alternative explodes",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ0EteUl4cFQ3T1U5Ni1Dei1uNEl4aU1jOTZyRnE5MmllVEZxdFhrcUF3b0lBTGxtdjBkUlFWOGFabUE4Y1dwSFdsYW9PVzNUZF8tMXEyZ2FBN1Qzc3AtMnVpaVRzejVyc0dpa3ZCUm5SUnkyUWQtTUt0di1yMkJyaWpVSjdSSUN3WmhxbE14Y3hoa3h3WHpZcHRUc3FqcUU4R2hHQ0lR?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
           "title": "Brazilian coffee shop boasting 'explosion of flavor' opening in Central Mass.",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdFN6c1dxbTBaMjlyTHFWV0R0dGJSZEh6OFRPUjg0eURBcGpjODllLWR5OVdmQTZVMzZnS3JLX3Q3S3hDYkVIQzJVei02VVF3Q19uOTN5aUYzSEJrSDZSM2tSYUlXS1dUNmlub1RqaU1Wd3AxNVVwbGJZVHdXdXhsTG45RkVhUzFhbVozb1pMSVNvd01fQ0E?oc=5"
         },
@@ -12759,12 +12771,6 @@
           "date": "2026-11-11",
           "title": "Just Ice Tea ups the caffeine with cold brew teas",
           "url": "https://www.fooddive.com/news/just-ice-tea-caffeine-energy-drink-alternative/874372/"
-        },
-        {
-          "source": "rss",
-          "date": "2026-11-11",
-          "title": "Nestlé gears up for next phase of growth",
-          "url": "https://www.foodnavigator.com/Article/2026/11/11/nestle-growth-strategy-coffee-petcare-and-nutrition-drive-growth/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS"
         }
       ],
       "watch_points": [
@@ -12796,12 +12802,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -6.8,
+        "wikipedia_growth_12m_relative_pts": -6.7,
         "openfoodfacts_products_count": 494,
         "openfoodfacts_brands": 262,
         "openfoodfacts_countries": 35,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 25,
+        "social_mentions_30d": 42,
         "youtube_views_30d": 1478,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -13270,12 +13276,12 @@
         "search_volatility_26w": 0.134,
         "search_spike_ratio": 1.2,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -6.4,
+        "wikipedia_growth_12m_relative_pts": -6.5,
         "openfoodfacts_products_count": 6,
         "openfoodfacts_brands": 4,
         "openfoodfacts_countries": 4,
         "press_mentions_30d": 3,
-        "social_mentions_30d": 56,
+        "social_mentions_30d": 80,
         "youtube_views_30d": 1133,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -13766,10 +13772,10 @@
         "openfoodfacts_products_count": 171,
         "openfoodfacts_brands": 123,
         "openfoodfacts_countries": 37,
-        "press_mentions_30d": 23,
-        "social_mentions_30d": 83,
+        "press_mentions_30d": 27,
+        "social_mentions_30d": 167,
         "youtube_views_30d": 6006,
-        "sponsored_share_30d": 0.009,
+        "sponsored_share_30d": 0.005,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -14195,6 +14201,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Nothing hits quite like an Ina Garten recipe, especially during the holidays. The best part of this cranberry martini recipe? It can be prepped before guests arrive.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNUW9jSEZtTkhYMUl2TXlKZkx0dkk3QnZlVzNNalRxa0VUQXh5LW5XU09oVk82QVhfV3RJcldRVkdFSThlbG41VGVpdXZlbHk5T0taYmd4cTBoTFB5QkdRMlZBRVJ2MkZVUG9ZT05vNXl3R1NVSFBYNVRacFhUaEhPUmJaWU96bHVFVS1DQThSWkZVWWttMFBkaWZRcVBrT0xyVHpJTVhWYXZDLTZnWUNRczJtN0VnZmk1WUUyZDRadzBtNXIzYzdoRFJZNmo1WWN6WXk0?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "A case for retiring canned cranberry sauce from the holiday table",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15RUdVaUxULXZqZFV1QVdRQVlqMWVsTDZRbkVCMjdtdEZaU0Q3aUF2SjM4VFFOdGdON1JwUklaTTZybnZJUXpzclNoeEkxWUx1THMzVkgyUkE?oc=5"
@@ -14222,12 +14234,6 @@
           "date": "2026-11-10",
           "title": "I Asked 7 Chefs if Fresh or Frozen Cranberries Are Best for Cranberry Sauce",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeHFwdF82aVROajd3a2Q1VnBiWHZXR2JmbjRfbHQxZEZQS3hGWm0zMXI5eUZNM3QzQ1NuamR0NF9rSEVxQlhzQmJ4U3hLSV9PdVR2d21HVWZtLVBJcEpHTGY3ZmlzdFpJaDNoQ2hXb0JpbWZ4dWNNbmpiQ0p2RmhWRmpDTWRQNElJ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-09",
-          "title": "Video: Sweet Potato and Cranberry Layer Cake",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVG1XSjdSS0FmQWdWYXNEV0I1UHU5czBuY1A5Mm9OQTIxLVY0eFNfWUF2alR2QUtxaFlZZlU4bUUzZ3NWazZLcU1fVmJ5MU5lTDRmOHd2bkE0SGtZdkRIem1HZFhTZW1vdWo5eDFjazJoeXpWb2dxaFlid3o4QVk5X19IQmwycXNUSHMyd1hpY1F3Ul9XVENqSlM5aw?oc=5"
         }
       ],
       "watch_points": [
@@ -14264,7 +14270,7 @@
         "openfoodfacts_brands": 61,
         "openfoodfacts_countries": 14,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 76,
+        "social_mentions_30d": 123,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -14726,12 +14732,12 @@
         "search_volatility_26w": 0.168,
         "search_spike_ratio": 1.15,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 5.5,
+        "wikipedia_growth_12m_relative_pts": 5.6,
         "openfoodfacts_products_count": 157,
         "openfoodfacts_brands": 124,
         "openfoodfacts_countries": 24,
-        "press_mentions_30d": 4,
-        "social_mentions_30d": 64,
+        "press_mentions_30d": 5,
+        "social_mentions_30d": 93,
         "youtube_views_30d": 1274,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -15178,6 +15184,12 @@
         {
           "source": "google_news",
           "date": "2026-11-06",
+          "title": "The Big Dill Pickle Festival in Arlington tomorrow",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JeUVLMklsRWlZS2xmS1NnWEhBMF9VY1BSRGhsem5LOXA3cjNqNWNrZ3ZfdHR6TzdOQVQzemVKRG8xTEtMcmZoUWVQMkVXZEFWQ20xb3piRDVzb3dJSmNPZNIBZkFVX3lxTE5qX1VMY1k1TFpNRWlLbGt2dnFIT2tmOE4tZXI1Tzd4Wk83TGZrckVoV09OQnhsSkVwbWpEVGstSlVkZVBzX2NHTkc2bVBnaFZPM3pCQXBiT1RTeUpDODFPaGM2WWxzUQ?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-06",
           "title": "Pickly Pete’s Gives Hospitality a Much Better Dill Than No.10, with Pickle Liqueur Give-away",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUUZCakl3NGhROTJqYTdVYWh6TGZIelVGN1k0dnNrNmw5RTk4bDh3LUlWdGU3Zml1NnFqU2cteDhrSHVDZk04b0VHc21fRFFnTjM5Mzd0bUpiT0I2SU53Y1JtTWU4VGtaUnh0S1lPZTdKaEZ0X2EzNlhmVi1LaEdIUWo2TGxabTB6ZlhkbjhnSnhZaUhfQkM2aHhsVFFLamJMQmJVNzZzZ0VCTWVnQ1hpdi0yTU1BZDJvZzV5VGlwNA?oc=5"
         },
@@ -15186,12 +15198,6 @@
           "date": "2026-11-05",
           "title": "Who's trying Bush Apple Pie or Dill Pickle Baked Beans?",
           "url": null
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-04",
-          "title": "Walmart’s New Dill Pickle Bacon Has Shoppers Saying ‘I’ll Take 5 Packs’",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55Mmdlb1YwT1JhSEtZRTR0c0xTWHZDRFdJOEVNaU1BSWhMZkJRclNqS0ZBYWJHaDhjMm5zQlNWcEEtU2FySjcxZnlZMU80ZE5rSkUtOE1UR0k?oc=5"
         }
       ],
       "watch_points": [
@@ -15223,12 +15229,12 @@
         "search_volatility_26w": 0.144,
         "search_spike_ratio": 1.25,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 98.9,
+        "wikipedia_growth_12m_relative_pts": 99.6,
         "openfoodfacts_products_count": 15,
         "openfoodfacts_brands": 11,
         "openfoodfacts_countries": 4,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 11,
+        "social_mentions_30d": 13,
         "youtube_views_30d": 3145,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -15708,7 +15714,7 @@
         "openfoodfacts_brands": 17,
         "openfoodfacts_countries": 14,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 11,
+        "social_mentions_30d": 12,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -16163,7 +16169,7 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 3.8,
+        "wikipedia_growth_12m_relative_pts": 3.9,
         "openfoodfacts_products_count": 84,
         "openfoodfacts_brands": 54,
         "openfoodfacts_countries": 15,
@@ -16632,12 +16638,12 @@
         "search_volatility_26w": 0.101,
         "search_spike_ratio": 1.11,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 0.5,
+        "wikipedia_growth_12m_relative_pts": 0.8,
         "openfoodfacts_products_count": 60,
         "openfoodfacts_brands": 40,
         "openfoodfacts_countries": 17,
         "press_mentions_30d": 7,
-        "social_mentions_30d": 74,
+        "social_mentions_30d": 132,
         "youtube_views_30d": 2143,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -17129,12 +17135,12 @@
         "search_volatility_26w": 0.079,
         "search_spike_ratio": 1.06,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -4.1,
+        "wikipedia_growth_12m_relative_pts": -4.2,
         "openfoodfacts_products_count": 734,
         "openfoodfacts_brands": 403,
         "openfoodfacts_countries": 49,
-        "press_mentions_30d": 9,
-        "social_mentions_30d": 126,
+        "press_mentions_30d": 10,
+        "social_mentions_30d": 212,
         "youtube_views_30d": 24976,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -17561,6 +17567,12 @@
       },
       "evidence": [
         {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "I Made Lucille Ball's Easy Ginger Beef Ricardo Recipe, and It's My New Go-To 20-Minute Dinner",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX0JReGxVN3dwVjdranhzVGN6X2djVzAwOTJPdW9qSW10cml0Umt5cXlHVmhYX3ZPT3VCWmUtNVBGdjVpZjVsTV9pTWpYRDFwSGNib2ZwNTFkdkloM3lybnBwWDdtOHdlS2ZZTHBpczdPT1Nxa3Y0U04tMEZncUlnQ21oMk51ZkVERGQtd2kzTQ?oc=5"
+        },
+        {
           "source": "youtube",
           "date": "2026-11-10",
           "title": "How to Cook the Best Sinigang na Baka | Tender Beef Shanks Recipe",
@@ -17581,7 +17593,7 @@
         {
           "source": "google_news",
           "date": "2026-11-10",
-          "title": "Bon Appétit Pick: HelloFresh Ginger Chicken & Rice Bowls",
+          "title": "HelloFresh Ginger Chicken & Rice Bowls",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9yT2tJUGZJcldMWXdUNFRCbWVhV2M1aU51SkdqcVVwTlEzOXFfUURWUko4MklEeUV5bHoteGJ3UXRxY2Z1a3YxTm9kRW9xVHJlak0zc3BpaGVQNXFwX2hoYXlLRFBTODFRUGpwNVRDTmcwclpmS2ZF?oc=5"
         },
         {
@@ -17589,12 +17601,6 @@
           "date": "2026-11-10",
           "title": "Moriba – Liqueur de Gingembre #boisson #france #afrique #senegal #juice #uk #noel #liqueur",
           "url": null
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-09",
-          "title": "New for spice lovers – Chilli Ginger Beer by The Root Co.",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU1hRSUJYUXk1Vk1iNE5jclNZN0FzMEhPdndnUW85NVVKWUt6dDE2Rm9Rc2xZY2ViVUpFa0NGU0FGeDNuZDh6OUlwbXM5UVpoNWx6OFUyakIyR3R2bHAtR2w2VkhaTzc1UFRfZ3BIbThHVk5pNm1TSXM2TXJBVURrVDZKVmxuM0t2?oc=5"
         }
       ],
       "watch_points": [
@@ -17631,7 +17637,7 @@
         "openfoodfacts_brands": 14,
         "openfoodfacts_countries": 13,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 36,
+        "social_mentions_30d": 45,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -18099,7 +18105,7 @@
         "openfoodfacts_brands": 62,
         "openfoodfacts_countries": 26,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 36,
+        "social_mentions_30d": 46,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -18567,12 +18573,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 28.9,
+        "wikipedia_growth_12m_relative_pts": 28.2,
         "openfoodfacts_products_count": 1881,
         "openfoodfacts_brands": 801,
         "openfoodfacts_countries": 73,
-        "press_mentions_30d": 17,
-        "social_mentions_30d": 123,
+        "press_mentions_30d": 19,
+        "social_mentions_30d": 173,
         "youtube_views_30d": 8271,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -19005,6 +19011,12 @@
           "url": "https://www.snackandbakery.com/articles/116642-paris-baguette-shares-thanksgiving-winter-holiday-lineup"
         },
         {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Eunwoo correctly identifies apple flavor during blind taste test with father",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KempxdXcxMkdERWxvWFRheGk0czMxbWdzWDNsMlRUdXQ1VWtIUUduSGN3NlZXb2NYUnMzcWRTYUdBRGZqSDl0cUNFRVU1V2piMVJxX1BHWnVPdGVqZ0plcnZVX1dtVUVVNUU1Ni1wNi1tdw?oc=5"
+        },
+        {
           "source": "rss",
           "date": "2026-11-11",
           "title": "Proda Golden Apple",
@@ -19019,20 +19031,14 @@
         {
           "source": "google_news",
           "date": "2026-11-10",
+          "title": "Apple vs. Kiwi: Which Fruit Will Help You more healther ..!",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1iekRPblc1OGJnQ0tlR1NVRktXMHgxVHhlak9JTW5QRWdqbFFYdTgzb0pRRHF4c2hZZS1ra1dVZE5jSG84UHdWRGE5dEFXSjdVazVMVTZqOFlER2lC?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-10",
           "title": "An Apple a Day? Referee T.J. Luxmore Offers Jacob Fowler a Snack",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVM4QlU2UmpmU2JTM3o5SnpUS0NZdndnZWNDbHZ5TXA4MzZCdjlRSzNzYURpa19CZGt4ZFNod3VZQ21EVDJrLUVaekFoZ3d0OUtlVWwxamotT1AxRGU1NjduUk9tVzBIamI3LVZVTzg3TUpTUk5kRUx2bWpwTkJXQjhUR0FUWWpSSFRCd2JZSHZ1VHZTdHNSMS1GdkFZV2ZrVjRRbjdNY0s?oc=5"
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-09",
-          "title": "Pumpkin Protein Nut Butter Spread 🎃 5-Minute Healthy Swap",
-          "url": null
-        },
-        {
-          "source": "youtube",
-          "date": "2026-11-09",
-          "title": "Deadcarpet Energy Drink Reviews - Sour Apple Echelon Energy Drink",
-          "url": null
         }
       ],
       "watch_points": [
@@ -19065,12 +19071,12 @@
         "search_volatility_26w": 0.186,
         "search_spike_ratio": 1.31,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 6.8,
+        "wikipedia_growth_12m_relative_pts": 6.7,
         "openfoodfacts_products_count": 81,
         "openfoodfacts_brands": 54,
         "openfoodfacts_countries": 18,
         "press_mentions_30d": 3,
-        "social_mentions_30d": 18,
+        "social_mentions_30d": 28,
         "youtube_views_30d": 3145,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -19555,7 +19561,7 @@
         "openfoodfacts_brands": 9,
         "openfoodfacts_countries": 6,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 7,
+        "social_mentions_30d": 11,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -19991,7 +19997,6 @@
       "watch_points": [
         "Volume de recherche Google Trends trop faible pour mesurer une tendance fiable.",
         "Peu de produits en rayon dans notre échantillon Open Food Facts (9) : marché encore étroit (ou arôme de niche).",
-        "Peu de mentions récentes dans la presse et les réseaux (8 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -20012,7 +20017,7 @@
         "v1_rule_verdict": null,
         "v2_perennity_score": null,
         "mirofish_simulation_score": null,
-        "confidence_level": "moyenne"
+        "confidence_level": "haute"
       },
       "metrics": {
         "search_growth_13w_pct": -1.0,
@@ -20020,14 +20025,14 @@
         "search_volatility_26w": 0.105,
         "search_spike_ratio": 1.19,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -0.3,
+        "wikipedia_growth_12m_relative_pts": -0.2,
         "openfoodfacts_products_count": 426,
         "openfoodfacts_brands": 226,
         "openfoodfacts_countries": 57,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 43,
+        "social_mentions_30d": 59,
         "youtube_views_30d": 632,
-        "sponsored_share_30d": 0.022,
+        "sponsored_share_30d": 0.016,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -20509,10 +20514,10 @@
         "openfoodfacts_products_count": 100,
         "openfoodfacts_brands": 58,
         "openfoodfacts_countries": 21,
-        "press_mentions_30d": 0,
-        "social_mentions_30d": 51,
+        "press_mentions_30d": 1,
+        "social_mentions_30d": 69,
         "youtube_views_30d": 3825,
-        "sponsored_share_30d": 0.02,
+        "sponsored_share_30d": 0.014,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -20937,6 +20942,12 @@
       },
       "evidence": [
         {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Hibiscus Tea Beats Coffee for Blood Pressure During Sitting, Small Trial Finds",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNR2VUaEZaUWVDcHRFOUowdDdKSnZOTFlERDR2V3pmTGdpOTh1cERWSUtQUlRUSDN5ejZnRmNSUUdVSWNzd0p2MkRkOUtUOEFNOUx5RUgzWWJXMzVYd2NWZFFnbUlHUmNYZHREVlJkRkl6blZNdmY0aWVaNVZWdG1UTzFubllHQ0F2dGJBVy1ER0ZiaWtZdjhsOEVKQURIcm5MU1hVZ0RsMDJUdDk4Smc?oc=5"
+        },
+        {
           "source": "youtube",
           "date": "2026-11-08",
           "title": "Chat made syrup with Rice and Hibiscus",
@@ -20995,7 +21006,7 @@
         "openfoodfacts_brands": 2,
         "openfoodfacts_countries": 2,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 5,
+        "social_mentions_30d": 7,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -21431,7 +21442,7 @@
       "watch_points": [
         "Volume de recherche Google Trends trop faible pour mesurer une tendance fiable.",
         "Peu de produits en rayon dans notre échantillon Open Food Facts (2) : marché encore étroit (ou arôme de niche).",
-        "Peu de mentions récentes dans la presse et les réseaux (6 sur 30 jours) : confiance limitée.",
+        "Peu de mentions récentes dans la presse et les réseaux (8 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -21464,10 +21475,10 @@
         "openfoodfacts_products_count": 898,
         "openfoodfacts_brands": 523,
         "openfoodfacts_countries": 68,
-        "press_mentions_30d": 15,
-        "social_mentions_30d": 216,
+        "press_mentions_30d": 18,
+        "social_mentions_30d": 333,
         "youtube_views_30d": 9977,
-        "sponsored_share_30d": 0.009,
+        "sponsored_share_30d": 0.006,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -21893,6 +21904,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "University Celebrates Honey Harvest With Sweet Treats",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPemJPT3lpZ25YLVZMYms1VlN2ZEhSb1NhaFB6SVpJQ09Pa0pIUTF0R0F5M01fYVZWQ1dnNXFNNGxZQTB2Q2JQbkJhdGdwcXB1WVZ4cXRKRlRITmFObWs2Wld2OVJLMXhreVNPTkV1UGxwVUI0ZzB1N2o4Q280clJIZnJNVGpEUmlqT096Vzgwdw?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Australian supermarket honey taste test: ‘The cheapest honey is still delicious’",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlZDcDFjZGhFU0ZfNHRxckE3a1FNaW1yblplbjd0QW5kWk5lWXlrRU1iODdoZnIzeUp5Q1BOTi01SjZyYV9yRngwNHRBR2tlSkE4NVBWN18wZ1FXOWhGMkVYZVViVHhhY2ljYWZmVkpjTFZyY1NEQWQ0bmVKZlZTaDQ1d3JaQlhMdTAxeEl2bzZvS1B4Z2p6T1lueG5qTFNfZ1hiVFFST0lXZw?oc=5"
@@ -21920,12 +21937,6 @@
           "date": "2026-11-10",
           "title": "Sweeten the Table: Honey Recipes for the Holidays",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPU21EYk5QRDRyc3o1eXNpLXJhVldLVmJlVmpUY1hLYnY1RVUweTNpdVhocTZsdlBxLW10UTBnZmpjeHNVZ2tjdTIwV0JYMlluVTBROFBURklZTWtKZFktYzlSMV9yaldKR3k2dG1wNjB1Q3FjLUc4VlpjZmJyelRDbF9UeDNQUExMT2fSAYoBQVVfeXFMT1NtRGJOUEQ0cnN6NXlzaS1yYVZXS1ZiZVZqVGNYS2J2NUVVMHkzaXVYaHE2bHZQcS1tdFEwZ2ZqY3hzVWdrY3UyMFdCWDJZblUwUThQVEZJWU1rSmRZLWM5UjFfcmpXSkd5NnRtcDYwdUNxYy1HOFZaY2ZicnpUQ2xfVHgzUFBMTE9n?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Burnt honey and lemon myrtle torrone recipe",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaU5CUFhjQUU0cDFtZTNwa3ZBLUM5NGcwZ1NWeFhJQWgzRzdPTkpjU0ptSm1XbXhQX09fMWk5OE5IMjNBalhzVldlV2k1dUwxd0F5b0wyMzdXSjdXclhHLV8xTWJ4QkVSVXprQzJiNU13TUFDbGtmYmpGTkhpdzdNSmkzQ2NPQklfV2VSLWRkSFZhZw?oc=5"
         }
       ],
       "watch_points": [
@@ -21961,8 +21972,8 @@
         "openfoodfacts_products_count": 32,
         "openfoodfacts_brands": 30,
         "openfoodfacts_countries": 7,
-        "press_mentions_30d": 3,
-        "social_mentions_30d": 24,
+        "press_mentions_30d": 5,
+        "social_mentions_30d": 35,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -22010,13 +22021,25 @@
           "source": "google_news",
           "date": "2026-11-09",
           "title": "Zalat Pizza Launches Hot Honey Italian",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9KRW9aSTJqVW8wYUZVSnZBLUVSd3ZVZUlmc1g5ZXNaZGNMUGowNHdIdDg4a0Y0YXdiTlBYOGhrWGI5QXhTUGxvQXFJdW5qdk85VWhla2dHM1hmb1hITDhVcXpJQ0VEeEdELTFCSExtWThqRkV5MXpmX1IydXQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeFlFVHdLc0NSN3hWUU9uRUxqWkVGS2h0bzhnNkJ0eDNvUGJKbTQ3V3dHd2RtY3R5OWE1My1Od0F6ek5xM1ZVWmtMWEtOVVg1U01VMlQ4Y19wWlpzeU5jRDl5TUk0SHhFS21YWnJBSVZnaDd3UkU0SUNULU5fdmtkZW83M3RxV0YtQ25WVzE3QQ?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-09",
+          "title": "Pumpkin Rigatoni With Goat’s Cheese & Hot Honey",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeERiWm5IODdJeUxObnljczRGX0lETXhYZS1iYkFRSFpDNDl3RkI0WURGMTE2a3Q2dFBoOGlrenNTTHVpQzNsUGFKQ25QaTNQS1ZMdkIzOGVvOEhFUXl1dnkydUZwemNRQ0tFVEZIakhranRwZ1A0NHY1OG0zTTdFdTIyRmRKRWk0Y1FlTEJOSQ?oc=5"
         },
         {
           "source": "google_news",
           "date": "2026-11-08",
           "title": "Tailgate Recipe: Grilled Hot Honey & Prosciutto Flatbread",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLWpvMnQtYlB2ajNWMUdjbFREendOdHBNVENrOGQ1LUJGLWFXc1VNV0JDVjdNRkxZOXlGYm5Id3JzMjNZc3ZaOG5GQW50Zmw0c1dEV2c2am1YaWpHTjdQWHRSWnBnb0JCYXNudkNlZXpSejVOSHNJeUdrUFRaUmtaWjRCYkxlN0ZRSXVhZVZ3eXVHd9IBpgFBVV95cUxOcEREQ2E0blkxU1Bvcm96R2FhNWxmbGIxakpjVTZ2bVdBMm40YnNUMHJ6cWZvSlY2VGlTdl8yaGJjUGk4cnktNGo1azdFT3JvdDdGbjA3WU1DNlMzX3dCR19ja2RBNDFVSnNPRDc0d3o1cUlselNzM214M3U5ZE9fQXNqYXVINXhTb0lGOTJKM0pMNk5zcEt0NGFWaTFBU0ZvTjE3ZHJB?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-05",
+          "title": "Mermaid teams with Today’s Tipple for Hot Honey Martini",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSVFjWEFKOTl0YUZjMU9UcThzaHJQck9UbU4zVDk0ekVJUDZnbjRPUnRtU2twbzRFM3ZEZGt2TXdGRUl1V2ZNVWRPYW5fRS1wdWItdlptQld1UWwyTmVKcHN3NUl0bkl6SlpSbmdPY1gyRDFrUmc3RVVVZUJJRzhWLTlWV2lvQQ?oc=5"
         }
       ],
       "watch_points": [
@@ -22053,10 +22076,10 @@
         "openfoodfacts_products_count": 225,
         "openfoodfacts_brands": 175,
         "openfoodfacts_countries": 29,
-        "press_mentions_30d": 2,
-        "social_mentions_30d": 92,
+        "press_mentions_30d": 3,
+        "social_mentions_30d": 136,
         "youtube_views_30d": 10453,
-        "sponsored_share_30d": 0.011,
+        "sponsored_share_30d": 0.007,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -22505,15 +22528,15 @@
           "url": null
         },
         {
-          "source": "youtube",
+          "source": "google_news",
           "date": "2026-11-07",
-          "title": "French Cancan Popcorn Sweet N Heat at Costco Canada",
-          "url": null
+          "title": "Shoppers Say Costco’s $9 Cranberry Jalapeño Dip Is the Perfect Combo of Smooth, Sweet and Spicy",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcjBDTndOa2xJaFRrbzRIVU5lbmg1NVp4QmdLcWFOdUZMVVVBem1QdU5XQURXXzBTRDlOc3ZrdzB2eENwV0F2YXVpd2xkWTVfVEdaV0RqVHRSVjdTcnpBNWpTZFlfZXE5TFJ3bEhvalNlR01SaFZUU2ZsQzQtU09Ba1RkLUE?oc=5"
         },
         {
           "source": "youtube",
           "date": "2026-11-07",
-          "title": "🌶️ From $1 Jalapeños to Homemade Seasoning #recipe",
+          "title": "French Cancan Popcorn Sweet N Heat at Costco Canada",
           "url": null
         }
       ],
@@ -22552,7 +22575,7 @@
         "openfoodfacts_brands": 47,
         "openfoodfacts_countries": 14,
         "press_mentions_30d": 3,
-        "social_mentions_30d": 99,
+        "social_mentions_30d": 181,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -23030,8 +23053,8 @@
         "openfoodfacts_products_count": 69,
         "openfoodfacts_brands": 48,
         "openfoodfacts_countries": 24,
-        "press_mentions_30d": 13,
-        "social_mentions_30d": 79,
+        "press_mentions_30d": 14,
+        "social_mentions_30d": 91,
         "youtube_views_30d": 2904,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -23459,6 +23482,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Why Koreans eat boiled pork with fresh kimchi — and what it does to the body",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQU3Y2eVBLWC1fU0VMaXBXMGtrUjBHMjZIR2ZUN0Z4VzJxZWx6RjNFYVFzUnpXQVdSOTY3azBINFh2N1NUZzVLU1hGZC0xSmo1T3JQNkdySVNKRTVJVFdkTmRzRUFlMFY0aGJoX0dJRHdKcXcxNzNsd1NSTktrbzNjU0pUX3N5Qk9qa05XUGVwLXJHZ25ZQllFVW95ZFFFSV9ZY0x4QWlNbVpCV0U3SlNoN292LWE2U0I5NGVXemo3TU5SLVRWRElKcG55SWJ2dW5DWGdGZXVaMHXSAdgBQVVfeXFMUFN2NnlQS1gtX1NFTGlwVzBra1IwRzI2SEdmVDdGeFcycWVsekYzRWFRc1J6V0FXUjk2N2swSDRYdjdTVGc1S1NYRmQtMUpqNU9yUDZHcklTSkU1SVRXZE5kc0VBZTBWNGhiaF9HSUR3SnF3MTczbHdTUk5La28zY1NKVF9zeUJPamtOV1BlcC1yR2duWUJZRVVveWRRRUlfWWNMeEFpTW1aQldFN0pTaDdvdi1hNlNCOTRlV3pqN01OUi1UVkRJSnBueUlidnVuQ1hnRmV1WjB1?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Chew This!: Kimchi Fried Rice with Fried Egg",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQUR5UUdtV0dVemlDek1EcURaUzR4WnZfRXhCNXNhWGhVZDNBU1FwMWZMdVgxYXJ6VGI0MldHT2trVi1rQ1JIMXhvbnRUa0V2TXNnUjNNYzlva1pzZEc2c3VnWEV1bWVSb0RMLURTQTFpNnplV3FoZDFxWm0xczVIM2kyZWNuVDZxZHhlRXFPZVJXMm1NOFd4d2FsZUNVdjludmNLNkJFRHliaF9IdS16bk12dFR1emVsV0NYTG5RbmJUMmFoak1UZjNjV3h2TFpsZ0h1RVJ0NEM5R0E?oc=5"
@@ -23468,12 +23497,6 @@
           "date": "2026-11-10",
           "title": "Daesang launches Jongga ‘Bossam Geotjeori’ kimchi for meat pairings",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBjRXRCTzZvblpaQThCYkhqSHhYNDNZQkxkRTBTNHh6ejRpUk1TRTVTZWM4MEhIRGxlRzVyOWRQaTY5UXQ5M3M3aVN2YWkxVjdZRm5fYlQyZnA0cUlTTGxsZ3djeXZGYm01SzlYbHhLaHc3aVVOTU5xZjB3ZS1fNm_SAZMBQVVfeXFMTWdSaFpEVnNOczNlc0VnVENYLVllRGpWT0V5N1RnQVNuWHhtajEweEJrX2R2YW9yMUstaDg3UjltbWlVR3FFcmVVdGE0ZS15ci1Ra3lXTW5zNnFabVdqcFdBVElWMDBDZjFQTVQ3YVcyemRqVEt3dUFtcl80c2h4ZFdTQlVQSC12dHNXUmx2U3hwaVN3?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Kimchi vs. Sauerkraut: Which Is Better for Your Gut Health?",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5bEowSVlJT0QyQ3M2SzRBbzZldXJUMmZWQUJGUWhhdHZrSlB3OVUyNXcyRVFLczFia3Atd0o3S3VVRXJ2bzZFQmc0dUNrRjFVcUlQSFh0eVVqTk5IaTBkT2pn?oc=5"
         },
         {
           "source": "google_news",
@@ -23489,9 +23512,9 @@
         },
         {
           "source": "google_news",
-          "date": "2026-11-09",
-          "title": "[Today's New Products] \"Helping Kids Experience Kimjang\"... Pulmuone Foodmerce Launches \"Traditional Kimchi-Making Kit\"",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kbWRKaFZpRjdaYUhRcUR4cnM4YnZxVTliSGlib1kxNEo4WVM3TGZOTm1kb1MzMDVCQU1pRWtsX2NIT3N2OUhfZHVHVFlmMERERFBIdEpXTzJzZ21DWDViT1IzbDM?oc=5"
+          "date": "2026-11-10",
+          "title": "Kimchi vs. Sauerkraut: Which Is Better for Your Gut Health?",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5bEowSVlJT0QyQ3M2SzRBbzZldXJUMmZWQUJGUWhhdHZrSlB3OVUyNXcyRVFLczFia3Atd0o3S3VVRXJ2bzZFQmc0dUNrRjFVcUlQSFh0eVVqTk5IaTBkT2pn?oc=5"
         }
       ],
       "watch_points": [
@@ -23528,10 +23551,10 @@
         "openfoodfacts_products_count": 127,
         "openfoodfacts_brands": 77,
         "openfoodfacts_countries": 40,
-        "press_mentions_30d": 6,
-        "social_mentions_30d": 86,
+        "press_mentions_30d": 9,
+        "social_mentions_30d": 136,
         "youtube_views_30d": 0,
-        "sponsored_share_30d": 0.011,
+        "sponsored_share_30d": 0.007,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -23957,6 +23980,18 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Leon Zhu's New Song \"Bushwick\" Names Mr. Kiwi, Market Hotel and Morgan Avenue L",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNQks5VkgtZWROZF9oeUM2REt4WG41TmZJeFRvckJpRjhKcnd4VVpqSV9PWC02dTlqSG1MaWYxNlpOZTNXODZBbU9acnJmRGxMRjhseHRNTnh1UU5iX2lZNFZMbV9pRC1FSmQ0MmFMMllOVE5UWTBrd2xRZVFOalROTmFoNzVwM01aNXJqY25ZaEF4OUZ6VlRnMHljcVJWeGdmYkRqTko3NEtFNG9IeTBfR0dHMXlWVGoyLWl1Um91OThMcnE2ODJMSnAzc1QxWDhG?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Snags and brews: local Kiwi suppliers behind Four Square's summer line-up",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQS0NLS2hTTWRlN3ZKcVlqVUNGNjVIU0FuMS1Lek9MNFN2aWdkdGQ0blBlbzlUVTF2WGpEaFB3b1lhRzdyY0NNZlNZTTgyOXFMcjhJcDNCNEJVcDB1aWpNTXBUMklzbjc2RVpMZTZPT1VtRGVWdC16TjVrdGVnOTJrTkRuUXQ2YnRCR200cnY3NnB0a2hkVDZZR2plVWNrNDdHa2tYd19FTlF6Z0ZBSkpsbjA1TjQwOFQ3N1Jr?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-10",
           "title": "Strawberry Kiwi Juice LTO",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZMmpNd1huNHZFLTlZSl9FWndWYm9CWDAwSGVTcE96YVRyaWllMHNBWVBPZVNIVnVOS3BLU0xGQ0xFMlBWZ1p4ODRwZ1RJYzk4b2ltQk56WjZDajVmbW8xUEhTbzY?oc=5"
@@ -23975,21 +24010,9 @@
         },
         {
           "source": "google_news",
-          "date": "2026-11-06",
-          "title": "Bloody clever: Kiwi surgeon’s invention to reconnect arteries is on the cusp of approval",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPWHM2OWUzUkpSTWp0eXJNYWhHYVpHeXVxWnFGU3AzSmVBVG5Fa19FcVJGalk3am5oRllCWnFXUTJXbnJRNVU5NFNZSURib0c3SWp4c1VTbGFNV3BucG5VZzRGZDVxVVdyVWxPVHJldXBEMHdMaXFYZXdrOVBJQ240QmFEWWhFVnFIZ0l0YzNYMTQxdDAzLXVWbWlQdzBGNDl6cG9wZHp0UVRWYWdDSWlXMVFYNGpJZElTS2RHWDFWbTdDaVVNYTVMWm5fNmNOLS1vcmVOTktreFlpVXhhaU9fVm1VeXVFS2Z1cUNtNDdvYXk2OUVWS1lCNDBDRUNTUQ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-06",
-          "title": "Life on Wellington’s trapping lines: ‘A lot of people thought it was a crazy idea to bring kiwi back here’",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcnlVZDFMQTI0NmVvSGN0dV9kQWl6ak4ybjFhdWx2VnBjeXpaWjVYSFdPS1hoUnpzaklGNy1aUUNZYXQyOXo2RnBXSVhfME02d3VzTjJnZ25xUU9FbnkwUG8xemNKbkw0QzN5bmtWdFN6bXRLTFNkeWhXc3hFSEJyVi03X0hxcmp3cU5xaFAzdmQxLWp5WldWRDBsMm9BNW1JTnpNUEZaYnQ5N1lBbDc3RW5NNXFGdHdGVEctU1dVN1p4T2txVmg2VnJ5eURZQQ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-06",
-          "title": "He lost the love of his life at 28. Then this Kiwi built a new life in Barcelona",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNUw2bmYyd000V21EMzhsVGVrRDJnekhLUWk3ZExXM29abG1ZZUN3MGxycFhwcHBad1RnbnM4cEY0OXNLTDlOQWgxdzJLQzNoTWRWR1BlbFVQem5scmNZM24yUVdjR1ZGbTBoSlRObVNMYVNfVHNvY3pKOTIzRVpOMEFEd0trbzZIbkdZemVVT1poODN5M1lHME11Ri1RRTUzdmNucg?oc=5"
+          "date": "2026-11-10",
+          "title": "Apple vs. Kiwi: Which Fruit Will Help You more healther ..!",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1iekRPblc1OGJnQ0tlR1NVRktXMHgxVHhlak9JTW5QRWdqbFFYdTgzb0pRRHF4c2hZZS1ra1dVZE5jSG84UHdWRGE5dEFXSjdVazVMVTZqOFlER2lC?oc=5"
         }
       ],
       "watch_points": [
@@ -24021,12 +24044,12 @@
         "search_volatility_26w": 0.238,
         "search_spike_ratio": 1.01,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -3.9,
+        "wikipedia_growth_12m_relative_pts": -4.0,
         "openfoodfacts_products_count": 13,
         "openfoodfacts_brands": 10,
         "openfoodfacts_countries": 8,
         "press_mentions_30d": 3,
-        "social_mentions_30d": 64,
+        "social_mentions_30d": 99,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -24506,7 +24529,7 @@
         "openfoodfacts_brands": 928,
         "openfoodfacts_countries": 72,
         "press_mentions_30d": 13,
-        "social_mentions_30d": 131,
+        "social_mentions_30d": 238,
         "youtube_views_30d": 22837,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -25002,8 +25025,8 @@
         "openfoodfacts_products_count": 48,
         "openfoodfacts_brands": 32,
         "openfoodfacts_countries": 16,
-        "press_mentions_30d": 1,
-        "social_mentions_30d": 25,
+        "press_mentions_30d": 2,
+        "social_mentions_30d": 27,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -25041,6 +25064,12 @@
         ]
       },
       "evidence": [
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Encapsulated Lemongrass Essential Oil Optimizes Dark Chocolate Texture And Acceptability",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWjhFMU9DMjM0RnkzcGlMOFc3TTZtbDEtX3NYQUtLQW9TNnZqMEduRXdDNmZZUXRIQVNFODlBdlFJaFVoektJX05hMXNRbjhla2JTdTNBR3J6bVVMRjhCVFB0V2laaWM2bnY1a3puT3ROSldJZ2NwdWVMcmhIMlhXSU5CRm1LU05yRkZQdzRqa292cEZVbmhZSHNuNGszWGVhUjZNYjRMUWs3MjZLTTFSTkRaQQ?oc=5"
+        },
         {
           "source": "google_news",
           "date": "2026-11-10",
@@ -25083,9 +25112,9 @@
         "openfoodfacts_brands": 312,
         "openfoodfacts_countries": 43,
         "press_mentions_30d": 5,
-        "social_mentions_30d": 87,
+        "social_mentions_30d": 151,
         "youtube_views_30d": 23572,
-        "sponsored_share_30d": 0.011,
+        "sponsored_share_30d": 0.006,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -25575,12 +25604,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 7.2,
+        "wikipedia_growth_12m_relative_pts": 7.1,
         "openfoodfacts_products_count": 43,
         "openfoodfacts_brands": 32,
         "openfoodfacts_countries": 17,
-        "press_mentions_30d": 3,
-        "social_mentions_30d": 19,
+        "press_mentions_30d": 4,
+        "social_mentions_30d": 24,
         "youtube_views_30d": 3145,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -26008,6 +26037,12 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-11",
+          "title": "La personne qui a fait pousser le litchi à Xuan Lanh.",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1oakhJeEZoaWk4ZEF5SHh2SXprXzRfMldleVRtMkJBX093TVZ5ck9ZZ0dnVmJscVZPNEw3SjhWZzdRV0hnWHlWMG9aVmJ1akhXN0RhR3NwOUNKV1Q5bmJrUzNENVNpNHVYTl9IVV9pMA?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-09",
           "title": "Oishi Green Tea flips the script on flavours with cool new ‘Lychee Twist’ lineup in Thailand",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWVZwd3djU2RJbklKcjEyRXBOYzhhdy1Mc0lBS2xaaEpqcFFMV1B1dEQtVjRrVTA0RW93RkgwN0owd0U4NWlaTzJidGxnWXctdksyV3ZRcjN4M3JUdFU5Z3hSUUthTzUzQ2RLRHMxYjVZdVdGLWJyUzdyTEFjQjFEbFdFVnFGUk9DaVdYeDRyNVhyUnUzaDlSNkpUMVhJeEFTWm1uT3RaaVlkTTBNd3FGaGdraG9rbnI3T1E?oc=5"
@@ -26061,14 +26096,14 @@
         "search_volatility_26w": 0.138,
         "search_spike_ratio": 0.97,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -3.7,
+        "wikipedia_growth_12m_relative_pts": -3.8,
         "openfoodfacts_products_count": 777,
         "openfoodfacts_brands": 476,
         "openfoodfacts_countries": 73,
         "press_mentions_30d": 14,
-        "social_mentions_30d": 100,
+        "social_mentions_30d": 183,
         "youtube_views_30d": 9551,
-        "sponsored_share_30d": 0.009,
+        "sponsored_share_30d": 0.005,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -26563,9 +26598,9 @@
         "openfoodfacts_brands": 148,
         "openfoodfacts_countries": 23,
         "press_mentions_30d": 8,
-        "social_mentions_30d": 108,
+        "social_mentions_30d": 152,
         "youtube_views_30d": 2447,
-        "sponsored_share_30d": 0.009,
+        "sponsored_share_30d": 0.006,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -27060,7 +27095,7 @@
         "openfoodfacts_brands": 35,
         "openfoodfacts_countries": 17,
         "press_mentions_30d": 6,
-        "social_mentions_30d": 75,
+        "social_mentions_30d": 128,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -27552,12 +27587,12 @@
         "search_volatility_26w": 0.126,
         "search_spike_ratio": 1.17,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -22.4,
+        "wikipedia_growth_12m_relative_pts": -22.6,
         "openfoodfacts_products_count": 138,
         "openfoodfacts_brands": 85,
         "openfoodfacts_countries": 37,
-        "press_mentions_30d": 34,
-        "social_mentions_30d": 101,
+        "press_mentions_30d": 35,
+        "social_mentions_30d": 170,
         "youtube_views_30d": 4790,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -28015,9 +28050,9 @@
         },
         {
           "source": "google_news",
-          "date": "2026-11-11",
-          "title": "Où boire un bon matcha latte à Paris ? Nos bonnes adresses",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSkRyb0owMkdQNEszT1hiRG9EZkhfV3hWSDhMWUMwVC1LZ1Ryc2ZoU1lWRWhLNnpxQVpSQ3M1dkZlOWFDQ1NfbmluZVhJZ2syM2VkTm0tNlZxbUZVaHYtSWJHRXRYbmc1U01ObXBLYzhwbW1PUXJCNVdwcExLNXc4d1VCRTdFVFRlRWh1X2NqYWYyX3RUd1lv?oc=5"
+          "date": "2026-11-10",
+          "title": "NATIVA, Organic Navitas Organics Lemon Matcha Cashew Superfood+ BITES – Power Snacks – All Natural Plant Based – Clean Energy & Nutrition – USDA, Non GMO, Gluten Free, Soy Free, Vegan (8oz. Bag 11 Ser",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kLVVEbW5xUi0wZGFDbWs1YUZ3d0dYUTczM01HclpKZ2lNWGdFT2dXS201Z2JZWW5wTlR2X1cyS3RJbktvdE4zMS13MXl5VC1YVDM3RXREV1JfS2FLMWtYdnotN1pSM1FYWV95aFU4QU9tV2tyRXc?oc=5"
         }
       ],
       "watch_points": [
@@ -28049,12 +28084,12 @@
         "search_volatility_26w": 0.179,
         "search_spike_ratio": 1.35,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 1.4,
+        "wikipedia_growth_12m_relative_pts": 1.3,
         "openfoodfacts_products_count": 34,
         "openfoodfacts_brands": 22,
         "openfoodfacts_countries": 11,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 81,
+        "social_mentions_30d": 124,
         "youtube_views_30d": 4212,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -28546,14 +28581,14 @@
         "search_volatility_26w": 0.131,
         "search_spike_ratio": 1.08,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -1.2,
+        "wikipedia_growth_12m_relative_pts": -1.3,
         "openfoodfacts_products_count": 385,
         "openfoodfacts_brands": 227,
         "openfoodfacts_countries": 38,
-        "press_mentions_30d": 15,
-        "social_mentions_30d": 116,
+        "press_mentions_30d": 16,
+        "social_mentions_30d": 186,
         "youtube_views_30d": 7200,
-        "sponsored_share_30d": 0.023,
+        "sponsored_share_30d": 0.03,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -28978,6 +29013,12 @@
       },
       "evidence": [
         {
+          "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Dessert-Inspired Protein Drinks: Spylt Adds a Limited-Edition Mint Chip Flavor…",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5RZFFmb2JvcFE0Ym04LU5GdEItRlN2bDZ5Wll2S0pZdUJsUldRU003aGZQamNoRExyeDBHbjIydlEzOWZBMGdQRFBvNHRjM2UzRjZWQjd1ZExSd0F3LXNTbVBzbzZicjMxYjZSV3VLYWdIQzNk?oc=5"
+        },
+        {
           "source": "rss",
           "date": "2026-11-11",
           "title": "Day Out Snacks gives its Peppermint Bark flavor an encore",
@@ -29006,12 +29047,6 @@
           "date": "2026-11-10",
           "title": "Spylt adds limited Mint Chip Protein Milk on Amazon",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FakNEZ1F5OGFVQ01oSzRRM3pTT2hkMDJSZW1qaWpNbnFDMVFwQlIyYkxxT0hOTmRqWkpvZzFOV3dpeGkzVkZQZDJzc1JkdXNlcWhQN3VDMERJRkVHQkN6cmxUVFlSZlhRbTZ6N21B?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Premier Protein brings back Winter Mint Chocolate shake",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOWkwZXYtTEdOenRiWGk0bTdHNUQxa3F4bjBsV3BWTjdhT1pHTHVlOE92TTVSVlNXVTZvV1RuZmdUMFFSU2tRNkNtSDBFQkNBMFJrTlEzQjFUTHRHMmtIZTctdlNaQlMxVXJQNHhnN2U2ZTJLVVJEVmNIZklxX3VVSUVscXlvWEpl?oc=5"
         }
       ],
       "watch_points": [
@@ -29043,12 +29078,12 @@
         "search_volatility_26w": 0.208,
         "search_spike_ratio": 1.46,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -10.0,
+        "wikipedia_growth_12m_relative_pts": -10.1,
         "openfoodfacts_products_count": 65,
         "openfoodfacts_brands": 49,
         "openfoodfacts_countries": 16,
         "press_mentions_30d": 5,
-        "social_mentions_30d": 91,
+        "social_mentions_30d": 114,
         "youtube_views_30d": 1109,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -29540,12 +29575,12 @@
         "search_volatility_26w": 0.26,
         "search_spike_ratio": 1.17,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -36.1,
+        "wikipedia_growth_12m_relative_pts": -36.2,
         "openfoodfacts_products_count": 23,
         "openfoodfacts_brands": 12,
         "openfoodfacts_countries": 7,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 5,
+        "social_mentions_30d": 7,
         "youtube_views_30d": 250,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -29979,7 +30014,7 @@
         }
       ],
       "watch_points": [
-        "Peu de mentions récentes dans la presse et les réseaux (5 sur 30 jours) : confiance limitée.",
+        "Peu de mentions récentes dans la presse et les réseaux (7 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -30008,12 +30043,12 @@
         "search_volatility_26w": 0.083,
         "search_spike_ratio": 1.13,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 7.5,
+        "wikipedia_growth_12m_relative_pts": 7.4,
         "openfoodfacts_products_count": 96,
         "openfoodfacts_brands": 68,
         "openfoodfacts_countries": 20,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 56,
+        "social_mentions_30d": 73,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -30486,7 +30521,7 @@
         "openfoodfacts_brands": 14,
         "openfoodfacts_countries": 8,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 10,
+        "social_mentions_30d": 12,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -30566,7 +30601,7 @@
         "openfoodfacts_brands": 3,
         "openfoodfacts_countries": 4,
         "press_mentions_30d": 5,
-        "social_mentions_30d": 10,
+        "social_mentions_30d": 13,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -31053,14 +31088,14 @@
         "search_volatility_26w": 0.171,
         "search_spike_ratio": 1.42,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -6.3,
+        "wikipedia_growth_12m_relative_pts": -6.4,
         "openfoodfacts_products_count": 223,
         "openfoodfacts_brands": 142,
         "openfoodfacts_countries": 33,
         "press_mentions_30d": 2,
-        "social_mentions_30d": 24,
+        "social_mentions_30d": 34,
         "youtube_views_30d": 131,
-        "sponsored_share_30d": 0.038,
+        "sponsored_share_30d": 0.028,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -31555,7 +31590,7 @@
         "openfoodfacts_brands": 217,
         "openfoodfacts_countries": 47,
         "press_mentions_30d": 12,
-        "social_mentions_30d": 113,
+        "social_mentions_30d": 193,
         "youtube_views_30d": 7166,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -32047,14 +32082,14 @@
         "search_volatility_26w": 0.102,
         "search_spike_ratio": 1.09,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -0.1,
+        "wikipedia_growth_12m_relative_pts": 0.0,
         "openfoodfacts_products_count": 428,
         "openfoodfacts_brands": 303,
         "openfoodfacts_countries": 60,
         "press_mentions_30d": 11,
-        "social_mentions_30d": 103,
+        "social_mentions_30d": 194,
         "youtube_views_30d": 9941,
-        "sponsored_share_30d": 0.009,
+        "sponsored_share_30d": 0.01,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -32481,14 +32516,14 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
-          "title": "PEANUTY FAV: Peanut butter, crunchy or smooth, is favored snack",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMGNyZHdKc1U1VXU1VWtKWFZnMjlQWlJ2Ml85LXVBMjdsQTIteHE0eFpQcWxzcUY0U1NPQjRJTGdiV1Q5bkd0cVpyTk42VWhVdnAyb0N0XzhneUlCdExURXk3UXJ4QWxPazAzNEdTQXd1Ni1PdGgtMm9NdWF1aVYxWjFaeDFQSThudlNYVmRPbTBHLS1PcWFfMWRlb2I5NXhqajB1SzQ5Q3J5eGtScW5MakVmblJhUkQ4WHFFTWhndTZCaGlTRW5HOTdfbG40RnBJTUNrWDFIRW1IUEgxRWV0akQ3Qk0zQQ?oc=5"
+          "title": "PEANUTY FAV: Peanut butter, cruncyh or smooth, is favored snack",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUXNkNDVpUTBlUEI1SXl1X0dBX3NwZ2tGeEF1bDM2Z3B1NFJXbGdIQm9wMndiamZ3dWlOU2NnM29Ic241U0gtZEUwQVpGZlU5WXQ5cVRBOFVoby1nS1RIekxfeENIMW5fWmtIX3BiX1VQbjJTX091ZkdOb0ZWTzBKUDNBNEhuNGx6WFBuUW05U0lqSGRsUWVOYU01Yktvc2ZEalcwem9uazdaSzV0NEZZYU5IVGJ6c1ZxVUMwRG5UR081SnFkUnVzdGt4OVVZTzRHQ285YVUtN2xtSUl0S3lxS2xDMUlPQQ?oc=5"
         },
         {
           "source": "google_news",
           "date": "2026-11-11",
-          "title": "PEANUTY FAV: Peanut butter, cruncyh or smooth, is favored snack",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUXNkNDVpUTBlUEI1SXl1X0dBX3NwZ2tGeEF1bDM2Z3B1NFJXbGdIQm9wMndiamZ3dWlOU2NnM29Ic241U0gtZEUwQVpGZlU5WXQ5cVRBOFVoby1nS1RIekxfeENIMW5fWmtIX3BiX1VQbjJTX091ZkdOb0ZWTzBKUDNBNEhuNGx6WFBuUW05U0lqSGRsUWVOYU01Yktvc2ZEalcwem9uazdaSzV0NEZZYU5IVGJ6c1ZxVUMwRG5UR081SnFkUnVzdGt4OVVZTzRHQ285YVUtN2xtSUl0S3lxS2xDMUlPQQ?oc=5"
+          "title": "PEANUTY FAV: Peanut butter, crunchy or smooth, is favored snack",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMGNyZHdKc1U1VXU1VWtKWFZnMjlQWlJ2Ml85LXVBMjdsQTIteHE0eFpQcWxzcUY0U1NPQjRJTGdiV1Q5bkd0cVpyTk42VWhVdnAyb0N0XzhneUlCdExURXk3UXJ4QWxPazAzNEdTQXd1Ni1PdGgtMm9NdWF1aVYxWjFaeDFQSThudlNYVmRPbTBHLS1PcWFfMWRlb2I5NXhqajB1SzQ5Q3J5eGtScW5MakVmblJhUkQ4WHFFTWhndTZCaGlTRW5HOTdfbG40RnBJTUNrWDFIRW1IUEgxRWV0akQ3Qk0zQQ?oc=5"
         },
         {
           "source": "google_news",
@@ -32544,12 +32579,12 @@
         "search_volatility_26w": 0.13,
         "search_spike_ratio": 1.32,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 5.0,
+        "wikipedia_growth_12m_relative_pts": 4.9,
         "openfoodfacts_products_count": 196,
         "openfoodfacts_brands": 103,
         "openfoodfacts_countries": 27,
         "press_mentions_30d": 11,
-        "social_mentions_30d": 105,
+        "social_mentions_30d": 166,
         "youtube_views_30d": 465,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -33045,8 +33080,8 @@
         "openfoodfacts_products_count": 63,
         "openfoodfacts_brands": 53,
         "openfoodfacts_countries": 10,
-        "press_mentions_30d": 12,
-        "social_mentions_30d": 104,
+        "press_mentions_30d": 15,
+        "social_mentions_30d": 182,
         "youtube_views_30d": 1274,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -33474,6 +33509,18 @@
       "evidence": [
         {
           "source": "google_news",
+          "date": "2026-11-12",
+          "title": "The Holiday Party Appetizers Our Editors Always Make, Including Fried Pickle Dip, Cheesy Gougères, and More",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XNW8zLTNIazZsMWR3QklSWHV2bENzNkw5bXJsZkVXVHczcEo3TUVuR2trN19QQ1h6SlFqbzlJM0NDZEMtVlVzNUwzclhHUklfZHVPb2VfcFE3NDU5V3ZTTEVxbTdLcE5CcWpHS3dMcHRPTUJhd0JZeA?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Pickle beer to pistachio spritzes: Food flavours shake up drinks",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRWRnZ1BfcE5UQkI4NFVmbnRtNTh3T3F6SHRRNzI1V0Q2NWI2WFB3bUgzVG1pOURQUjhaV3N3aWZRb1ZKRDNOcFpaeHJ2d3NHVHR3SE5WczA1UnZFMTMwX1FtdkxuMkE3MHl5WVlfNTUxVWljOTlkckJSeVF0WTZsU2pKeEVhY2pSbWEwclRoWEF5Xzd4eUl1Y2hleVBveFc0?oc=5"
+        },
+        {
+          "source": "google_news",
           "date": "2026-11-11",
           "title": "Six Ways to Celebrate National Pickle Day",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5jcHgxT2FycGwyLS04Y1NvSXUzMGdoYlZ6ZGdvaUVUckJaZzFXNzViVVdEQl9raWtJZ1hSaHZiUksyNUp2bXdMSUQwcWlJVnJzX0xwVW9ZTFUxVWI5dFlGVHFEeWt0WjE4MmJVU1gwT1MwZ241ZUdYUg?oc=5"
@@ -33495,18 +33542,6 @@
           "date": "2026-11-10",
           "title": "B-Dubs Adds Pickle Sauce Wings and a $6 Pickle Margarita",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSllzTTBScVdkdFNWekFnUUs5cTQyM1lmWXZwS2g2MlNCTl9YbGw2ZmZiTXV1NmEzZHRXYjY4c1h6bmVpdEZYWTNjSUQ5a1h6RmI0dkpSOVNKaWYzVmNSWUpxd2lhQTA3MEo3VGUzOTFOd1E4ek9zN3VJZTNMRzZxdzRKMVhKRlJUMUJ2Vm9B?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-09",
-          "title": "Buffalo Wild Wing’s reveals pickle menu and it even has a pickle margarita",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VpbTA2Z2JWM1M3MG8xN0R6SnF1ZGgxQ3ViaXhOc2EwNU54dnpfaFJPU3pHeUV0TUs3c1g3NXZlTFctRm9IMnZIVDJNeER4TzVHQlVibVY5Y2hha3c4OUo4dWxzVFoxd3FVSHpjNFBNX1RCZHVDajh2UElUQnZjcmppX2VUSU8yd2xZdjNHd010LXg4VUlrc2VHN3F6X0lENzY0OGk2MzZ5V0xhUDdRRQ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-09",
-          "title": "Pip’s Heirloom Snacks and Cleveland Kitchen Launch Pickle Balls Nationwide at Whole Foods Market",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMDNmb2gyTmFac181V2xNZkhvMGlwQ3M4Q3lHdkxfdHR6dWJYNEVmUVJEUE9GY0NXMzZ4T2JTSnpKc2VPS2FqcFVmOF9iYVRzVDRiY0FwMVhiUHNwOGRSREJ3aDgtYlhoMWVGeFI5S25iQ29DTG9aUlpEdFhGTl8xY1JRNXh2RnItVE5fMGJLczN2bWI1cXJlcGQ1OVFPS1RMcGRZSEF5VzZrYlR6RFNoa1FOaHlSVXpOZDU5TGhHSUIyQkFzNHdkam9B?oc=5"
         }
       ],
       "watch_points": [
@@ -33543,7 +33578,7 @@
         "openfoodfacts_brands": 288,
         "openfoodfacts_countries": 43,
         "press_mentions_30d": 21,
-        "social_mentions_30d": 97,
+        "social_mentions_30d": 171,
         "youtube_views_30d": 7839,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -34039,10 +34074,10 @@
         "openfoodfacts_products_count": 225,
         "openfoodfacts_brands": 150,
         "openfoodfacts_countries": 45,
-        "press_mentions_30d": 11,
-        "social_mentions_30d": 66,
+        "press_mentions_30d": 13,
+        "social_mentions_30d": 95,
         "youtube_views_30d": 230,
-        "sponsored_share_30d": 0.013,
+        "sponsored_share_30d": 0.009,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -34467,10 +34502,22 @@
       },
       "evidence": [
         {
+          "source": "google_news",
+          "date": "2026-11-12",
+          "title": "Gym Bod adds Pistachio Choc Top Protein Ice Cream",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83OEFKLUVBb2JXYlg1TmhOdlhUYV9XS253RDc3Nk8tOUc0V0FrQjl0bC1rWWFxZFVteWIweVhkT1VWX3VCSEJIc2NXdnhOU1V6MVp3ZFotbkdDMW9WMzF2ZUVzRE1VbTVsTXBlM1QtaW1YeHVCQ05IQQ?oc=5"
+        },
+        {
           "source": "rss",
           "date": "2026-11-11",
           "title": "Pandan rises as a standout in global flavor trends",
           "url": "https://www.foodbusinessnews.net/articles/31335-pandan-rises-as-a-standout-in-global-flavor-trends"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
+          "title": "Pickle beer to pistachio spritzes: Food flavours shake up drinks",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRWRnZ1BfcE5UQkI4NFVmbnRtNTh3T3F6SHRRNzI1V0Q2NWI2WFB3bUgzVG1pOURQUjhaV3N3aWZRb1ZKRDNOcFpaeHJ2d3NHVHR3SE5WczA1UnZFMTMwX1FtdkxuMkE3MHl5WVlfNTUxVWljOTlkckJSeVF0WTZsU2pKeEVhY2pSbWEwclRoWEF5Xzd4eUl1Y2hleVBveFc0?oc=5"
         },
         {
           "source": "rss",
@@ -34489,18 +34536,6 @@
           "date": "2026-11-11",
           "title": "Táche Debuts Its First-Ever Chocolate Pistachio Milk, Reimagining the Classic Peppermint Mocha",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ0hKWjZ0TGROb2lDcnN2V0FfSXdIb1hRcTRidWZidFB1UmQ1N3luY0V0ZG0xdmZHWll0MTB3M3ktZ2VLeUFFSEhvOWszcUFidE5Jc2NQSmY0NjdvM0pGWE5JSFhJaENYcjFtSUpSTkhXaTB2NnMxV1V2SW9YRGFfaXFROEc1SjFkRzZNUG45UzJPQQ?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "The Salty and Tache launch limited pistachio treats",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNRUN1S0hWeHJ1QkdUaXE1OGZoc1FHRmJFejdkU3lVVnhYaU0zTUlvbHp1ZHdHU29NbXhYQjRNaE9ha3ZxUi1Nam1PdnVpRnB1dlM2LVQ1UVF6WFNsdjJMM3VZNFNhNFNXYmFzUm9DNkNNdXpHODBhemNUNlpjYkdCOGpGeVc3QjTSAYwBQVVfeXFMTjZEQjF1RXlqS3ZNWmN2alFTYXdUUmpxdU80TlVVeUFvOEVmUTRIQ3RtNzQzVl9KaktUVTk5MmFJYkRRNzZ2TVNVRXJZTEJ3ZjdudEZrOTlvMTg4SUFYZjhVVFR6OHh4bXhWWFF3TVNfWWIycWJpSV9jNUczbHJORFNGQVRxdXJSS1dsdkk?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-10",
-          "title": "Intico adds White Choco & Pistachio Almond to its Protein Bar",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVjJjR3E2X2pxZ2RxeV9Ta19faEE4aDRoNEpYOURyenFyNHp4cS15eHByZndsTjh1czd0eE5mT044Mlozdzg5OFZwd1Y4eElNZDhnVEU0Y2VMTXVQQlM3UTIxYXhyb1dUanpndVlLSGVMd3VPelpzLVFDZURUWTJSZktiMTlPc2c?oc=5"
         }
       ],
       "watch_points": [
@@ -34537,7 +34572,7 @@
         "openfoodfacts_brands": 61,
         "openfoodfacts_countries": 24,
         "press_mentions_30d": 7,
-        "social_mentions_30d": 106,
+        "social_mentions_30d": 131,
         "youtube_views_30d": 4276,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -35021,7 +35056,7 @@
         "v1_rule_verdict": null,
         "v2_perennity_score": null,
         "mirofish_simulation_score": null,
-        "confidence_level": "basse"
+        "confidence_level": "moyenne"
       },
       "metrics": {
         "search_growth_13w_pct": 6.6,
@@ -35029,12 +35064,12 @@
         "search_volatility_26w": 0.192,
         "search_spike_ratio": 1.32,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -2.6,
+        "wikipedia_growth_12m_relative_pts": -2.5,
         "openfoodfacts_products_count": 117,
         "openfoodfacts_brands": 48,
         "openfoodfacts_countries": 20,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 9,
+        "social_mentions_30d": 12,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -35461,7 +35496,6 @@
       },
       "evidence": [],
       "watch_points": [
-        "Peu de mentions récentes dans la presse et les réseaux (9 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -35490,14 +35524,14 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -12.5,
+        "wikipedia_growth_12m_relative_pts": -12.7,
         "openfoodfacts_products_count": 56,
         "openfoodfacts_brands": 43,
         "openfoodfacts_countries": 11,
-        "press_mentions_30d": 16,
-        "social_mentions_30d": 81,
+        "press_mentions_30d": 17,
+        "social_mentions_30d": 114,
         "youtube_views_30d": 4502,
-        "sponsored_share_30d": 0.021,
+        "sponsored_share_30d": 0.015,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -35600,14 +35634,14 @@
         "search_volatility_26w": 0.217,
         "search_spike_ratio": 1.06,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -1.6,
+        "wikipedia_growth_12m_relative_pts": -1.5,
         "openfoodfacts_products_count": 504,
         "openfoodfacts_brands": 305,
         "openfoodfacts_countries": 46,
         "press_mentions_30d": 7,
-        "social_mentions_30d": 67,
+        "social_mentions_30d": 125,
         "youtube_views_30d": 6436,
-        "sponsored_share_30d": 0.027,
+        "sponsored_share_30d": 0.015,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -36101,8 +36135,8 @@
         "openfoodfacts_products_count": 129,
         "openfoodfacts_brands": 85,
         "openfoodfacts_countries": 23,
-        "press_mentions_30d": 9,
-        "social_mentions_30d": 54,
+        "press_mentions_30d": 10,
+        "social_mentions_30d": 68,
         "youtube_views_30d": 342,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -36212,7 +36246,7 @@
         "openfoodfacts_brands": 270,
         "openfoodfacts_countries": 33,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 76,
+        "social_mentions_30d": 108,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -36674,12 +36708,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -6.1,
+        "wikipedia_growth_12m_relative_pts": -6.2,
         "openfoodfacts_products_count": 34,
         "openfoodfacts_brands": 24,
         "openfoodfacts_countries": 14,
-        "press_mentions_30d": 14,
-        "social_mentions_30d": 88,
+        "press_mentions_30d": 15,
+        "social_mentions_30d": 104,
         "youtube_views_30d": 430,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -37132,14 +37166,14 @@
         {
           "source": "google_news",
           "date": "2026-11-10",
-          "title": "James Gunn et Peter Safran quittent DC Studios, un ex-Marvel les remplace",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYWtSUW00eGU1cms5d3RsanNFV2RKc2J0Zy14cDVzc2ZHNlFqdGJNYnpXd1hjcGZ6bkpiX0NveFNtS2NXZGcwMlVrTzJHaDBleTJfVG13eThqQVVFZkJQSzJWcldTUnJYNjV5MXVnczlNMm1adkMxUE15N0lXMy1malFMUXd0N3cyT19jRlZZeHVYeHhGalppdFR1TjlraDRaRUxBV2ZnaTRMR1BSRVFSWG1nV0phTU5WSmJfaTI0T0tzZHUwUlI4WTB5YTR2RjZRaWhJ?oc=5"
+          "title": "How to Get Saffron in Enshrouded",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91NnRvMkFKZnNXR254eXFrQUl1ME9VelJUbFIwV0lMRnh4RElCX1FHLXJOMTZBaDRnaDQ2QzVMM0tQa0IzdHQxUTRRcG9NTU5IQ3dKSEUxeDZqRW9TbXpPSm9vSF83QQ?oc=5"
         },
         {
           "source": "google_news",
-          "date": "2026-11-09",
-          "title": "Meet Sumac, Saffron and Cassia: Names of Calgary zoo’s red panda cubs announced",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPa2F6WU83UExMSzc5RDVTMVZTV3Bld1ZxMnI4bHJ0bkUwdzRiT1d0azhHVU1PdlZDYkg5YkItakQ5MFZnY2d6YjVZZ091WGRjbG1yMml5d1h3NUh2VGdvT3djRzJHclRhdHNFX2VKZFB3VVJJdDFyMUxablRaN0k5TXBwM1FkM2JOTjM3M3V6dXVwdFp0eS01UkNoNDhaZ1JIMXU0RGg2VDFZUU5YSlpaVFMySlctY0U?oc=5"
+          "date": "2026-11-10",
+          "title": "James Gunn et Peter Safran quittent DC Studios, un ex-Marvel les remplace",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYWtSUW00eGU1cms5d3RsanNFV2RKc2J0Zy14cDVzc2ZHNlFqdGJNYnpXd1hjcGZ6bkpiX0NveFNtS2NXZGcwMlVrTzJHaDBleTJfVG13eThqQVVFZkJQSzJWcldTUnJYNjV5MXVnczlNMm1adkMxUE15N0lXMy1malFMUXd0N3cyT19jRlZZeHVYeHhGalppdFR1TjlraDRaRUxBV2ZnaTRMR1BSRVFSWG1nV0phTU5WSmJfaTI0T0tzZHUwUlI4WTB5YTR2RjZRaWhJ?oc=5"
         }
       ],
       "watch_points": [
@@ -37177,7 +37211,7 @@
         "openfoodfacts_brands": 9,
         "openfoodfacts_countries": 7,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 13,
+        "social_mentions_30d": 15,
         "youtube_views_30d": 1,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -37259,12 +37293,12 @@
         "search_volatility_26w": 0.112,
         "search_spike_ratio": 1.38,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -6.9,
+        "wikipedia_growth_12m_relative_pts": -6.8,
         "openfoodfacts_products_count": 171,
         "openfoodfacts_brands": 122,
         "openfoodfacts_countries": 34,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 33,
+        "social_mentions_30d": 43,
         "youtube_views_30d": 3642,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -37756,7 +37790,7 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 5.0,
+        "wikipedia_growth_12m_relative_pts": 4.9,
         "openfoodfacts_products_count": 4,
         "openfoodfacts_brands": 3,
         "openfoodfacts_countries": 5,
@@ -38689,7 +38723,7 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 8.8,
+        "wikipedia_growth_12m_relative_pts": 8.7,
         "openfoodfacts_products_count": 3,
         "openfoodfacts_brands": 2,
         "openfoodfacts_countries": 3,
@@ -39152,7 +39186,7 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 10.2,
+        "wikipedia_growth_12m_relative_pts": 10.1,
         "openfoodfacts_products_count": 84,
         "openfoodfacts_brands": 49,
         "openfoodfacts_countries": 33,
@@ -39644,12 +39678,12 @@
         "search_volatility_26w": 0.159,
         "search_spike_ratio": 1.08,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -1.0,
+        "wikipedia_growth_12m_relative_pts": -1.2,
         "openfoodfacts_products_count": 49,
         "openfoodfacts_brands": 41,
         "openfoodfacts_countries": 22,
         "press_mentions_30d": 3,
-        "social_mentions_30d": 28,
+        "social_mentions_30d": 38,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -40128,9 +40162,9 @@
         "openfoodfacts_brands": 537,
         "openfoodfacts_countries": 73,
         "press_mentions_30d": 7,
-        "social_mentions_30d": 121,
+        "social_mentions_30d": 198,
         "youtube_views_30d": 7556,
-        "sponsored_share_30d": 0.016,
+        "sponsored_share_30d": 0.01,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -40625,7 +40659,7 @@
         "openfoodfacts_brands": 2,
         "openfoodfacts_countries": 1,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 19,
+        "social_mentions_30d": 22,
         "youtube_views_30d": 93758,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -41100,7 +41134,7 @@
         "openfoodfacts_brands": 67,
         "openfoodfacts_countries": 16,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 7,
+        "social_mentions_30d": 11,
         "youtube_views_30d": 3296,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -41585,7 +41619,7 @@
         "v1_rule_verdict": null,
         "v2_perennity_score": null,
         "mirofish_simulation_score": null,
-        "confidence_level": "moyenne"
+        "confidence_level": "haute"
       },
       "metrics": {
         "search_growth_13w_pct": -23.2,
@@ -41598,9 +41632,9 @@
         "openfoodfacts_brands": 159,
         "openfoodfacts_countries": 25,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 45,
+        "social_mentions_30d": 62,
         "youtube_views_30d": 5022,
-        "sponsored_share_30d": 0.022,
+        "sponsored_share_30d": 0.016,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -42078,12 +42112,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -12.4,
+        "wikipedia_growth_12m_relative_pts": -12.5,
         "openfoodfacts_products_count": 59,
         "openfoodfacts_brands": 38,
         "openfoodfacts_countries": 27,
-        "press_mentions_30d": 17,
-        "social_mentions_30d": 64,
+        "press_mentions_30d": 18,
+        "social_mentions_30d": 80,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -42512,6 +42546,12 @@
         {
           "source": "google_news",
           "date": "2026-11-11",
+          "title": "Trader Joe’s Just Dropped Tiramisu Ravioli and Shoppers Are Divided",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa1NydEF3c1FmUHVmLTBfQkN3YkFSLUhDR3A4Tk5yYU1XTTQ1ZVFRTnZYLWVNUEx3TjZWaUlNdmFLTnZla3JDckljX3FMaXdJcnNYZXp6OE5fSzRpbXhNRE5jdVdfb0FMS2ZidEJpR0Zfc2RKWEFBN2FWSG5id1k4emZhNXRkRnBfRWxKTWVEUXJObWJ2?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-11",
           "title": "Ni tiramisu à l’alcool ni sucette en forme de cochon, Lucciano’s adapte ses glaces au Maroc",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZlNIVExYTUFBNndmd1hyNGhVbXNlMkdpb01aUE01WXBQTFU0dFR1ODZXZlo1Rlh3dDdkMjZWNEpnSC02LWF0TVJfWUlzYnFDWUVfcU85ZGd4ZnRtNmZsNUZRQmFSVzZuMmZMajJwdUNCb2RRTWYycU9zeGJtSzNBQ291S0g5bzlhZS03ZlB6S0QtT2JibldjN3l0SFQxU3FS?oc=5"
         },
@@ -42538,12 +42578,6 @@
           "date": "2026-11-08",
           "title": "La pinsa sucrée s’invite au dessert et ringardise le tiramisu",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdmFHTDhMeFpZOUQ3X3pjV180bE04dHBkdXRqcnVrUnpHZFhCcjVPb2lra1FjOFQ1LVJCcGRWNzlqRmU1LXEyVF9sSXFNWmlCLTUwSEM2T21GNGtCeElEQ1FNVEJXWHRpNG5QQ0h4bUpfdm5jU2VDUWZfNVBFUTdMMWNCdmdFc3k2LUtrdW9KQlB2R2lOYVZ3?oc=5"
-        },
-        {
-          "source": "google_news",
-          "date": "2026-11-08",
-          "title": "Au Touquet, Lola & Smith se réinvente en bar à tiramisu",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcWxBOElDYkFHRUVidVc4LVZwS05nQ05sTnFsM2NURENSRVhVRlF3djhkS1o3aS1GUVZmMW1seFBrdGxWTXE2YU5ZMERXUV9NSlM1T2F4c1pKcWNzcURhY2M1a0tDTXlxcFE2T2xrMGl2WC1SWFZhWlZram1aLTNwMllucmlycmJ0VzM0MC1XczNrbmVEMkRTcTZFSV82ejNxU0VkVE4zTQ?oc=5"
         }
       ],
       "watch_points": [
@@ -42576,12 +42610,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -3.6,
+        "wikipedia_growth_12m_relative_pts": -3.7,
         "openfoodfacts_products_count": 6,
         "openfoodfacts_brands": 6,
         "openfoodfacts_countries": 3,
         "press_mentions_30d": 0,
-        "social_mentions_30d": 2,
+        "social_mentions_30d": 4,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -43010,7 +43044,7 @@
       "watch_points": [
         "Volume de recherche Google Trends trop faible pour mesurer une tendance fiable.",
         "Peu de produits en rayon dans notre échantillon Open Food Facts (6) : marché encore étroit (ou arôme de niche).",
-        "Peu de mentions récentes dans la presse et les réseaux (2 sur 30 jours) : confiance limitée.",
+        "Peu de mentions récentes dans la presse et les réseaux (4 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {
@@ -43039,14 +43073,14 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -16.3,
+        "wikipedia_growth_12m_relative_pts": -16.2,
         "openfoodfacts_products_count": 114,
         "openfoodfacts_brands": 73,
         "openfoodfacts_countries": 24,
         "press_mentions_30d": 13,
-        "social_mentions_30d": 52,
+        "social_mentions_30d": 66,
         "youtube_views_30d": 4616,
-        "sponsored_share_30d": 0.0,
+        "sponsored_share_30d": 0.013,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -43529,7 +43563,7 @@
         "v1_rule_verdict": null,
         "v2_perennity_score": null,
         "mirofish_simulation_score": null,
-        "confidence_level": "moyenne"
+        "confidence_level": "haute"
       },
       "metrics": {
         "search_growth_13w_pct": -28.2,
@@ -43542,7 +43576,7 @@
         "openfoodfacts_brands": 508,
         "openfoodfacts_countries": 46,
         "press_mentions_30d": 5,
-        "social_mentions_30d": 41,
+        "social_mentions_30d": 50,
         "youtube_views_30d": 1478,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -44034,12 +44068,12 @@
         "search_volatility_26w": 0.065,
         "search_spike_ratio": 1.1,
         "popularity_vs_vanilla": 0.127,
-        "wikipedia_growth_12m_relative_pts": 54.0,
+        "wikipedia_growth_12m_relative_pts": 54.2,
         "openfoodfacts_products_count": 23,
         "openfoodfacts_brands": 18,
         "openfoodfacts_countries": 9,
         "press_mentions_30d": 10,
-        "social_mentions_30d": 30,
+        "social_mentions_30d": 38,
         "youtube_views_30d": 1663,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -44531,14 +44565,14 @@
         "search_volatility_26w": 0.126,
         "search_spike_ratio": 1.09,
         "popularity_vs_vanilla": 1.0,
-        "wikipedia_growth_12m_relative_pts": 6.6,
+        "wikipedia_growth_12m_relative_pts": 6.5,
         "openfoodfacts_products_count": 2188,
         "openfoodfacts_brands": 1016,
         "openfoodfacts_countries": 92,
         "press_mentions_30d": 15,
-        "social_mentions_30d": 134,
+        "social_mentions_30d": 231,
         "youtube_views_30d": 18585,
-        "sponsored_share_30d": 0.027,
+        "sponsored_share_30d": 0.016,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -45032,10 +45066,10 @@
         "openfoodfacts_products_count": 11,
         "openfoodfacts_brands": 8,
         "openfoodfacts_countries": 5,
-        "press_mentions_30d": 4,
-        "social_mentions_30d": 79,
+        "press_mentions_30d": 5,
+        "social_mentions_30d": 148,
         "youtube_views_30d": 0,
-        "sponsored_share_30d": 0.012,
+        "sponsored_share_30d": 0.02,
         "efsa_regulatory_status": "non_verifie"
       },
       "series": {
@@ -45076,6 +45110,12 @@
           "date": "2026-11-10",
           "title": "Ube Bio : la boisson violette aux vertus santé qui séduit la France",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MYUlza1ZyMVdWVE5pcEd1LVNWTHllYmFKVDh3ZHphRjZvN2NwNEc3QmZoWmF6aEs3VHdxVGJCTTFYQ21RdFdFY3NGWTI2THJReXY1SzNnTHZpaFVfRTNRb3licWJKVDJhdVE?oc=5"
+        },
+        {
+          "source": "google_news",
+          "date": "2026-11-09",
+          "title": "Pokemon Scarlet & Violet: All sandwich recipes explained",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPckUzNGpoQ1ZyZV9iem0tVi1rRURUeVdzR180S2RZZlE1T2lIUXVEWDZhYkdOV2NYQXhzaU1qR21Ga1Y4Q2w4SEg3VVlINHRYdkJLYkE2dG1nLVVnRVFUNTFnZDNMU3N3cU1UWFV3aktTd1RDRmhFcFMxbjRHZWs3ZC1PbzVZbFVrVUpfaEIyMzBYMFZFQmdkeA?oc=5"
         },
         {
           "source": "google_news",
@@ -45127,12 +45167,12 @@
         "search_volatility_26w": 0.094,
         "search_spike_ratio": 0.98,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 4.5,
+        "wikipedia_growth_12m_relative_pts": 4.6,
         "openfoodfacts_products_count": 32,
         "openfoodfacts_brands": 25,
         "openfoodfacts_countries": 10,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 38,
+        "social_mentions_30d": 45,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -45617,7 +45657,7 @@
         "openfoodfacts_brands": 67,
         "openfoodfacts_countries": 21,
         "press_mentions_30d": 4,
-        "social_mentions_30d": 75,
+        "social_mentions_30d": 138,
         "youtube_views_30d": 300,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -46103,12 +46143,12 @@
         "search_volatility_26w": 0.12,
         "search_spike_ratio": 1.12,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": 6.2,
+        "wikipedia_growth_12m_relative_pts": 6.1,
         "openfoodfacts_products_count": 31,
         "openfoodfacts_brands": 23,
         "openfoodfacts_countries": 16,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 31,
+        "social_mentions_30d": 41,
         "youtube_views_30d": 0,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -46570,12 +46610,12 @@
         "search_volatility_26w": null,
         "search_spike_ratio": null,
         "popularity_vs_vanilla": null,
-        "wikipedia_growth_12m_relative_pts": -10.6,
+        "wikipedia_growth_12m_relative_pts": -10.7,
         "openfoodfacts_products_count": 14,
         "openfoodfacts_brands": 9,
         "openfoodfacts_countries": 6,
         "press_mentions_30d": 1,
-        "social_mentions_30d": 3,
+        "social_mentions_30d": 6,
         "youtube_views_30d": 93758,
         "sponsored_share_30d": 0.0,
         "efsa_regulatory_status": "non_verifie"
@@ -47017,7 +47057,7 @@
       "watch_points": [
         "Volume de recherche Google Trends trop faible pour mesurer une tendance fiable.",
         "Peu de produits en rayon dans notre échantillon Open Food Facts (14) : marché encore étroit (ou arôme de niche).",
-        "Peu de mentions récentes dans la presse et les réseaux (4 sur 30 jours) : confiance limitée.",
+        "Peu de mentions récentes dans la presse et les réseaux (7 sur 30 jours) : confiance limitée.",
         "Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable."
       ],
       "mirofish": {

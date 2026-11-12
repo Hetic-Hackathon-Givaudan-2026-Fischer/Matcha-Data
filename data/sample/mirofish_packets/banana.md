@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.08 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +9 points
 - Produits Open Food Facts citant l'arôme : 464 produits, 301 marques, 63 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 13 dans la presse, 107 sur les réseaux (YouTube, Bluesky) ; 4 661 vues YouTube
+- Mentions sur 30 jours : 15 dans la presse, 197 sur les réseaux (YouTube, Bluesky) ; 4 661 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Machine Learning and Marine Metaheuristics Optimize Solvent Free Banana Flavor Synthesis »
 - [google_news] 2026-11-11 : « Your daily Matcha just got a banana & fiber makeover with TRIZIE »
 - [google_news] 2026-11-10 : « Pumpkin Spice Banana Bread »
 - [google_news] 2026-11-10 : « Top food trends of 2020 on TikTok: Banana bread, pancake cereal and Gordon Ramsay »
 - [youtube] 2026-11-09 : « Pumpkin Protein Nut Butter Spread 🎃 5-Minute Healthy Swap »
 - [google_news] 2026-11-09 : « ELEV8 adds Banana Bread and Shaken Espresso Creamy Rice »
-- [youtube] 2026-11-08 : « Not making my coffee any other way 😍😍🔥🔥 #teacherdiaries #icedcoffee »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

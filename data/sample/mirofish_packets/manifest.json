@@ -7,7 +7,7 @@
   },
   {
     "flavor_id": "almond",
-    "chars": 2779,
+    "chars": 2780,
     "quality_ok": true,
     "issues": []
   },
@@ -19,19 +19,19 @@
   },
   {
     "flavor_id": "banana",
-    "chars": 2613,
+    "chars": 2638,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "barbecue",
-    "chars": 2676,
+    "chars": 2739,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "basil",
-    "chars": 2673,
+    "chars": 2712,
     "quality_ok": true,
     "issues": []
   },
@@ -67,13 +67,13 @@
   },
   {
     "flavor_id": "blood_orange",
-    "chars": 2280,
+    "chars": 2281,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "blueberry",
-    "chars": 2691,
+    "chars": 2692,
     "quality_ok": true,
     "issues": []
   },
@@ -97,19 +97,19 @@
   },
   {
     "flavor_id": "chai",
-    "chars": 2616,
+    "chars": 2617,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "chamomile",
-    "chars": 2231,
+    "chars": 2324,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "cheesecake",
-    "chars": 2737,
+    "chars": 2738,
     "quality_ok": true,
     "issues": []
   },
@@ -121,31 +121,31 @@
   },
   {
     "flavor_id": "chili",
-    "chars": 2719,
+    "chars": 2756,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "chocolate",
-    "chars": 2850,
+    "chars": 2800,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "cinnamon",
-    "chars": 2639,
+    "chars": 2673,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "coconut",
-    "chars": 2691,
+    "chars": 2692,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "coffee",
-    "chars": 2612,
+    "chars": 2640,
     "quality_ok": true,
     "issues": []
   },
@@ -163,13 +163,13 @@
   },
   {
     "flavor_id": "cranberry",
-    "chars": 2689,
+    "chars": 2811,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "cucumber",
-    "chars": 2176,
+    "chars": 2177,
     "quality_ok": true,
     "issues": []
   },
@@ -181,13 +181,13 @@
   },
   {
     "flavor_id": "dill",
-    "chars": 2684,
+    "chars": 2663,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "dragon_fruit",
-    "chars": 2460,
+    "chars": 2461,
     "quality_ok": true,
     "issues": []
   },
@@ -205,13 +205,13 @@
   },
   {
     "flavor_id": "fig",
-    "chars": 2707,
+    "chars": 2708,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "ginger",
-    "chars": 2633,
+    "chars": 2652,
     "quality_ok": true,
     "issues": []
   },
@@ -229,7 +229,7 @@
   },
   {
     "flavor_id": "green_apple",
-    "chars": 2730,
+    "chars": 2751,
     "quality_ok": true,
     "issues": []
   },
@@ -241,7 +241,7 @@
   },
   {
     "flavor_id": "harissa",
-    "chars": 2509,
+    "chars": 2415,
     "quality_ok": true,
     "issues": []
   },
@@ -253,7 +253,7 @@
   },
   {
     "flavor_id": "hibiscus",
-    "chars": 2440,
+    "chars": 2552,
     "quality_ok": true,
     "issues": []
   },
@@ -265,37 +265,37 @@
   },
   {
     "flavor_id": "honey",
-    "chars": 2660,
+    "chars": 2670,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "hot_honey",
-    "chars": 2479,
+    "chars": 2649,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "jalapeno",
-    "chars": 2718,
+    "chars": 2768,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "jasmine",
-    "chars": 2460,
+    "chars": 2461,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "kimchi",
-    "chars": 2880,
+    "chars": 2837,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "kiwi",
-    "chars": 2631,
+    "chars": 2569,
     "quality_ok": true,
     "issues": []
   },
@@ -313,19 +313,19 @@
   },
   {
     "flavor_id": "lemongrass",
-    "chars": 2270,
+    "chars": 2392,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "lime",
-    "chars": 2687,
+    "chars": 2688,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "lychee",
-    "chars": 2580,
+    "chars": 2667,
     "quality_ok": true,
     "issues": []
   },
@@ -343,31 +343,31 @@
   },
   {
     "flavor_id": "marshmallow",
-    "chars": 2846,
+    "chars": 2847,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "matcha",
-    "chars": 2628,
+    "chars": 2770,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "melon",
-    "chars": 2655,
+    "chars": 2656,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "mint",
-    "chars": 2594,
+    "chars": 2618,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "miso",
-    "chars": 2596,
+    "chars": 2597,
     "quality_ok": true,
     "issues": []
   },
@@ -421,19 +421,19 @@
   },
   {
     "flavor_id": "pickle",
-    "chars": 2691,
+    "chars": 2692,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "pineapple",
-    "chars": 2696,
+    "chars": 2697,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "pistachio",
-    "chars": 2649,
+    "chars": 2650,
     "quality_ok": true,
     "issues": []
   },
@@ -445,37 +445,37 @@
   },
   {
     "flavor_id": "praline",
-    "chars": 2222,
+    "chars": 2128,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "pumpkin_spice",
-    "chars": 2694,
+    "chars": 2695,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "raspberry",
-    "chars": 2690,
+    "chars": 2691,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "rose",
-    "chars": 2817,
+    "chars": 2818,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "rosemary",
-    "chars": 2189,
+    "chars": 2190,
     "quality_ok": true,
     "issues": []
   },
   {
     "flavor_id": "saffron",
-    "chars": 2815,
+    "chars": 2769,
     "quality_ok": true,
     "issues": []
   },
@@ -535,7 +535,7 @@
   },
   {
     "flavor_id": "tamarind",
-    "chars": 2920,
+    "chars": 2921,
     "quality_ok": true,
     "issues": []
   },
@@ -547,7 +547,7 @@
   },
   {
     "flavor_id": "tiramisu",
-    "chars": 2811,
+    "chars": 2823,
     "quality_ok": true,
     "issues": []
   },
@@ -583,7 +583,7 @@
   },
   {
     "flavor_id": "violet",
-    "chars": 2693,
+    "chars": 2784,
     "quality_ok": true,
     "issues": []
   },
@@ -595,7 +595,7 @@
   },
   {
     "flavor_id": "watermelon",
-    "chars": 2660,
+    "chars": 2661,
     "quality_ok": true,
     "issues": []
   },

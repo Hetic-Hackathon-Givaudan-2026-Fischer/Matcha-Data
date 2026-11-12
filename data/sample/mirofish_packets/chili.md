@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.15 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +0 points
 - Produits Open Food Facts citant l'arôme : 1405 produits, 774 marques, 76 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 20 dans la presse, 120 sur les réseaux (YouTube, Bluesky) ; 18 240 vues YouTube
+- Mentions sur 30 jours : 22 dans la presse, 215 sur les réseaux (YouTube, Bluesky) ; 18 240 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « Tequesta Chili Cook-Off Brings the Heat »
+- [google_news] 2026-11-11 : « Veterans Day 2026 deals: Score free food from Olive Garden, Krispy Kreme, Chili’s, and more »
 - [google_news] 2026-11-11 : « Kiwanis Chili Day Remembered as Annual Northeast Tradition »
 - [google_news] 2026-11-10 : « Barney’s Beanery West Hollywood Celebrates Route 66 Centennial With $1 Chili Special »
 - [google_news] 2026-11-10 : « Spiced Soft Drinks: The Root Co. Adds Chipotle Heat to Chilli Ginger Beer »
 - [youtube] 2026-11-10 : « Reviewing Eat Real Hummus Chips Zesty Lime Chilli And Sea Salt Flavour »
-- [youtube] 2026-11-10 : « Singapore Noodles The Takeaway Classic »
-- [youtube] 2026-11-10 : « Kimchi Instant Ramen with Pork & Egg | Easy Korean Ramen Recipe »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

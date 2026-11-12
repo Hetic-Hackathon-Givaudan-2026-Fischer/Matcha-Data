@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.13 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +19 points
 - Produits Open Food Facts citant l'arôme : 847 produits, 370 marques, 75 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 85 dans la presse, 303 sur les réseaux (YouTube, Bluesky) ; 1 432 528 vues YouTube
+- Mentions sur 30 jours : 93 dans la presse, 457 sur les réseaux (YouTube, Bluesky) ; 1 432 528 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « Aussies 'keep coming back' as $8 coffee alternative explodes »
 - [google_news] 2026-11-11 : « Brazilian coffee shop boasting 'explosion of flavor' opening in Central Mass. »
 - [google_news] 2026-11-11 : « The Best Coffee Advent Calendars: Tested for Freshness, Flavor and Variety »
 - [google_news] 2026-11-11 : « Much-loved café with near-5 star TripAdvisor rating put up for sale »
 - [google_news] 2026-11-11 : « New Yemeni coffee shop, Qamaria, coming soon to Leawood »
 - [rss] 2026-11-11 : « Just Ice Tea ups the caffeine with cold brew teas »
-- [rss] 2026-11-11 : « Nestlé gears up for next phase of growth »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

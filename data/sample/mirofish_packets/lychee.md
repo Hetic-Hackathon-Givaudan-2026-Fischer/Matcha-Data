@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +7 points
 - Produits Open Food Facts citant l'arôme : 43 produits, 32 marques, 17 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 3 dans la presse, 19 sur les réseaux (YouTube, Bluesky) ; 3 145 vues YouTube
+- Mentions sur 30 jours : 4 dans la presse, 24 sur les réseaux (YouTube, Bluesky) ; 3 145 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,6 +23,7 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « La personne qui a fait pousser le litchi à Xuan Lanh. »
 - [google_news] 2026-11-09 : « Oishi Green Tea flips the script on flavours with cool new ‘Lychee Twist’ lineup in Thailand »
 - [google_news] 2026-11-07 : « Passionfruit-Lychee-Martini700 »
 - [google_news] 2026-11-06 : « Alpha Neon’s popular Pumped TF now in Lychee Crush and Citrus Twist flavors »

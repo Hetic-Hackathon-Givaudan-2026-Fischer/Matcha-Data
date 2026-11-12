@@ -11,9 +11,9 @@
 - Recherches Google (13 dernières semaines vs les 13 précédentes) : -11 %
 - Recherches Google vs la même période l'an dernier : +1 %
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.13 (0 = régulière)
-- Wikipédia, croissance sur 12 mois relative aux autres arômes : -22 points
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : -23 points
 - Produits Open Food Facts citant l'arôme : 138 produits, 85 marques, 37 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 34 dans la presse, 101 sur les réseaux (YouTube, Bluesky) ; 4 790 vues YouTube
+- Mentions sur 30 jours : 35 dans la presse, 170 sur les réseaux (YouTube, Bluesky) ; 4 790 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -28,7 +28,7 @@
 - [google_news] 2026-11-11 : « Is It Safe to Drink Matcha Every Day? »
 - [google_news] 2026-11-11 : « Nujii tea turns a new leaf in the Athens matcha scene »
 - [google_news] 2026-11-11 : « Matcha made in India? These are the homegrown brands worth knowing - Cosmopolitan India »
-- [google_news] 2026-11-11 : « Où boire un bon matcha latte à Paris ? Nos bonnes adresses »
+- [google_news] 2026-11-10 : « NATIVA, Organic Navitas Organics Lemon Matcha Cashew Superfood+ BITES – Power Snacks – All Natural Plant Based – Clean Energy & Nutrition – USDA, Non GMO, Gluten Free, Soy Free, Vegan (8oz. Bag 11 Ser »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

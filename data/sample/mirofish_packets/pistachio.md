@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.11 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -9 points
 - Produits Open Food Facts citant l'arôme : 225 produits, 150 marques, 45 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 11 dans la presse, 66 sur les réseaux (YouTube, Bluesky) ; 230 vues YouTube
+- Mentions sur 30 jours : 13 dans la presse, 95 sur les réseaux (YouTube, Bluesky) ; 230 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Gym Bod adds Pistachio Choc Top Protein Ice Cream »
 - [rss] 2026-11-11 : « Pandan rises as a standout in global flavor trends »
+- [google_news] 2026-11-11 : « Pickle beer to pistachio spritzes: Food flavours shake up drinks »
 - [rss] 2026-11-11 : « Táche debutes Peppermint Mocha Barista »
 - [google_news] 2026-11-11 : « Táche Launches Chocolate Pistachio Milk Peppermint Mocha »
 - [google_news] 2026-11-11 : « Táche Debuts Its First-Ever Chocolate Pistachio Milk, Reimagining the Classic Peppermint Mocha »
-- [google_news] 2026-11-10 : « The Salty and Tache launch limited pistachio treats »
-- [google_news] 2026-11-10 : « Intico adds White Choco & Pistachio Almond to its Protein Bar »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

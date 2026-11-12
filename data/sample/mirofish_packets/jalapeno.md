@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +2 points
 - Produits Open Food Facts citant l'arôme : 225 produits, 175 marques, 29 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 2 dans la presse, 92 sur les réseaux (YouTube, Bluesky) ; 10 453 vues YouTube
+- Mentions sur 30 jours : 3 dans la presse, 136 sur les réseaux (YouTube, Bluesky) ; 10 453 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -27,8 +27,8 @@
 - [youtube] 2026-11-09 : « How to Make Extra Spicy Buffalo Wings With Jalapeño Cheese | Virgin Voyages »
 - [youtube] 2026-11-09 : « Cranberry Jalapeño Redbull, the hottest flavor of the season 🤣 »
 - [youtube] 2026-11-08 : « Smoked Jalapeño Sausage Stuffing | The PERFECT Thanksgiving Side Dish! »
+- [google_news] 2026-11-07 : « Shoppers Say Costco’s $9 Cranberry Jalapeño Dip Is the Perfect Combo of Smooth, Sweet and Spicy »
 - [youtube] 2026-11-07 : « French Cancan Popcorn Sweet N Heat at Costco Canada »
-- [youtube] 2026-11-07 : « 🌶️ From $1 Jalapeños to Homemade Seasoning #recipe »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

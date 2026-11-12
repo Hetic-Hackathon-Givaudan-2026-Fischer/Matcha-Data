@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : n.d.
 - Produits Open Food Facts citant l'arôme : 32 produits, 30 marques, 7 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 3 dans la presse, 24 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 5 dans la presse, 35 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -25,7 +25,9 @@
 
 - [google_news] 2026-11-10 : « EPIC Just Launched Rotisserie Chicken and Hot Honey Chicken Meat Sticks »
 - [google_news] 2026-11-09 : « Zalat Pizza Launches Hot Honey Italian »
+- [google_news] 2026-11-09 : « Pumpkin Rigatoni With Goat’s Cheese & Hot Honey »
 - [google_news] 2026-11-08 : « Tailgate Recipe: Grilled Hot Honey & Prosciutto Flatbread »
+- [google_news] 2026-11-05 : « Mermaid teams with Today’s Tipple for Hot Honey Martini »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

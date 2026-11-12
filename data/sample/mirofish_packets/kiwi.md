@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.06 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +1 points
 - Produits Open Food Facts citant l'arôme : 127 produits, 77 marques, 40 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 6 dans la presse, 86 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 9 dans la presse, 136 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Leon Zhu's New Song "Bushwick" Names Mr. Kiwi, Market Hotel and Morgan Avenue L »
+- [google_news] 2026-11-11 : « Snags and brews: local Kiwi suppliers behind Four Square's summer line-up »
 - [google_news] 2026-11-10 : « Strawberry Kiwi Juice LTO »
 - [google_news] 2026-11-10 : « Kiwi Dairy Drink Founders target Indian market »
 - [google_news] 2026-11-10 : « Jillaroos brace for Kiwi Ferns »
-- [google_news] 2026-11-06 : « Bloody clever: Kiwi surgeon’s invention to reconnect arteries is on the cusp of approval »
-- [google_news] 2026-11-06 : « Life on Wellington’s trapping lines: ‘A lot of people thought it was a crazy idea to bring kiwi back here’ »
-- [google_news] 2026-11-06 : « He lost the love of his life at 28. Then this Kiwi built a new life in Barcelona »
+- [google_news] 2026-11-10 : « Apple vs. Kiwi: Which Fruit Will Help You more healther ..! »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

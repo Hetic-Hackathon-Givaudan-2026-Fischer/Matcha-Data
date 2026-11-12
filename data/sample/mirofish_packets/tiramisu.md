@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -12 points
 - Produits Open Food Facts citant l'arôme : 59 produits, 38 marques, 27 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 17 dans la presse, 64 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 18 dans la presse, 80 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « Trader Joe’s Just Dropped Tiramisu Ravioli and Shoppers Are Divided »
 - [google_news] 2026-11-11 : « Ni tiramisu à l’alcool ni sucette en forme de cochon, Lucciano’s adapte ses glaces au Maroc »
 - [google_news] 2026-11-11 : « One More Tiramisu, New Dessert Concept, to Debut in the Southern Highlands »
 - [google_news] 2026-11-09 : « The creator of tiramisu has died »
 - [google_news] 2026-11-08 : « The Coffee Bean & Tea Leaf Is Bringing Back Its Sold-Out Tiramisu Drinks »
 - [google_news] 2026-11-08 : « La pinsa sucrée s’invite au dessert et ringardise le tiramisu »
-- [google_news] 2026-11-08 : « Au Touquet, Lola & Smith se réinvente en bar à tiramisu »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

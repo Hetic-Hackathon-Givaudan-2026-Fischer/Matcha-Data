@@ -11,9 +11,9 @@
 - Recherches Google (13 dernières semaines vs les 13 précédentes) : -13 %
 - Recherches Google vs la même période l'an dernier : -10 %
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.09 (0 = régulière)
-- Wikipédia, croissance sur 12 mois relative aux autres arômes : +4 points
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : +5 points
 - Produits Open Food Facts citant l'arôme : 32 produits, 25 marques, 10 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 4 dans la presse, 38 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 4 dans la presse, 45 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 

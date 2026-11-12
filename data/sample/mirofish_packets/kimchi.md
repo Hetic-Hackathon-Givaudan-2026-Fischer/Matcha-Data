@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -18 points
 - Produits Open Food Facts citant l'arôme : 69 produits, 48 marques, 24 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 13 dans la presse, 79 sur les réseaux (YouTube, Bluesky) ; 2 904 vues YouTube
+- Mentions sur 30 jours : 14 dans la presse, 91 sur les réseaux (YouTube, Bluesky) ; 2 904 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Why Koreans eat boiled pork with fresh kimchi — and what it does to the body »
 - [google_news] 2026-11-11 : « Chew This!: Kimchi Fried Rice with Fried Egg »
 - [google_news] 2026-11-10 : « Daesang launches Jongga ‘Bossam Geotjeori’ kimchi for meat pairings »
-- [google_news] 2026-11-10 : « Kimchi vs. Sauerkraut: Which Is Better for Your Gut Health? »
 - [google_news] 2026-11-10 : « ABS-CBN News. . Kimchi is more than a Korean staple. Find out how fermented foods may support gut health and influence the immune system. #Sciencewise »
 - [youtube] 2026-11-10 : « Kimchi Instant Ramen with Pork & Egg | Easy Korean Ramen Recipe »
-- [google_news] 2026-11-09 : « [Today's New Products] "Helping Kids Experience Kimjang"... Pulmuone Foodmerce Launches "Traditional Kimchi-Making Kit" »
+- [google_news] 2026-11-10 : « Kimchi vs. Sauerkraut: Which Is Better for Your Gut Health? »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

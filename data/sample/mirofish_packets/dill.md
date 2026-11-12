@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.17 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +6 points
 - Produits Open Food Facts citant l'arôme : 157 produits, 124 marques, 24 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 4 dans la presse, 64 sur les réseaux (YouTube, Bluesky) ; 1 274 vues YouTube
+- Mentions sur 30 jours : 5 dans la presse, 93 sur les réseaux (YouTube, Bluesky) ; 1 274 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -26,9 +26,9 @@
 - [google_news] 2026-11-10 : « NC Support Our Troops salutes Mt. Olive Pickles for dill-ivering cartons of snacks »
 - [google_news] 2026-11-06 : « Pickles NY Deli Is a BIG DILL! »
 - [youtube] 2026-11-06 : « maximum pickle flavor: why the vito picklewich delivers the ultimate punch »
+- [google_news] 2026-11-06 : « The Big Dill Pickle Festival in Arlington tomorrow »
 - [google_news] 2026-11-06 : « Pickly Pete’s Gives Hospitality a Much Better Dill Than No.10, with Pickle Liqueur Give-away »
 - [youtube] 2026-11-05 : « Who's trying Bush Apple Pie or Dill Pickle Baked Beans? »
-- [google_news] 2026-11-04 : « Walmart’s New Dill Pickle Bacon Has Shoppers Saying ‘I’ll Take 5 Packs’ »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

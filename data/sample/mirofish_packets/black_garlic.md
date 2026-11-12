@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.19 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -18 points
 - Produits Open Food Facts citant l'arôme : 9 produits, 4 marques, 4 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 4 dans la presse, 4 sur les réseaux (YouTube, Bluesky) ; 1 940 vues YouTube
+- Mentions sur 30 jours : 4 dans la presse, 5 sur les réseaux (YouTube, Bluesky) ; 1 940 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -32,8 +32,8 @@
 ## 4. Points de vigilance (calculés à partir des données)
 
 - Peu de produits en rayon dans notre échantillon Open Food Facts (9) : marché encore étroit (ou arôme de niche).
-- 12 % des mentions récentes sont sponsorisées : signal en partie marketing.
-- Peu de mentions récentes dans la presse et les réseaux (8 sur 30 jours) : confiance limitée.
+- 11 % des mentions récentes sont sponsorisées : signal en partie marketing.
+- Peu de mentions récentes dans la presse et les réseaux (9 sur 30 jours) : confiance limitée.
 - Les vues Wikipédia baissent globalement (≈ -24 % en un an) : seule la croissance relative est interprétable.
 
 ## 5. Question de simulation

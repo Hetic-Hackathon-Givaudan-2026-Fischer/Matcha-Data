@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.08 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -4 points
 - Produits Open Food Facts citant l'arôme : 734 produits, 403 marques, 49 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 9 dans la presse, 126 sur les réseaux (YouTube, Bluesky) ; 24 976 vues YouTube
+- Mentions sur 30 jours : 10 dans la presse, 212 sur les réseaux (YouTube, Bluesky) ; 24 976 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « I Made Lucille Ball's Easy Ginger Beef Ricardo Recipe, and It's My New Go-To 20-Minute Dinner »
 - [youtube] 2026-11-10 : « How to Cook the Best Sinigang na Baka | Tender Beef Shanks Recipe »
 - [google_news] 2026-11-10 : « Spiced Soft Drinks: The Root Co. Adds Chipotle Heat to Chilli Ginger Beer »
 - [youtube] 2026-11-10 : « Singapore Noodles The Takeaway Classic »
-- [google_news] 2026-11-10 : « Bon Appétit Pick: HelloFresh Ginger Chicken & Rice Bowls »
+- [google_news] 2026-11-10 : « HelloFresh Ginger Chicken & Rice Bowls »
 - [youtube] 2026-11-10 : « Moriba – Liqueur de Gingembre #boisson #france #afrique #senegal #juice #uk #noel #liqueur »
-- [google_news] 2026-11-09 : « New for spice lovers – Chilli Ginger Beer by The Root Co. »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

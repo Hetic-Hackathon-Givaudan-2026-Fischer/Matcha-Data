@@ -11,9 +11,9 @@
 - Recherches Google (13 dernières semaines vs les 13 précédentes) : n.d.
 - Recherches Google vs la même période l'an dernier : n.d.
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
-- Wikipédia, croissance sur 12 mois relative aux autres arômes : +29 points
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : +28 points
 - Produits Open Food Facts citant l'arôme : 1881 produits, 801 marques, 73 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 17 dans la presse, 123 sur les réseaux (YouTube, Bluesky) ; 8 271 vues YouTube
+- Mentions sur 30 jours : 19 dans la presse, 173 sur les réseaux (YouTube, Bluesky) ; 8 271 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -24,11 +24,11 @@
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
 - [rss] 2026-11-11 : « Paris Baguette shares Thanksgiving, winter holiday lineup »
+- [google_news] 2026-11-11 : « Eunwoo correctly identifies apple flavor during blind taste test with father »
 - [rss] 2026-11-11 : « Proda Golden Apple »
 - [google_news] 2026-11-10 : « This Apple Is Terrible for Eating, but It Makes Some of the World’s Best Hard Cider »
+- [google_news] 2026-11-10 : « Apple vs. Kiwi: Which Fruit Will Help You more healther ..! »
 - [google_news] 2026-11-10 : « An Apple a Day? Referee T.J. Luxmore Offers Jacob Fowler a Snack »
-- [youtube] 2026-11-09 : « Pumpkin Protein Nut Butter Spread 🎃 5-Minute Healthy Swap »
-- [youtube] 2026-11-09 : « Deadcarpet Energy Drink Reviews - Sour Apple Echelon Energy Drink »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

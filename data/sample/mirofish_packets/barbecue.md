@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.25 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -9 points
 - Produits Open Food Facts citant l'arôme : 333 produits, 249 marques, 56 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 19 dans la presse, 77 sur les réseaux (YouTube, Bluesky) ; 1 530 vues YouTube
+- Mentions sur 30 jours : 22 dans la presse, 138 sur les réseaux (YouTube, Bluesky) ; 1 530 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
-- [google_news] 2026-11-11 : « SAW’s BBQ brings award-winning flavor to Chelsea’s Valley Po... »
+- [google_news] 2026-11-11 : « Three Food Festivals Bring Barbecue, Plant-Based Dining and Wine Tastings to the Coachella Valley This Weekend »
+- [google_news] 2026-11-11 : « SAW’s BBQ brings award-winning flavor to Chelsea’s Valley Post »
 - [google_news] 2026-11-11 : « Barbecue Your Thanksgiving »
 - [google_news] 2026-11-11 : « Forget Fancy Barbecue Equipment — These Chefs Swear by 3 Surprisingly Simple Tools »
 - [google_news] 2026-11-11 : « The Cat Empire is bringing Big Brass Barbecue back to HOTA this summer »
 - [google_news] 2026-11-10 : « Show Up After Lunch At These 7 Ohio Barbecue Joints And The Pulled Pork Is Already Gone »
-- [youtube] 2026-11-10 : « Easy Maple Barbecue Sauce with Smoky Flavor #shorts »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

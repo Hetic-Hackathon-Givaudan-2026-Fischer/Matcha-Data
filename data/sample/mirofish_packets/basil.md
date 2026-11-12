@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.18 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -7 points
 - Produits Open Food Facts citant l'arôme : 621 produits, 286 marques, 53 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 5 dans la presse, 81 sur les réseaux (YouTube, Bluesky) ; 59 vues YouTube
+- Mentions sur 30 jours : 7 dans la presse, 140 sur les réseaux (YouTube, Bluesky) ; 59 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Basil Zempilas unveils plans to fast-track WA mining projects »
 - [google_news] 2026-11-11 : « Whip Up This Red Sauce Pasta Recipe In Under 15 Minutes Using Ripe Tomatoes And Fresh Basil »
 - [google_news] 2026-11-09 : « Little Orchids in Quakertown Serves a Thai Basil Cheesesteak »
 - [youtube] 2026-11-08 : « Smoked Jalapeño Sausage Stuffing | The PERFECT Thanksgiving Side Dish! »
 - [google_news] 2026-11-07 : « Escaloppe de poulet parmigiana avec une salade tiède de tomate cerise et basilic »
-- [google_news] 2026-11-05 : « Thai Basil duo to open another restaurant in Madison next year »
-- [google_news] 2026-11-04 : « Quick Bites: Thai Basil »
+- [google_news] 2026-11-05 : « Why A Pound Of Basil Can Cost As Much As A Pound Of Wagyu Beef »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

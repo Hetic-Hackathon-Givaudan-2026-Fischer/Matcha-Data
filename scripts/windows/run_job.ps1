@@ -43,10 +43,19 @@ $env:PYTHONIOENCODING = 'utf-8'
 $ExitCode = 0
 foreach ($Step in $Steps) {
     Write-Log "flavortrends $Step"
-    # cmd.exe redirige stdout et stderr dans le même fichier sans que PowerShell ne les transforme en erreurs.
-    $Inner = '"{0}" {1} >> "{2}" 2>&1' -f $Exe, $Step, $Log
-    & cmd.exe /d /s /c "`"$Inner`""
-    $Code = $LASTEXITCODE
+    # Start-Process redirige stdout et stderr dans des fichiers temporaires (sans passer par cmd.exe,
+    # qui casse sur les chemins avec espaces comme « Project Data »), puis on les ajoute au journal.
+    $Out = Join-Path $LogDir ('.{0}.out.tmp' -f $Job)
+    $Err = Join-Path $LogDir ('.{0}.err.tmp' -f $Job)
+    $Proc = Start-Process -FilePath $Exe -ArgumentList $Step -WorkingDirectory $Root -NoNewWindow -Wait -PassThru `
+        -RedirectStandardOutput $Out -RedirectStandardError $Err
+    $Code = $Proc.ExitCode
+    foreach ($F in @($Out, $Err)) {
+        if (Test-Path $F) {
+            Get-Content -Path $F -Encoding UTF8 | Add-Content -Path $Log -Encoding UTF8
+            Remove-Item -Path $F -Force
+        }
+    }
     Write-Log "fin de l'étape, code de sortie $Code"
     if ($Code -ne 0) { $ExitCode = $Code }
 }

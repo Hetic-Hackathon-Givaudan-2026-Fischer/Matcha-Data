@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.06 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +21 points
 - Produits Open Food Facts citant l'arôme : 3960 produits, 1695 marques, 115 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 63 dans la presse, 291 sur les réseaux (YouTube, Bluesky) ; 1 399 300 vues YouTube
+- Mentions sur 30 jours : 69 dans la presse, 417 sur les réseaux (YouTube, Bluesky) ; 1 399 300 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Chocolate-Inspired Fragrance Lines: Michel Germain Debuts Séxūal Crème Chocolat… »
+- [google_news] 2026-11-11 : « Encapsulated Lemongrass Essential Oil Optimizes Dark Chocolate Texture And Acceptability »
 - [rss] 2026-11-11 : « Planters announces festive seasonal snack lineup »
-- [google_news] 2026-11-11 : « Rare Cadbury chocolate bar slashed in price after return to UK supermarkets »
 - [google_news] 2026-11-11 : « Pretty chic to serve a big bowl of chocolate mousse with whipped cream. Give your guests bowls and let them scoop their own portions. »
 - [google_news] 2026-11-11 : « Playa Bowls Introduces New Chocolate-Inspired Bowls and Smoothies »
-- [google_news] 2026-11-11 : « Chocolat, thé, ou plus insolite : quel calendrier de l'Avent gourmand 2026 est (vraiment) fait pour vous »
-- [google_news] 2026-11-11 : « Panda Express Just Turned Its Famous Rangoons Into a Triple-Chocolate Dessert With Ghirardelli—but There's a Catch »
+- [google_news] 2026-11-11 : « Rare Cadbury chocolate bar slashed in price after return to UK supermarkets »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

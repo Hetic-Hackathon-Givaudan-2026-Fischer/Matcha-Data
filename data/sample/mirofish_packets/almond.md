@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.13 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -1 points
 - Produits Open Food Facts citant l'arôme : 473 produits, 296 marques, 58 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 12 dans la presse, 88 sur les réseaux (YouTube, Bluesky) ; 14 520 vues YouTube
+- Mentions sur 30 jours : 12 dans la presse, 131 sur les réseaux (YouTube, Bluesky) ; 14 520 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 

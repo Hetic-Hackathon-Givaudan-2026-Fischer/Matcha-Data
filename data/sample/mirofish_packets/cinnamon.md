@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.09 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : +5 points
 - Produits Open Food Facts citant l'arôme : 616 produits, 401 marques, 57 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 15 dans la presse, 118 sur les réseaux (YouTube, Bluesky) ; 18 837 vues YouTube
+- Mentions sur 30 jours : 16 dans la presse, 207 sur les réseaux (YouTube, Bluesky) ; 18 837 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « This is what happens to blood sugar levels when you drink overnight-soaked cinnamon water »
 - [rss] 2026-11-11 : « Planters announces festive seasonal snack lineup »
 - [google_news] 2026-11-10 : « Elle croit ses roulés à la cannelle volés, la vérité sur la disparition de son livreur bouleverse Miami »
 - [youtube] 2026-11-10 : « Mon Flan de folie goût Chai Latte ☕️ | Recette Flan Pâtissier aux Épices, Facile avec Caramel Maison »
 - [youtube] 2026-11-10 : « Cinnamon Buns OREOs #shorts »
 - [google_news] 2026-11-10 : « New Jersey’s 11 best cinnamon rolls, ranked for 2026 »
-- [youtube] 2026-11-10 : « Cinnamon Maple Frosted Flakes - Perfect For a Cool Fall Day »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

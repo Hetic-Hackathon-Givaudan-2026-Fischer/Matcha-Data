@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -6 points
 - Produits Open Food Facts citant l'arôme : 34 produits, 24 marques, 14 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 14 dans la presse, 88 sur les réseaux (YouTube, Bluesky) ; 430 vues YouTube
+- Mentions sur 30 jours : 15 dans la presse, 104 sur les réseaux (YouTube, Bluesky) ; 430 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -27,8 +27,8 @@
 - [google_news] 2026-11-11 : « Jusqu'à 2 000 DA le gramme : la récolte du safran s'annonce sous de bons auspices à Khenchela »
 - [rss] 2026-11-10 : « The cost of conflict: Food supply chains under pressure »
 - [google_news] 2026-11-10 : « Tahmina Tea Expands Beverage Collection with Two New Saffron-Infused Innovations for the Holiday Season »
+- [google_news] 2026-11-10 : « How to Get Saffron in Enshrouded »
 - [google_news] 2026-11-10 : « James Gunn et Peter Safran quittent DC Studios, un ex-Marvel les remplace »
-- [google_news] 2026-11-09 : « Meet Sumac, Saffron and Cassia: Names of Calgary zoo’s red panda cubs announced »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

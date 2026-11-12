@@ -11,9 +11,9 @@
 - Recherches Google (13 dernières semaines vs les 13 précédentes) : +27 %
 - Recherches Google vs la même période l'an dernier : +56 %
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.59 (0 = régulière)
-- Wikipédia, croissance sur 12 mois relative aux autres arômes : +4 points
+- Wikipédia, croissance sur 12 mois relative aux autres arômes : +3 points
 - Produits Open Food Facts citant l'arôme : 361 produits, 226 marques, 42 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 20 dans la presse, 102 sur les réseaux (YouTube, Bluesky) ; 50 327 vues YouTube
+- Mentions sur 30 jours : 22 dans la presse, 195 sur les réseaux (YouTube, Bluesky) ; 50 327 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Weston-super-Mare curry house owner recognised for tackling major issue »
+- [google_news] 2026-11-12 : « Warriors’ Stephen Curry exits early with abdominal soreness, ruled out vs Rockets »
 - [google_news] 2026-11-11 : « Glasgow restaurant creates 'curry in a pie' for Aldi stores across Scotland »
 - [google_news] 2026-11-11 : « LEON UNVEILS CHRISTMAS 2026 MENU WITH FESTIVE WRAP, SANDO CLAUS AND RETURNING CHRISTMAS PARTY CURRY! »
 - [google_news] 2026-11-11 : « Glasgow Indian restaurant teams up with popular bakery to launch new curry pies »
 - [youtube] 2026-11-10 : « Singapore Noodles The Takeaway Classic »
-- [google_news] 2026-11-10 : « Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win »
-- [google_news] 2026-11-10 : « Aatma Curry House Review: Not Authentic, and Proudly So »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

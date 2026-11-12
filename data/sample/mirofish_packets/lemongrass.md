@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -16 points
 - Produits Open Food Facts citant l'arôme : 48 produits, 32 marques, 16 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 1 dans la presse, 25 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 2 dans la presse, 27 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,6 +23,7 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-11 : « Encapsulated Lemongrass Essential Oil Optimizes Dark Chocolate Texture And Acceptability »
 - [google_news] 2026-11-10 : « Braised water dragon with lemongrass in winter »
 
 ## 4. Points de vigilance (calculés à partir des données)

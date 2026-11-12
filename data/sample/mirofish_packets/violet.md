@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : n.d. (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -13 points
 - Produits Open Food Facts citant l'arôme : 11 produits, 8 marques, 5 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 4 dans la presse, 79 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
+- Mentions sur 30 jours : 5 dans la presse, 148 sur les réseaux (YouTube, Bluesky) ; 0 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -24,6 +24,7 @@
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
 - [google_news] 2026-11-10 : « Ube Bio : la boisson violette aux vertus santé qui séduit la France »
+- [google_news] 2026-11-09 : « Pokemon Scarlet & Violet: All sandwich recipes explained »
 - [google_news] 2026-11-06 : « How to farm Herba Mystica in Pokemon Scarlet & Violet »
 - [google_news] 2026-11-05 : « ‘Violet’: Patrick Brice Casts Lili Reinhart, Suki Waterhouse »
 - [google_news] 2026-11-05 : « CREEP Team Reunites For New Horror Film VIOLET, Starring A Murderer’s Row Of Genre Talent »

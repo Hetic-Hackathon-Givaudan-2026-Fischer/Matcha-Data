@@ -13,7 +13,7 @@
 - Irrégularité de la courbe (volatilité sur 26 semaines) : 0.13 (0 = régulière)
 - Wikipédia, croissance sur 12 mois relative aux autres arômes : -1 points
 - Produits Open Food Facts citant l'arôme : 385 produits, 227 marques, 38 pays (échantillon des produits récemment mis à jour, monde entier)
-- Mentions sur 30 jours : 15 dans la presse, 116 sur les réseaux (YouTube, Bluesky) ; 7 200 vues YouTube
+- Mentions sur 30 jours : 16 dans la presse, 186 sur les réseaux (YouTube, Bluesky) ; 7 200 vues YouTube
 
 ## 2. Résultat statistique (modèle V2)
 
@@ -23,12 +23,12 @@
 
 ## 3. Preuves : articles et vidéos réels (30 derniers jours)
 
+- [google_news] 2026-11-12 : « Dessert-Inspired Protein Drinks: Spylt Adds a Limited-Edition Mint Chip Flavor… »
 - [rss] 2026-11-11 : « Day Out Snacks gives its Peppermint Bark flavor an encore »
 - [rss] 2026-11-11 : « Táche debutes Peppermint Mocha Barista »
 - [google_news] 2026-11-11 : « Táche Launches Chocolate Pistachio Milk Peppermint Mocha »
 - [google_news] 2026-11-11 : « Táche Debuts Its First-Ever Chocolate Pistachio Milk, Reimagining the Classic Peppermint Mocha »
 - [google_news] 2026-11-10 : « Spylt adds limited Mint Chip Protein Milk on Amazon »
-- [google_news] 2026-11-10 : « Premier Protein brings back Winter Mint Chocolate shake »
 
 ## 4. Points de vigilance (calculés à partir des données)
 

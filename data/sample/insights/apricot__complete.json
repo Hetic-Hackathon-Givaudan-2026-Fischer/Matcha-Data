@@ -1,0 +1,59 @@
+{
+  "trend_id": "apricot",
+  "aroma_name": "Abricot",
+  "trend_status": "declining",
+  "trend_status_reason": "recherches en baisse sur les 3 derniers mois",
+  "growth_rate": -23.4,
+  "buzz_score": 40,
+  "trend_score": 26,
+  "perennity_score_v2": null,
+  "confidence_level": "high",
+  "trend_summary": "Abricot en baisse : Statut calculé : en baisse",
+  "evolution_explanation": "La baisse de l'intérêt pour l'arôme Abricot est principalement due à la diminution des recherches sur les 3 derniers mois, reflétant une réduction des intérêts potentiels pour ce produit.",
+  "business_opportunity": "Hypothèse : L'arôme Abricot pourrait potentiellement perdre de l'intérêt, ce qui pourrait signifier une réduction des ventes et une diminution des profits pour Givaudan. Pour éviter une perte de marché, il serait recommandé de réfléchir à des stratégies pour retenir l'attention des consommateurs sur l'arôme Abricot.",
+  "recommendation": "Hypothèse : Lancer un nouveau projet pour l'arôme Abricot pourrait être une bonne stratégie pour retenir l'attention des consommateurs et réduire la baisse de l'intérêt actuelle.",
+  "key_drivers": [
+    "Recherches Google : -23% sur 3 mois ; -3% par rapport à l'an dernier",
+    "Marché : 181 produits en rayon, 99 marques, 27 pays",
+    "Types de produits : Boissons (40%), Céréales et produits du petit-déjeuner (19%), Produits laitiers (14%), Biscuits et pâtisseries (14%)"
+  ],
+  "data_limitations": [
+    "Pas de prédiction « durable ou buzz » : le modèle ne s'applique qu'aux arômes en vraie hausse.",
+    "Réseaux sociaux : langue connue, pays non connu. Google Trends : accès non officiel."
+  ],
+  "indicator_definitions": {
+    "trend_status": {
+      "type": "calculé (règle bêta)",
+      "definition": "Dérivé du statut Data. Vraie hausse (≥ +20 % sur 3 mois ET vs l'an dernier) : « exploding » si le pic récent ≥ 2.0 × la moyenne, « emerging » si moins de 20 produits en rayon, sinon « growing ». Sinon : seasonal, stable, declining, ou insufficient_data (volume de recherche trop faible)."
+    },
+    "growth_rate": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Évolution des recherches Google (monde) sur les 13 dernières semaines, en %."
+    },
+    "buzz_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Attention médiatique sur 30 jours, comparée aux 102 arômes : moyenne des rangs (0-100) des mentions presse, des mentions réseaux sociaux et des vues YouTube. 80 = plus visible que 80 % des arômes. Ce n'est pas une mesure absolue."
+    },
+    "trend_score": {
+      "type": "bêta (rang relatif)",
+      "definition": "Dynamique de recherche comparée aux autres arômes : moyenne des rangs (0-100) de la croissance sur 3 mois et de la croissance vs l'an dernier. null si le volume est trop faible."
+    },
+    "perennity_score_v2": {
+      "type": "calculé (modèle V2 validé)",
+      "definition": "Probabilité (0-100) que la hausse tienne encore dans 1 an. N'existe que pour un arôme en vraie hausse."
+    },
+    "confidence_level": {
+      "type": "calculé (pipeline Data)",
+      "definition": "Quantité de données disponibles : high = beaucoup de mentions et de produits, low = peu de signaux."
+    }
+  },
+  "focus": "complete",
+  "generated_by": "llm",
+  "model": "qwen2.5:1.5b",
+  "llm_error": null,
+  "llm_seconds": 21.1,
+  "llm_attempts": 1,
+  "warnings": [],
+  "data_generated_at": "2026-11-12T11:31:42.410437+00:00",
+  "cached": false
+}

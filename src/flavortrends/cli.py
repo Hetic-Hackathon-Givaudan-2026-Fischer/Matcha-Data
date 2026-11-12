@@ -215,6 +215,30 @@ def cmd_serve(args, settings):
     return 0
 
 
+def cmd_insights(args, settings):
+    """Pré-génère les explications LLM (cache) pour que l'API réponde instantanément en démo."""
+    from . import analyst
+    data = analyst.load_trends()
+    trends = data["trends"]
+    ids = [t["trend_id"] for t in trends] if args.all else [x.strip() for x in args.ids.split(",") if x.strip()]
+    status = analyst.ollama_status()
+    print(f"Ollama : {'OK' if status['reachable'] else 'INJOIGNABLE'} | modèle {status['model']} "
+          f"{'installé' if status['model_installed'] else 'ABSENT'}")
+    by_id = {t["trend_id"]: t for t in trends}
+    for fid in ids:
+        if fid not in by_id:
+            print(f"  {fid:<20} arôme inconnu")
+            continue
+        r = analyst.insight(by_id[fid], trends, data["generated_at"], focus=args.focus, refresh=args.refresh)
+        how = "cache" if r["cached"] else f"{r['generated_by']} {r['llm_seconds'] or 0:.0f}s"
+        print(f"  {fid:<20} {r['trend_status']:<18} {how:<14} {r['trend_summary'][:90]}")
+        for w in r["warnings"]:
+            print(f"  {'':<20} ⚠ {w}")
+        if r["llm_error"]:
+            print(f"  {'':<20} ⚠ repli : {r['llm_error']}")
+    return 0
+
+
 def cmd_import_off_dump(args, settings):
     with connect(settings) as conn:
         res = OpenFoodFactsDump(conn, settings).run(categories=settings.off_categories,
@@ -388,6 +412,14 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--host", default="127.0.0.1")
     s.add_argument("--port", type=int, default=8000)
     s.set_defaults(func=cmd_serve)
+
+    s = sub.add_parser("insights", help="AI Trend Analyst : pré-génère les explications LLM (Ollama) en cache")
+    s.add_argument("--ids", default="curry,matcha,vanilla,pistachio,yuzu",
+                   help="arômes séparés par des virgules (défaut : 5 exemples)")
+    s.add_argument("--all", action="store_true", help="les 102 arômes (≈ 30 s chacun sur CPU)")
+    s.add_argument("--focus", default="complete", choices=["complete", "trend", "buzz", "emerging", "business"])
+    s.add_argument("--refresh", action="store_true", help="ignore le cache")
+    s.set_defaults(func=cmd_insights)
 
     s = sub.add_parser("import-off-dump", help="import unique de l'export complet Open Food Facts (historique)")
     s.add_argument("--file", help="fichier .csv.gz déjà téléchargé (défaut : téléchargement en continu)")

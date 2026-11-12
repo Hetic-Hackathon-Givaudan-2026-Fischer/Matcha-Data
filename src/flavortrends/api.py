@@ -37,6 +37,8 @@ Tendances d'arômes calculées sur **données réelles** (Google Trends, Open Fo
 | Fiche détaillée d'un arôme (courbe, preuves, points de vigilance) | `GET /api/v1/trends/{trend_id}` |
 | Fiabilité du modèle (panneau « validation ») | `GET /api/v1/model-metrics` |
 | Calculatrice « et si… » (variables saisies à la main) | `POST /api/v1/simulate` |
+| Indicateurs métier des 102 arômes (buzz score, trend status…) | `GET /api/v1/ai/indicators` |
+| Explication en langage simple d'un arôme (LLM local) | `GET /api/v1/trends/{trend_id}/insight` |
 
 ### Erreurs
 Toutes les erreurs renvoient un JSON `{"detail": "..."}`.
@@ -53,6 +55,8 @@ app = FastAPI(
     openapi_tags=[
         {"name": "Données", "description": "Arômes, scores et fiches (lecture seule)"},
         {"name": "Modèle", "description": "Validation du modèle V2 et simulation"},
+        {"name": "IA", "description": "AI Trend Analyst : explications métier rédigées par un LLM local (Ollama). "
+                                      "Les chiffres viennent toujours de la Data, jamais du LLM."},
         {"name": "Système", "description": "État de l'API"},
     ],
 )
@@ -293,6 +297,88 @@ def get_packet(trend_id: str):
          tags=["Modèle"], responses={200: {"model": ModelMetrics}, **ERR_503, **ERR_500})
 def model_metrics():
     return _data()["model"]
+
+
+# ---------------------------------------------------------------- IA : AI Trend Analyst (Ollama local)
+FocusName = Literal["complete", "trend", "buzz", "emerging", "business"]
+
+
+class IndicatorDefinition(BaseModel):
+    type: str
+    definition: str
+
+
+class Indicators(BaseModel):
+    trend_id: str
+    aroma_name: str
+    trend_status: Literal["exploding", "emerging", "growing", "seasonal", "stable", "declining", "insufficient_data"]
+    trend_status_reason: str
+    growth_rate: float | None = Field(None, description="Évolution des recherches Google sur 13 semaines, en %")
+    buzz_score: int | None = Field(None, ge=0, le=100, description="Bêta : rang relatif de l'attention médiatique")
+    trend_score: int | None = Field(None, ge=0, le=100, description="Bêta : rang relatif de la dynamique de recherche")
+    perennity_score_v2: int | None = Field(None, description="Modèle V2 : probabilité (0-100) que la hausse dure 1 an")
+    confidence_level: Literal["high", "medium", "low"]
+
+
+class Insight(Indicators):
+    trend_summary: str
+    evolution_explanation: str
+    key_drivers: list[str]
+    business_opportunity: str
+    recommendation: str
+    data_limitations: list[str]
+    indicator_definitions: dict[str, IndicatorDefinition]
+    focus: FocusName
+    generated_by: Literal["llm", "fallback"] = Field(
+        ..., description="« llm » = texte rédigé par Ollama ; « fallback » = texte modèle (Ollama indisponible)")
+    model: str | None = None
+    llm_error: str | None = Field(None, description="Raison du repli, si generated_by = fallback")
+    llm_seconds: float | None = None
+    llm_attempts: int = Field(..., description="0 = LLM non appelé ; 2 = la première réponse a été corrigée")
+    warnings: list[str] = Field(..., description="Avertissements éventuels sur la réponse")
+    data_generated_at: str
+    cached: bool
+
+
+def _trend(trend_id: str) -> dict:
+    for t in _data()["trends"]:
+        if t["trend_id"] == trend_id:
+            return t
+    raise HTTPException(404, f"Arôme inconnu : {trend_id}")
+
+
+@app.get("/api/v1/ai/health", tags=["IA"], summary="État d'Ollama (LLM local) et modèle utilisé")
+def ai_health():
+    from . import analyst
+    return analyst.ollama_status()
+
+
+@app.get("/api/v1/ai/indicators", tags=["IA"],
+         summary="Indicateurs métier des 102 arômes (instantané, sans LLM)",
+         description="Trend status, growth rate, buzz score, trend score, confiance. Calculés en Python à partir "
+                     "des données Data (aucun LLM, réponse immédiate). Définitions : voir /ai/insight.",
+         responses={200: {"model": list[Indicators]}, **ERR_503, **ERR_500})
+def ai_indicators():
+    from . import analyst
+    trends = _data()["trends"]
+    return [{"trend_id": t["trend_id"], "aroma_name": t["aroma_name"], **analyst.compute_indicators(t, trends)}
+            for t in trends]
+
+
+@app.get("/api/v1/trends/{trend_id}/insight", tags=["IA"],
+         summary="Explication métier d'un arôme par l'AI Trend Analyst (LLM local Ollama)",
+         description="Les chiffres et le statut sont calculés en Python ; le LLM ne rédige que le texte. "
+                     "Première génération : 20 à 60 s sur CPU, puis réponse instantanée (cache, invalidé à chaque "
+                     "recalcul nocturne des données). Si Ollama est indisponible, la réponse arrive quand même "
+                     "avec un texte modèle (`generated_by: fallback`) et la raison dans `llm_error`.\n\n"
+                     "`focus` : complete (défaut), trend, buzz, emerging, business. "
+                     "`refresh=true` force une nouvelle génération. `use_llm=false` = texte modèle immédiat.",
+         responses={200: {"model": Insight}, **ERR_404, **ERR_503, **ERR_500})
+def trend_insight(trend_id: str, focus: FocusName = "complete", refresh: bool = False, use_llm: bool = True):
+    from . import analyst
+    d = _data()
+    return analyst.insight(_trend(trend_id), d["trends"], d["generated_at"], focus=focus, refresh=refresh,
+                           use_llm=use_llm)
 
 
 class SimulationRequest(BaseModel):

@@ -70,6 +70,19 @@ Options utiles : `--flavors yuzu,matcha` pour cibler quelques arômes, `--langs 
 
 **Commande quotidienne** (toutes les sources puis nettoyage) : `flavortrends run`.
 
+## Image Docker publiée (GHCR)
+
+Chaque push sur `main` publie l'API Data sur GHCR (workflow `.github/workflows/docker.yml`), pour amd64 et arm64 :
+
+| Tag | Quand |
+| --- | --- |
+| `ghcr.io/hetic-hackathon-givaudan-2026-fischer/matcha-data:latest` | Dernier commit de `main` |
+| `…:sha-<commit>` | Chaque commit de `main` (pour revenir en arrière) |
+| `…:1.2.0` | Tag git `v1.2.0` |
+
+hackathon-app la tire dans son `compose.yml` (service `data`) : `docker compose up` côté app lance aussi cette API, sans cloner ce dépôt.
+Les données servies sont celles de `data/sample` au moment du build : pour mettre à jour l'app, commitez `data/sample` sur `main`.
+
 ## Planification automatique (Windows)
 
 Une fois la base lancée et le fichier `.env` rempli :

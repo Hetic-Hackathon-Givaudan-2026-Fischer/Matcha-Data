@@ -1,0 +1,58 @@
+name: Image Docker
+
+# Publie l'API Data sur GHCR : ghcr.io/hetic-hackathon-givaudan-2026-fischer/matcha-data
+#   push sur main → :latest et :sha-<commit>
+#   tag v1.2.0    → :1.2.0
+#   pull request  → build seul (vérifie que l'image se construit), rien n'est publié
+# hackathon-app la tire dans son compose (service « data »).
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+# Un seul build par branche : un nouveau push annule le précédent
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # En minuscules : GHCR refuse les majuscules du nom de l'organisation
+  IMAGE: ghcr.io/hetic-hackathon-givaudan-2026-fischer/matcha-data
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v7
+      # arm64 : pour les Mac Apple Silicon de l'équipe
+      - uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
+      - uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
+        if: github.event_name != 'pull_request'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      # Tags + labels OCI (dont org.opencontainers.image.source, qui lie le package au dépôt)
+      - id: meta
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
+        with:
+          images: ${{ env.IMAGE }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha
+            type=semver,pattern={{version}}
+      - uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
